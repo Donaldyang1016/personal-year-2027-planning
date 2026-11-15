@@ -1,5 +1,5 @@
 {
-  "plan_version": "D01 V3.0 — Strategic Planning & Execution",
+  "plan_version": "D01 V3.1 — Five-Period Strategic Planning & Execution",
   "last_reviewed": "2026-11-15",
   "north_star": {
     "vision_zh": "2027年底获得稳定正式全职风险岗位，争取Senior Analyst或等效职级与CAD 100,000–110,000年基本工资，并通过业务成果、风险分析能力和项目领导经验为Market Risk、Credit Methodology、CCR方向的未来Manager Scope打基础。",
@@ -11,10 +11,11 @@
     "career_horizon_2030": "Manager scope or above in Market Risk / Credit Methodology / CCR"
   },
   "quarterly_review_dates": [
-    "2027-03-31",
-    "2027-06-30",
-    "2027-09-30",
-    "2027-12-31"
+    "2027-01-03",
+    "2027-04-04",
+    "2027-07-04",
+    "2027-10-03",
+    "2028-01-02"
   ],
   "contingencies": [
     {
@@ -88,10 +89,11 @@
       "stretch": "获得1份目标专业领域岗位或1项直接相关业务项目",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "完成职业定位文件；分析至少2个方向和6份JD",
-        "Q2": "累计完成3个专业方向和12份JD分析；选定主要+备选方向",
-        "Q3": "根据实际岗位和面试反馈复核方向匹配",
-        "Q4": "形成2028–2030职业路线图"
+        "Q1": "形成初版Risk职业路线对照与目标JD清单",
+        "Q2": "完成职业定位文件；分析至少2个方向和6份JD",
+        "Q3": "累计完成3个专业方向和12份JD分析；选定主要+备选方向",
+        "Q4": "根据实际岗位和面试反馈复核方向匹配",
+        "Q5": "形成2028–2030职业路线图"
       },
       "section_id": "D01.1",
       "title_zh": "形成灵活且有竞争力的风险管理职业路线",
@@ -106,10 +108,11 @@
           "verification": "Documented analysis across Credit Methodology / Market Risk / CCR",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 2,
-            "Q2": 3,
+            "Q1": 0,
+            "Q2": 2,
             "Q3": 3,
-            "Q4": 3
+            "Q4": 3,
+            "Q5": 3
           }
         },
         {
@@ -122,10 +125,11 @@
           "verification": "Unique relevant job descriptions reviewed",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 6,
-            "Q2": 12,
+            "Q1": 0,
+            "Q2": 6,
             "Q3": 12,
-            "Q4": 12
+            "Q4": 12,
+            "Q5": 12
           }
         },
         {
@@ -186,10 +190,11 @@
       "stretch": "拥有至少2份可比较的正式PFT Offer",
       "due": "2027-06-30",
       "quarterly": {
-        "Q1": "落实合同/转正状态；若无PFT启动条件性求职；完成季度风险复盘",
-        "Q2": "6月30日前争取获得并开始合适PFT；完成第2次风险复盘",
-        "Q3": "稳定交付，必要时持续外部市场测试；完成第3次复盘",
-        "Q4": "复核岗位长期稳定和成长条件；完成第4次复盘"
+        "Q1": "确认 PFT/合同审批的实际状态，执行11月20日Plan B门槛并准备备选机会",
+        "Q2": "落实合同/转正状态；若无PFT启动条件性求职；完成季度风险复盘",
+        "Q3": "6月30日前争取获得并开始合适PFT；完成第2次风险复盘",
+        "Q4": "稳定交付，必要时持续外部市场测试；完成第3次复盘",
+        "Q5": "复核岗位长期稳定和成长条件；完成第4次复盘"
       },
       "section_id": "D01.2",
       "title_zh": "在2027年Q2前实现稳定PFT就业",
@@ -214,10 +219,11 @@
           "verification": "One dated quarterly review",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 1,
-            "Q2": 2,
-            "Q3": 3,
-            "Q4": 4
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 3,
+            "Q5": 4
           }
         },
         {
@@ -267,10 +273,11 @@
       "stretch": "Manager Title或正式管理职责；或年基本工资至少CAD110000",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "职位和薪酬基准调研；首次Scope对标",
-        "Q2": "累计至少10个薪酬样本和1次正式发展讨论；明确晋升标准",
-        "Q3": "累计至少2次发展讨论；如晋升受阻评估外部机会",
-        "Q4": "验证Senior Analyst等效职级和有效Base>=CAD100k两个独立结果"
+        "Q1": "建立Senior Analyst title与基本年薪的双目标标准，整理初始市场样本",
+        "Q2": "职位和薪酬基准调研；首次Scope对标",
+        "Q3": "累计至少10个薪酬样本和1次正式发展讨论；明确晋升标准",
+        "Q4": "累计至少2次发展讨论；如晋升受阻评估外部机会",
+        "Q5": "验证Senior Analyst等效职级和有效Base>=CAD100k两个独立结果"
       },
       "section_id": "D01.3",
       "title_zh": "实现Senior Analyst职级与CAD100k–110k基本年薪",
@@ -316,9 +323,10 @@
           "condition": "Always",
           "quarterly_cumulative_targets": {
             "Q1": 0,
-            "Q2": 1,
-            "Q3": 2,
-            "Q4": 2
+            "Q2": 0,
+            "Q3": 1,
+            "Q4": 2,
+            "Q5": 2
           }
         },
         {
@@ -331,10 +339,11 @@
           "verification": "Written quarterly gap notes",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 1,
-            "Q2": 2,
-            "Q3": 3,
-            "Q4": 4
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 3,
+            "Q5": 4
           }
         },
         {
@@ -376,10 +385,11 @@
       "stretch": "领导至少1项重要跨团队项目并获得正式业务采用或认可",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "明确现有责任范围，记录交付和质量基线",
-        "Q2": "累计1项独立Ownership成果及首项业务影响候选",
-        "Q3": "累计2项重要Ownership成果；争取完整跨团队交付",
-        "Q4": "完成至少1项量化业务影响和3个STAR成果案例"
+        "Q1": "整理现有业务贡献和可公开描述的成果基线",
+        "Q2": "明确现有责任范围，记录交付和质量基线",
+        "Q3": "累计1项独立Ownership成果及首项业务影响候选",
+        "Q4": "累计2项重要Ownership成果；争取完整跨团队交付",
+        "Q5": "完成至少1项量化业务影响和3个STAR成果案例"
       },
       "section_id": "D01.4",
       "title_zh": "形成可量化的关键业务成果",
@@ -395,9 +405,10 @@
           "condition": "Always",
           "quarterly_cumulative_targets": {
             "Q1": 0,
-            "Q2": 1,
-            "Q3": 2,
-            "Q4": 2
+            "Q2": 0,
+            "Q3": 1,
+            "Q4": 2,
+            "Q5": 2
           }
         },
         {
@@ -468,10 +479,11 @@
       "stretch": "高级方法用于真实项目或产出高质量独立研究",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "完成技术技能差距分析，选定两个案例主题",
-        "Q2": "完成Credit Risk/Data Analytics技术案例1",
-        "Q3": "完成Market/CCR/Methodology技术案例2",
-        "Q4": "进行至少2次案例复盘并评价岗位匹配能力"
+        "Q1": "设定2027 Risk Technical Cases方向与学习资源",
+        "Q2": "完成技术技能差距分析，选定两个案例主题",
+        "Q3": "完成Credit Risk/Data Analytics技术案例1",
+        "Q4": "完成Market/CCR/Methodology技术案例2",
+        "Q5": "进行至少2次案例复盘并评价岗位匹配能力"
       },
       "section_id": "D01.5",
       "title_zh": "建立高级Risk Analytics与Methodology能力",
@@ -517,9 +529,10 @@
           "condition": "Always",
           "quarterly_cumulative_targets": {
             "Q1": 0,
-            "Q2": 1,
-            "Q3": 2,
-            "Q4": 2
+            "Q2": 0,
+            "Q3": 1,
+            "Q4": 2,
+            "Q5": 2
           }
         },
         {
@@ -560,10 +573,11 @@
       "stretch": "获得正式Team Lead/Acting Manager/Manager职责",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "识别项目领导机会与工作边界",
-        "Q2": "承担实际跨团队协调工作并积累案例",
-        "Q3": "完成至少1项领导或协调Ownership",
-        "Q4": "汇总至少2项跨团队案例、2项建议案例、3个Leadership故事及2次反馈"
+        "Q1": "整理跨团队合作与主动协调案例的初始清单",
+        "Q2": "识别项目领导机会与工作边界",
+        "Q3": "承担实际跨团队协调工作并积累案例",
+        "Q4": "完成至少1项领导或协调Ownership",
+        "Q5": "汇总至少2项跨团队案例、2项建议案例、3个Leadership故事及2次反馈"
       },
       "section_id": "D01.6",
       "title_zh": "积累Manager-Level领导力证据",
@@ -646,10 +660,11 @@
       "stretch": "形成至少1位长期Mentor关系并获得高质量职业机会",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "职业交流累计9次；完成第一季度联系人复盘",
-        "Q2": "累计18次交流；加强跨行与校友联系",
-        "Q3": "累计27次交流；培育潜在Mentor关系",
-        "Q4": "累计至少36次交流；3位长期联系人和4次复盘"
+        "Q1": "联系既有人脉，启动每周职业交流与跟进记录",
+        "Q2": "职业交流累计9次；完成第一季度联系人复盘",
+        "Q3": "累计18次交流；加强跨行与校友联系",
+        "Q4": "累计27次交流；培育潜在Mentor关系",
+        "Q5": "累计至少36次交流；3位长期联系人和4次复盘"
       },
       "section_id": "D01.7",
       "title_zh": "建立长期有效的风险领域职业网络",
@@ -664,10 +679,11 @@
           "verification": "Dated substantive 1:1 conversations; desired range 36-48",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 9,
-            "Q2": 18,
-            "Q3": 27,
-            "Q4": 36
+            "Q1": 0,
+            "Q2": 9,
+            "Q3": 18,
+            "Q4": 27,
+            "Q5": 36
           }
         },
         {
@@ -690,10 +706,11 @@
           "verification": "Dated quarterly review",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 1,
-            "Q2": 2,
-            "Q3": 3,
-            "Q4": 4
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 3,
+            "Q5": 4
           }
         },
         {
@@ -732,10 +749,11 @@
       "stretch": "完成1–2篇高质量专业文章或研究",
       "due": "2027-12-31",
       "quarterly": {
-        "Q1": "更新LinkedIn和现有简历；至少1次Mock Interview",
-        "Q2": "完成Credit/Market/Quant三套简历及第2次Mock",
-        "Q3": "形成40题Technical、12个Behavioral故事及第3次Mock",
-        "Q4": "完成第4次Mock及2项能力证据；视资源完成文章/研究Stretch"
+        "Q1": "整理Credit / Market Risk专用简历、LinkedIn和求职资料",
+        "Q2": "更新LinkedIn和现有简历；至少1次Mock Interview",
+        "Q3": "完成Credit/Market/Quant三套简历及第2次Mock",
+        "Q4": "形成40题Technical、12个Behavioral故事及第3次Mock",
+        "Q5": "完成第4次Mock及2项能力证据；视资源完成文章/研究Stretch"
       },
       "section_id": "D01.8",
       "title_zh": "形成高级风险岗位的职业品牌",
@@ -780,10 +798,11 @@
           "verification": "Completed practice with feedback",
           "condition": "Always",
           "quarterly_cumulative_targets": {
-            "Q1": 1,
-            "Q2": 2,
-            "Q3": 3,
-            "Q4": 4
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 3,
+            "Q5": 4
           }
         },
         {
@@ -826,13 +845,153 @@
       ]
     }
   ],
-  "execution_version": "2027.2",
+  "execution_version": "2027.3",
   "planning_notes": [
     "月度/周度项目为建议执行路线，实际工作条件触发的任务可标记 Skipped，不视为失败。",
     "求职行动只在需要时启动；不能因 checklist 驱动无意义投递。",
-    "公开 GitHub 中仅保存计划，不上传具体工资、公司内部信息、私人职业记录。"
+    "公开 GitHub 中仅保存计划，不上传具体工资、公司内部信息、私人职业记录。",
+    "Q1–Q5 are custom periods, not calendar quarters; 2027-01-03 is a shared handover date assigned to Q1 for the week ending Jan 3."
   ],
   "monthly_plans": [
+    {
+      "id": "D01-M2026-11",
+      "month": "2026-11",
+      "title": "启动与转正决策 / Launch & PFT Decision",
+      "outcome": "落实11月20日就业决策节点，准备正式岗位的求职备选方案",
+      "tasks": [
+        {
+          "id": "D01-M2026-11-T01",
+          "title": "明确BMO PFT状态、审批负责人和时间节点；在11月20日按证据作Plan B决策",
+          "goal_id": "D01-O2",
+          "priority": "Critical",
+          "evidence": "正式offer/审批结论或Plan B决策记录",
+          "conditional": true,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-11-T02",
+          "title": "校对并定稿Credit Risk及Market Risk简历各一版",
+          "goal_id": "D01-O8",
+          "priority": "High",
+          "evidence": "2份可用简历",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-11-T03",
+          "title": "建立Senior Analyst/Market Risk/Credit Methodology目标岗位清单，标出至少3份JD",
+          "goal_id": "D01-O1",
+          "priority": "High",
+          "evidence": "岗位清单与JD要点",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-11-T04",
+          "title": "把已完成的Risk reporting、UAT、automation工作成果整理为不泄密的STAR简述",
+          "goal_id": "D01-O4",
+          "priority": "High",
+          "evidence": "初版职业成果档案",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-11-T05",
+          "title": "完成两次有明确职业主题的联系人跟进或Coffee Chat",
+          "goal_id": "D01-O7",
+          "priority": "Medium",
+          "evidence": "交流记录",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        }
+      ],
+      "view_type": "execution",
+      "goal_ids": [
+        "D01-O2",
+        "D01-O8",
+        "D01-O1",
+        "D01-O4",
+        "D01-O7"
+      ],
+      "quarter": "Q1",
+      "period_ids": [
+        "Q1"
+      ]
+    },
+    {
+      "id": "D01-M2026-12",
+      "month": "2026-12",
+      "title": "职业转型基础建设 / Build Career Foundation",
+      "outcome": "确定2027首季度职业优先级和可用求职/面试资料",
+      "tasks": [
+        {
+          "id": "D01-M2026-12-T01",
+          "title": "核实年末合同、工作资格及2027开年雇佣风险应对方案",
+          "goal_id": "D01-O2",
+          "priority": "Critical",
+          "evidence": "就业风险清单",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-12-T02",
+          "title": "完成JD分类和主/备职业方向首轮比较",
+          "goal_id": "D01-O1",
+          "priority": "High",
+          "evidence": "方向比较初稿",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-12-T03",
+          "title": "更新LinkedIn与至少2份目标岗位简历",
+          "goal_id": "D01-O8",
+          "priority": "High",
+          "evidence": "LinkedIn和简历版本",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-12-T04",
+          "title": "整理至少2个可量化工作成果或技术案例题材（不得泄密）",
+          "goal_id": "D01-O4",
+          "priority": "High",
+          "evidence": "成果证据摘要",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2026-12-T05",
+          "title": "完成Q1复盘：2027年1–3月目标、时间预算和外部求职触发规则",
+          "goal_id": "D01-O1",
+          "priority": "High",
+          "evidence": "过渡复盘备忘",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        }
+      ],
+      "view_type": "execution",
+      "goal_ids": [
+        "D01-O2",
+        "D01-O1",
+        "D01-O8",
+        "D01-O4"
+      ],
+      "quarter": "Q1",
+      "period_ids": [
+        "Q1"
+      ]
+    },
     {
       "id": "D01-M01",
       "month": "2027-01",
@@ -891,13 +1050,17 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1",
+      "quarter": "Q2",
       "goal_ids": [
         "D01-O2",
         "D01-O1",
         "D01-O4",
         "D01-O8",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q1",
+        "Q2"
       ]
     },
     {
@@ -958,12 +1121,15 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1",
+      "quarter": "Q2",
       "goal_ids": [
         "D01-O1",
         "D01-O8",
         "D01-O4",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q2"
       ]
     },
     {
@@ -1024,12 +1190,15 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1",
+      "quarter": "Q2",
       "goal_ids": [
         "D01-O2",
         "D01-O5",
         "D01-O8",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q2"
       ]
     },
     {
@@ -1090,12 +1259,15 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2",
+      "quarter": "Q3",
       "goal_ids": [
         "D01-O5",
         "D01-O4",
         "D01-O7",
         "D01-O3"
+      ],
+      "period_ids": [
+        "Q3"
       ]
     },
     {
@@ -1156,12 +1328,15 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2",
+      "quarter": "Q3",
       "goal_ids": [
         "D01-O5",
         "D01-O4",
         "D01-O3",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q3"
       ]
     },
     {
@@ -1222,13 +1397,16 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2",
+      "quarter": "Q3",
       "goal_ids": [
         "D01-O2",
         "D01-O5",
         "D01-O1",
         "D01-O4",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q3"
       ]
     },
     {
@@ -1289,12 +1467,15 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3",
+      "quarter": "Q4",
       "goal_ids": [
         "D01-O6",
         "D01-O5",
         "D01-O7",
         "D01-O3"
+      ],
+      "period_ids": [
+        "Q4"
       ]
     },
     {
@@ -1355,13 +1536,16 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3",
+      "quarter": "Q4",
       "goal_ids": [
         "D01-O5",
         "D01-O4",
         "D01-O6",
         "D01-O8",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q4"
       ]
     },
     {
@@ -1422,13 +1606,16 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3",
+      "quarter": "Q4",
       "goal_ids": [
         "D01-O5",
         "D01-O3",
         "D01-O6",
         "D01-O1",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q4"
       ]
     },
     {
@@ -1489,12 +1676,15 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4",
+      "quarter": "Q5",
       "goal_ids": [
         "D01-O4",
         "D01-O8",
         "D01-O3",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q5"
       ]
     },
     {
@@ -1555,13 +1745,16 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4",
+      "quarter": "Q5",
       "goal_ids": [
         "D01-O3",
         "D01-O2",
         "D01-O6",
         "D01-O8",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q5"
       ]
     },
     {
@@ -1622,16 +1815,370 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4",
+      "quarter": "Q5",
       "goal_ids": [
         "D01-O3",
         "D01-O1",
         "D01-O4",
         "D01-O7"
+      ],
+      "period_ids": [
+        "Q5"
+      ]
+    },
+    {
+      "id": "D01-M2028-01",
+      "month": "2028-01",
+      "title": "周期收口 / Close the Personal Year",
+      "outcome": "2028年1月2日前归档2027年度成果与下一周期优先级",
+      "tasks": [
+        {
+          "id": "D01-M2028-01-T01",
+          "title": "归档截至2027-12-31的职位、薪酬、KPI及业务成果年终评估",
+          "goal_id": "D01-O3",
+          "priority": "High",
+          "evidence": "Year-end evidence snapshot",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        },
+        {
+          "id": "D01-M2028-01-T02",
+          "title": "确认2028 Q1职业优先事项、遗留风险和下一次复盘节点",
+          "goal_id": "D01-O1",
+          "priority": "Medium",
+          "evidence": "2028 transition note",
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
+        }
+      ],
+      "view_type": "execution",
+      "goal_ids": [
+        "D01-O3",
+        "D01-O1"
+      ],
+      "quarter": "Q5",
+      "period_ids": [
+        "Q5"
       ]
     }
   ],
   "weekly_plans": [
+    {
+      "id": "D01-WPRE01",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "month": "2026-11",
+      "quarter": "Q1",
+      "title": "Launch Week 01 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE01-T01",
+          "title": "按11月20日门槛核实PFT决策，必要时启动正式岗位Plan B",
+          "goal_id": "D01-O2",
+          "monthly_task_id": "D01-M2026-11-T01",
+          "priority": "Critical",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE01-T02",
+          "title": "完成Credit和Market简历的优先修改清单",
+          "goal_id": "D01-O8",
+          "monthly_task_id": "D01-M2026-11-T02",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE01-T03",
+          "title": "记录一个可验证的Risk工作成果",
+          "goal_id": "D01-O4",
+          "monthly_task_id": "D01-M2026-11-T04",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE01-T04",
+          "title": "周末复盘就业风险与下一周求职安排",
+          "goal_id": "D01-O1",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "D01-WPRE02",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "month": "2026-11",
+      "quarter": "Q1",
+      "title": "Launch Week 02 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE02-T01",
+          "title": "根据11月20日决定执行Plan B或确认正式转正路径",
+          "goal_id": "D01-O2",
+          "monthly_task_id": "D01-M2026-11-T01",
+          "priority": "Critical",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE02-T02",
+          "title": "提交或校对两版针对性Risk简历",
+          "goal_id": "D01-O8",
+          "monthly_task_id": "D01-M2026-11-T02",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE02-T03",
+          "title": "筛选并分析至少3个有效Risk职位",
+          "goal_id": "D01-O1",
+          "monthly_task_id": "D01-M2026-11-T03",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE02-T04",
+          "title": "完成一项职业联系人跟进",
+          "goal_id": "D01-O7",
+          "monthly_task_id": "D01-M2026-11-T05",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "D01-WPRE03",
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Launch Week 03 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE03-T01",
+          "title": "更新职业机会列表与有效求职申请状态（如已启动Plan B）",
+          "goal_id": "D01-O2",
+          "monthly_task_id": "D01-M2026-12-T01",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE03-T02",
+          "title": "梳理JD中的Senior Analyst技能与差距",
+          "goal_id": "D01-O1",
+          "monthly_task_id": "D01-M2026-12-T02",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE03-T03",
+          "title": "整理第一个可面试讲述的成果STAR",
+          "goal_id": "D01-O4",
+          "monthly_task_id": "D01-M2026-12-T04",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE03-T04",
+          "title": "完成每周职业进度复盘",
+          "goal_id": "D01-O1",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "D01-WPRE04",
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Launch Week 04 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE04-T01",
+          "title": "完成LinkedIn核心经历更新",
+          "goal_id": "D01-O8",
+          "monthly_task_id": "D01-M2026-12-T03",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE04-T02",
+          "title": "完善Credit Risk简历与岗位匹配版本",
+          "goal_id": "D01-O8",
+          "monthly_task_id": "D01-M2026-12-T03",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE04-T03",
+          "title": "比较Credit / Market / CCR中至少2个方向的职责要求",
+          "goal_id": "D01-O1",
+          "monthly_task_id": "D01-M2026-12-T02",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE04-T04",
+          "title": "完成一项职业交流或跟进",
+          "goal_id": "D01-O7",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "D01-WPRE05",
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Launch Week 05 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE05-T01",
+          "title": "复核年末PFT/合同与2027开年职位风险",
+          "goal_id": "D01-O2",
+          "monthly_task_id": "D01-M2026-12-T01",
+          "priority": "Critical",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE05-T02",
+          "title": "完善Market Risk版简历与目标JD的具体匹配点",
+          "goal_id": "D01-O8",
+          "monthly_task_id": "D01-M2026-12-T03",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE05-T03",
+          "title": "补充第二个可验证项目成果或技术案例方向",
+          "goal_id": "D01-O4",
+          "monthly_task_id": "D01-M2026-12-T04",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE05-T04",
+          "title": "完成每周复盘并调整下周重点",
+          "goal_id": "D01-O1",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "D01-WPRE06",
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Launch Week 06 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE06-T01",
+          "title": "检查2027年1月就业/求职路径及准备文件",
+          "goal_id": "D01-O2",
+          "monthly_task_id": "D01-M2026-12-T01",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE06-T02",
+          "title": "整理职业能力缺口与1月准备清单",
+          "goal_id": "D01-O1",
+          "monthly_task_id": "D01-M2026-12-T02",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE06-T03",
+          "title": "建立2027技术案例/Interview题库草案",
+          "goal_id": "D01-O5",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE06-T04",
+          "title": "完成每周职业复盘",
+          "goal_id": "D01-O1",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "D01-WPRE07",
+      "start": "2026-12-28",
+      "end": "2026-12-31",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Launch Week 07 · Foundation & Transition",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WPRE07-T01",
+          "title": "完成Q1阶段复盘与2027年前三个自然月的工作重点",
+          "goal_id": "D01-O1",
+          "monthly_task_id": "D01-M2026-12-T05",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE07-T02",
+          "title": "确定2027第一周的职位/项目优先事项",
+          "goal_id": "D01-O2",
+          "monthly_task_id": "D01-M2026-12-T01",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WPRE07-T03",
+          "title": "检查现有简历及成果记录的可用性",
+          "goal_id": "D01-O8",
+          "monthly_task_id": "D01-M2026-12-T03",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
+    },
     {
       "id": "D01-W01",
       "start": "2027-01-01",
@@ -1728,7 +2275,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W03",
@@ -1781,7 +2328,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W04",
@@ -1834,7 +2381,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W05",
@@ -1879,7 +2426,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W06",
@@ -1932,7 +2479,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W07",
@@ -1985,7 +2532,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W08",
@@ -2038,7 +2585,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W09",
@@ -2083,7 +2630,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W10",
@@ -2136,7 +2683,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W11",
@@ -2189,7 +2736,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W12",
@@ -2242,7 +2789,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W13",
@@ -2287,7 +2834,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W14",
@@ -2332,7 +2879,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q1"
+      "quarter": "Q2"
     },
     {
       "id": "D01-W15",
@@ -2385,7 +2932,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W16",
@@ -2438,7 +2985,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W17",
@@ -2491,7 +3038,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W18",
@@ -2536,7 +3083,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W19",
@@ -2589,7 +3136,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W20",
@@ -2642,7 +3189,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W21",
@@ -2695,7 +3242,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W22",
@@ -2740,7 +3287,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W23",
@@ -2785,7 +3332,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W24",
@@ -2838,7 +3385,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W25",
@@ -2891,7 +3438,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W26",
@@ -2944,7 +3491,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W27",
@@ -2989,7 +3536,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q2"
+      "quarter": "Q3"
     },
     {
       "id": "D01-W28",
@@ -3042,7 +3589,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W29",
@@ -3095,7 +3642,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W30",
@@ -3148,7 +3695,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W31",
@@ -3193,7 +3740,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W32",
@@ -3246,7 +3793,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W33",
@@ -3299,7 +3846,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W34",
@@ -3352,7 +3899,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W35",
@@ -3397,7 +3944,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W36",
@@ -3442,7 +3989,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W37",
@@ -3495,7 +4042,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W38",
@@ -3548,7 +4095,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W39",
@@ -3601,7 +4148,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W40",
@@ -3646,7 +4193,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q3"
+      "quarter": "Q4"
     },
     {
       "id": "D01-W41",
@@ -3699,7 +4246,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W42",
@@ -3752,7 +4299,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W43",
@@ -3805,7 +4352,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W44",
@@ -3850,7 +4397,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W45",
@@ -3903,7 +4450,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W46",
@@ -3956,7 +4503,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W47",
@@ -4009,7 +4556,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W48",
@@ -4054,7 +4601,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W49",
@@ -4099,7 +4646,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W50",
@@ -4152,7 +4699,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W51",
@@ -4205,7 +4752,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W52",
@@ -4258,7 +4805,7 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
     },
     {
       "id": "D01-W53",
@@ -4303,7 +4850,36 @@
         }
       ],
       "view_type": "execution",
-      "quarter": "Q4"
+      "quarter": "Q5"
+    },
+    {
+      "id": "D01-WCLOSE",
+      "start": "2028-01-01",
+      "end": "2028-01-02",
+      "month": "2028-01",
+      "quarter": "Q5",
+      "title": "Final Closeout · 2027 Personal Year",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D01-WCLOSE-T01",
+          "title": "核验并归档2027年度核心职业KPI与成果记录 / Verify final outcomes",
+          "goal_id": "D01-O3",
+          "monthly_task_id": "D01-M2028-01-T01",
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D01-WCLOSE-T02",
+          "title": "完成2028年职业发展行动和下一周期复盘安排 / Next-cycle handoff",
+          "goal_id": "D01-O1",
+          "monthly_task_id": "D01-M2028-01-T02",
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ]
     }
   ],
   "information_architecture": {
@@ -4341,16 +4917,85 @@
   "quarterly_plans": [
     {
       "quarter": "Q1",
-      "title": "Stabilize & Position / 稳定就业与职业定位",
-      "dates": "2027-01-01 — 2027-03-31",
-      "strategic_focus": "清楚确定就业风险、职业定位与可迁移优势，为 Q2 正式岗位和成长路径创造条件。",
-      "decision_gate": "3月31日前确认 PFT 进展质量，若只有延约/讨论则外部正式职位搜索持续推进。",
+      "title": "Foundation & Transition / 启动与过渡",
+      "start": "2026-11-16",
+      "end": "2027-01-03",
+      "dates": "2026-11-16 — 2027-01-03",
+      "strategic_focus": "以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+      "decision_gate": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
       "must_win": [
-        "明确合同/PFT 真实状态与应对路径",
-        "完成职业定位文件、至少2个方向与6份JD初步比较",
-        "形成可描述的工作成果档案与技能差距分析"
+        "完成雇佣状态确认和 Plan B 决策",
+        "整理 Credit / Market 风险简历及项目成果档案",
+        "搭建年度职业 KPI 基线、目标 JD 筛选清单与固定 weekly review"
       ],
-      "risk_trigger": "无可靠岗位稳定进展、合同终止风险或工作许可条件变化",
+      "risk_trigger": "仅有 still in discussion、无明确批准与时间节点，或合同不续约",
+      "kpi_ids": [
+        "D01-K07",
+        "D01-K08",
+        "D01-K35"
+      ],
+      "monthly_ids": [
+        "D01-M2026-11",
+        "D01-M2026-12",
+        "D01-M01"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D01-O1",
+          "title": "形成灵活且有竞争力的风险管理职业路线",
+          "milestone": "形成初版Risk职业路线对照与目标JD清单"
+        },
+        {
+          "goal_id": "D01-O2",
+          "title": "在2027年Q2前实现稳定PFT就业",
+          "milestone": "确认 PFT/合同审批的实际状态，执行11月20日Plan B门槛并准备备选机会"
+        },
+        {
+          "goal_id": "D01-O3",
+          "title": "实现Senior Analyst职级与CAD100k–110k基本年薪",
+          "milestone": "建立Senior Analyst title与基本年薪的双目标标准，整理初始市场样本"
+        },
+        {
+          "goal_id": "D01-O4",
+          "title": "形成可量化的关键业务成果",
+          "milestone": "整理现有业务贡献和可公开描述的成果基线"
+        },
+        {
+          "goal_id": "D01-O5",
+          "title": "建立高级Risk Analytics与Methodology能力",
+          "milestone": "设定2027 Risk Technical Cases方向与学习资源"
+        },
+        {
+          "goal_id": "D01-O6",
+          "title": "积累Manager-Level领导力证据",
+          "milestone": "整理跨团队合作与主动协调案例的初始清单"
+        },
+        {
+          "goal_id": "D01-O7",
+          "title": "建立长期有效的风险领域职业网络",
+          "milestone": "联系既有人脉，启动每周职业交流与跟进记录"
+        },
+        {
+          "goal_id": "D01-O8",
+          "title": "形成高级风险岗位的职业品牌",
+          "milestone": "整理Credit / Market Risk专用简历、LinkedIn和求职资料"
+        }
+      ]
+    },
+    {
+      "quarter": "Q2",
+      "title": "Stabilization & Positioning / 稳定与定位",
+      "start": "2027-01-03",
+      "end": "2027-04-04",
+      "dates": "2027-01-03 — 2027-04-04",
+      "strategic_focus": "稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+      "decision_gate": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+      "must_win": [
+        "建立至少2个风险方向的岗位与能力对标",
+        "完成 Career Positioning Statement 与技术技能差距分析",
+        "保留正常工作的可验证成果和适当外部选择权"
+      ],
+      "risk_trigger": "正式岗位仍无可信路径，或工作条件发生实质变化",
       "kpi_ids": [
         "D01-K03",
         "D01-K07",
@@ -4407,17 +5052,19 @@
       ]
     },
     {
-      "quarter": "Q2",
-      "title": "Secure & Deliver / 确保正式岗位与交付",
-      "dates": "2027-04-01 — 2027-06-30",
-      "strategic_focus": "以 6月30日 PFT 为硬节点，同时形成第一项可展示的 Risk Analytics Case 和明确的晋升标准。",
-      "decision_gate": "6月30日前核验正式PFT已开始；未实现则把就业安全和高质量外部求职置于首位。",
+      "quarter": "Q3",
+      "title": "Employment & Delivery / 就业与交付",
+      "start": "2027-04-05",
+      "end": "2027-07-04",
+      "dates": "2027-04-05 — 2027-07-04",
+      "strategic_focus": "以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+      "decision_gate": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
       "must_win": [
-        "取得并开始合适正式 PFT（若未达成则执行 Plan B）",
-        "累计比较至少3个方向与12份JD，选择主备路线",
-        "完成Credit/Data Analytics Case 1，明确1项 Ownership 成果"
+        "争取合适 PFT 正式岗位并开始工作",
+        "完成 Risk Technical Case I 和业务 Ownership 记录",
+        "累计3个赛道、12份 JD 并确定主备方向"
       ],
-      "risk_trigger": "仅续约无正式 PFT，或内部发展讨论缺乏可执行条件",
+      "risk_trigger": "仅获短期延期、正式岗位审批不明确或失业",
       "kpi_ids": [
         "D01-K06",
         "D01-K12",
@@ -4474,17 +5121,19 @@
       ]
     },
     {
-      "quarter": "Q3",
-      "title": "Advance & Lead / 专业深化与领导力证据",
-      "dates": "2027-07-01 — 2027-09-30",
-      "strategic_focus": "构建 Senior Analyst 级别的技术深度、项目 Ownership 与跨团队协调能力，明确晋升可能性。",
-      "decision_gate": "9月30日前审视内部职级与薪资路线是否可信；若不可信，启动更强的外部机会测试。",
+      "quarter": "Q4",
+      "title": "Advancement & Leadership / 晋升与领导力",
+      "start": "2027-07-05",
+      "end": "2027-10-03",
+      "dates": "2027-07-05 — 2027-10-03",
+      "strategic_focus": "积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+      "decision_gate": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
       "must_win": [
-        "完成第二个 Market/CCR/Methodology Case，累计2个技术案例",
-        "累计2项重要 Ownership 与至少1项跨团队协调成果",
-        "对照Senior Analyst的scope和compensation完成Q3判断"
+        "完成第二项技术案例",
+        "累计2项 Ownership 与1项跨团队协调",
+        "确认高级风险岗位技能与薪资差距"
       ],
-      "risk_trigger": "无可验证的晋升路径、重要项目长期不可获得或实际成长停滞",
+      "risk_trigger": "项目机会或晋升路径持续不足",
       "kpi_ids": [
         "D01-K16",
         "D01-K23",
@@ -4541,17 +5190,19 @@
       ]
     },
     {
-      "quarter": "Q4",
-      "title": "Convert & Review / 职级薪酬兑现与年终验收",
-      "dates": "2027-10-01 — 2027-12-31",
-      "strategic_focus": "把全年可验证的业务、技术与领导成果转化为正式职级和薪酬结果，并规划2028–2030路径。",
-      "decision_gate": "12月31日分别核验正式 Title（Senior Analyst+）与 Base（至少 CAD 100k），不以其他替代。",
+      "quarter": "Q5",
+      "title": "Final Outcomes & Review / 最终成果与年终复盘",
+      "start": "2027-10-04",
+      "end": "2028-01-02",
+      "dates": "2027-10-04 — 2028-01-02",
+      "strategic_focus": "把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+      "decision_gate": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
       "must_win": [
-        "核验 Senior Analyst 或等效职级与CAD 100k+ base salary两个独立结果",
-        "完成至少1项量化Business Impact、领导力/面试材料总结",
-        "完成年度40项 KPI 审核与2028–2030职业路线图"
+        "核验正式 Title、Base Salary 和就业状态",
+        "完成 40 KPI 年度评估与关键业务成果总结",
+        "完成 2028–2030 Career Roadmap"
       ],
-      "risk_trigger": "年底薪酬或职级不达标且无可信短期路径",
+      "risk_trigger": "年终职级或薪资未达标且不存在可信短期调整路径",
       "kpi_ids": [
         "D01-K10",
         "D01-K11",
@@ -4562,7 +5213,8 @@
       "monthly_ids": [
         "D01-M10",
         "D01-M11",
-        "D01-M12"
+        "D01-M12",
+        "D01-M2028-01"
       ],
       "objective_milestones": [
         {
@@ -4607,5 +5259,48 @@
         }
       ]
     }
-  ]
+  ],
+  "planning_periods": [
+    {
+      "id": "Q1",
+      "start": "2026-11-16",
+      "end": "2027-01-03",
+      "title": "Foundation & Transition / 启动与过渡",
+      "type": "personal_year_period",
+      "boundary_note": "Jan 3 is a shared handover date; weekly assignment uses the week ending Jan 3 in Q1."
+    },
+    {
+      "id": "Q2",
+      "start": "2027-01-03",
+      "end": "2027-04-04",
+      "title": "Stabilization & Positioning / 稳定与定位",
+      "type": "personal_year_period",
+      "boundary_note": "Use period boundaries, not calendar-year quarters."
+    },
+    {
+      "id": "Q3",
+      "start": "2027-04-05",
+      "end": "2027-07-04",
+      "title": "Employment & Delivery / 就业与交付",
+      "type": "personal_year_period",
+      "boundary_note": "Use period boundaries, not calendar-year quarters."
+    },
+    {
+      "id": "Q4",
+      "start": "2027-07-05",
+      "end": "2027-10-03",
+      "title": "Advancement & Leadership / 晋升与领导力",
+      "type": "personal_year_period",
+      "boundary_note": "Use period boundaries, not calendar-year quarters."
+    },
+    {
+      "id": "Q5",
+      "start": "2027-10-04",
+      "end": "2028-01-02",
+      "title": "Final Outcomes & Review / 最终成果与年终复盘",
+      "type": "personal_year_period",
+      "boundary_note": "Use period boundaries, not calendar-year quarters."
+    }
+  ],
+  "planning_calendar": "Custom Personal Year Q1–Q5; NOT Gregorian calendar quarters"
 }
