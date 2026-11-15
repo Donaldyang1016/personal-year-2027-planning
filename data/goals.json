@@ -1,0 +1,27 @@
+{
+  "app_title": "Personal Year 2027",
+  "domains": [
+    {"id":"D01","name":"Career & Professional Development","status":"Draft V1.0"},
+    {"id":"D02","name":"To be finalized","status":"Outline"},
+    {"id":"D03","name":"To be finalized","status":"Outline"},
+    {"id":"D04","name":"To be finalized","status":"Outline"},
+    {"id":"D05","name":"To be finalized","status":"Outline"},
+    {"id":"D06","name":"To be finalized","status":"Outline"},
+    {"id":"D07","name":"To be finalized","status":"Outline"},
+    {"id":"D08","name":"To be finalized","status":"Outline"},
+    {"id":"D09","name":"To be finalized","status":"Outline"},
+    {"id":"D10","name":"To be finalized","status":"Outline"},
+    {"id":"D11","name":"To be finalized","status":"Outline"},
+    {"id":"D12","name":"Personal Growth & Wellbeing","status":"Outline"}
+  ],
+  "goals": [
+    {"id":"D01-O1","domain":"D01","section":"1.1 Career Strategy","title":"Define a long-term risk career direction","priority":"P2","must":"Set criteria for evaluating roles","target":"Select a main and backup risk specialization","stretch":"Move closer to Methodology, Market Risk, or CCR","due":"2027-12-31","quarterly":{"Q1":"Build role selection criteria","Q2":"Prioritize potential tracks","Q3":"Review direction using actual opportunities","Q4":"Set 2028–2030 career roadmap"}},
+    {"id":"D01-O2","domain":"D01","section":"1.2 Career Stability","title":"Secure a stable permanent full-time role","priority":"P0","must":"Keep an active contingency plan if PFT is not secured","target":"Secure a suitable PFT role by June 30","stretch":"Have two competitive PFT opportunities to choose from","due":"2027-06-30","quarterly":{"Q1":"Verify employment path / activate Plan B","Q2":"Secure suitable PFT role","Q3":"Build track record in role","Q4":"Review growth options"}},
+    {"id":"D01-O3","domain":"D01","section":"1.3 Promotion & Compensation","title":"Reach Senior Analyst level and CAD 100k–110k base","priority":"P1","must":"Benchmark pay and role requirements","target":"Senior Analyst or equivalent and CAD 100k–110k base salary","stretch":"Manager title or meaningfully higher total scope and pay","due":"2027-12-31","quarterly":{"Q1":"Benchmark target roles","Q2":"Identify progression opportunities","Q3":"Pursue promotion or external offers","Q4":"Assess title and base salary separately"}},
+    {"id":"D01-O4","domain":"D01","section":"1.4 Work Performance","title":"Own important risk work and show business impact","priority":"P1","must":"Maintain high-quality delivery","target":"Own at least two important workstreams and quantify one impact","stretch":"Lead a major cross-team initiative recognized by senior leaders","due":"2027-12-31","quarterly":{"Q1":"Capture baseline achievements","Q2":"Deliver first demonstrable impact","Q3":"Deliver second ownership example","Q4":"Summarize evidence and feedback"}},
+    {"id":"D01-O5","domain":"D01","section":"1.5 Professional Skills","title":"Develop advanced risk analytics and methodology capabilities","priority":"P2","must":"Maintain SQL / Python and business risk fundamentals","target":"Create two demonstrable technical cases","stretch":"Use advanced methods in work or produce significant research","due":"2027-12-31","quarterly":{"Q1":"Skill-gap analysis","Q2":"Complete technical case 1","Q3":"Complete technical case 2","Q4":"Evaluate technical readiness"}},
+    {"id":"D01-O6","domain":"D01","section":"1.6 Leadership","title":"Build observable manager-level leadership skills","priority":"P2","must":"Manage priorities and stakeholder relationships","target":"Lead a cross-functional project or workstream","stretch":"Take formal lead / acting management responsibilities","due":"2027-12-31","quarterly":{"Q1":"Identify leadership scope","Q2":"Own cross-team coordination","Q3":"Lead key workstream","Q4":"Evaluate leadership evidence"}},
+    {"id":"D01-O7","domain":"D01","section":"1.7 Networking","title":"Build a durable professional network","priority":"P2","must":"Maintain existing professional relationships","target":"36–48 meaningful professional conversations and 2–3 long-term contacts","stretch":"Develop mentorship and receive high-quality career opportunities","due":"2027-12-31","quarterly":{"Q1":"Connect with internal leaders and alumni","Q2":"Broaden risk network","Q3":"Deepen mentorship","Q4":"Consolidate relationships"}},
+    {"id":"D01-O8","domain":"D01","section":"1.8 Professional Brand","title":"Establish a credible risk professional brand","priority":"P3","must":"Maintain LinkedIn and existing risk resumes","target":"Prepare targeted Credit / Market / Quant materials and interview bank","stretch":"Publish one or two professional articles or research outputs","due":"2027-12-31","quarterly":{"Q1":"Refresh resumes and interviewing material","Q2":"Tailor applications and stories","Q3":"Develop optional research output","Q4":"Review personal brand"}}
+  ]
+}
