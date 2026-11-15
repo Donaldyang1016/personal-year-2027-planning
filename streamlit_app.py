@@ -79,11 +79,94 @@ for kid in kpis:
 for tid in todo_by_id:
     st.session_state.todo_records.setdefault(tid, {'done': False, 'skipped': False, 'updated_at': ''})
 
+# D01 V4 execution: a monthly deliverable can be auto-satisfied by its
+# linked weekly steps OR independently verified ahead of schedule.
+weekly_children = {}
+for week in weekly_plans:
+    for step in week.get('tasks', []):
+        parent_id = step.get('monthly_task_id')
+        if parent_id:
+            weekly_children.setdefault(parent_id, []).append(step)
+
+
+def task_done(task):
+    tid = task['id']
+    rec = st.session_state.todo_records[tid]
+    if task.get('task_type') == 'verified_deliverable':
+        if rec['done']:
+            return True
+        children = weekly_children.get(tid, [])
+        # Skipping a required step does NOT prove a completed deliverable.
+        return bool(children) and all(
+            st.session_state.todo_records[x['id']]['done']
+            and not st.session_state.todo_records[x['id']]['skipped']
+            for x in children
+        )
+    parent_id = task.get('monthly_task_id')
+    if parent_id and parent_id in st.session_state.todo_records:
+        if st.session_state.todo_records[parent_id]['done']:
+            return True  # Verified early: weekly work is satisfied by the outcome.
+    return bool(rec['done'])
+
+
 def todo_progress(tasks):
-    # Skipped conditional tasks are excluded from the completion denominator.
     included = [t for t in tasks if not st.session_state.todo_records[t['id']]['skipped']]
-    completed = sum(bool(st.session_state.todo_records[t['id']]['done']) for t in included)
+    completed = sum(bool(task_done(t)) for t in included)
     return completed, len(included)
+
+
+def verify_deliverable(tid):
+    rec = st.session_state.todo_records[tid]
+    rec.update({'done': not rec['done'], 'skipped': False,
+                'updated_at': datetime.now().isoformat(timespec='seconds')})
+    st.session_state.activity_log.insert(0, {
+        'task_id': tid, 'date': rec['updated_at'],
+        'verified_early': rec['done'], 'type': 'manual_deliverable_verification'
+    })
+    st.session_state.activity_log = st.session_state.activity_log[:1500]
+
+
+def render_deliverables(tasks):
+    if not tasks:
+        st.info('No monthly deliverables for this period.')
+        return
+    progress_bar(tasks, 'Verified deliverables / 可验收交付')
+    for task in tasks:
+        tid = task['id']
+        rec = st.session_state.todo_records[tid]
+        children = weekly_children.get(tid, [])
+        done_steps = sum(task_done(c) for c in children)
+        completed = task_done(task)
+        with st.container(border=True):
+            left, right = st.columns([5, 1], vertical_alignment='top')
+            with left:
+                st.markdown(('✅ ' if completed else '⬜ ') + '**' + task.get('title', tid) + '**')
+                st.caption(f"{task.get('priority', 'Normal')} · {task.get('goal_id', '')} · {done_steps}/{len(children)} weekly steps")
+                st.write('**验收标准 / Evidence:** ' + str(task.get('acceptance_criteria', task.get('evidence', '—'))))
+            with right:
+                if rec['done']:
+                    st.caption('Verified early / 手工验收')
+                    st.button('Undo verify', key='undo_'+tid,
+                              on_click=verify_deliverable, args=(tid,))
+                elif completed:
+                    st.caption('Auto-completed / 周行动已完成')
+                else:
+                    st.button('✓ Verify now', key='verify_'+tid,
+                              on_click=verify_deliverable, args=(tid,),
+                              help='Use only when the deliverable already meets its acceptance criteria.')
+            if children:
+                with st.expander(f"Linked weekly steps / 关联周任务 · {done_steps}/{len(children)}"):
+                    for child in children:
+                        status = '✅' if task_done(child) else ('⊘' if st.session_state.todo_records[child['id']]['skipped'] else '○')
+                        st.markdown(f"{status} {child.get('title', child['id'])}")
+    st.caption('Automatic roll-up: all linked applicable weekly steps completed → monthly delivered. Manual Verify enables early completion.')
+
+
+def execution_stats_for_goal(gid):
+    relevant = [t for m in monthly_plans for t in m.get('tasks', [])
+                if t.get('goal_id') == gid]
+    return todo_progress(relevant) if relevant else (0, 0)
+
 
 
 def update_todo(tid, field):
@@ -115,40 +198,44 @@ def progress_bar(tasks, label='Completion / 完成率'):
     return pct
 
 
-def render_todos(tasks, key_prefix='todo'):
-    """Short action rows with reliable session-state callbacks."""
+def render_todos(tasks, key_prefix='weekly'):
+    """Only concrete steps get checkboxes; parent verification satisfies steps."""
     if not tasks:
-        st.info('暂无任务 / No tasks available')
+        st.info('本周没有需要强制打卡的交付任务 / No required steps this week.')
         return
-    progress_bar(tasks)
+    progress_bar(tasks, 'Weekly actions / 本周行动')
     for task in tasks:
         tid = task['id']
-        record = st.session_state.todo_records[tid]
+        rec = st.session_state.todo_records[tid]
+        parent_id = task.get('monthly_task_id')
+        parent_verified = bool(parent_id and parent_id in st.session_state.todo_records
+                               and st.session_state.todo_records[parent_id]['done'])
+        if parent_verified:
+            st.markdown('✅ **' + task.get('title', tid) + '**')
+            st.caption('Already satisfied · Monthly deliverable verified early')
+            st.divider()
+            continue
         check_key, skip_key = f'done_{tid}', f'skipped_{tid}'
-        # Widget state is initialized once. Restore-backup clears these keys.
         if check_key not in st.session_state:
-            st.session_state[check_key] = bool(record['done'])
+            st.session_state[check_key] = bool(rec['done'])
         if skip_key not in st.session_state:
-            st.session_state[skip_key] = bool(record['skipped'])
+            st.session_state[skip_key] = bool(rec['skipped'])
         left, right = st.columns([5, 1], vertical_alignment='center')
         with left:
             st.checkbox(task.get('title', tid), key=check_key,
-                        disabled=bool(record['skipped']),
+                        disabled=bool(rec['skipped']),
                         on_change=update_todo, args=(tid, 'done'))
-            st.caption(f"{task.get('priority','Normal')} priority  ·  {task.get('goal_id','')}  ·  {tid}")
+            st.caption(f"{task.get('priority', 'Normal')} · {task.get('goal_id', '')}")
         with right:
             st.checkbox('N/A', key=skip_key,
-                        help='Not applicable — exclude from progress',
-                        on_change=update_todo, args=(tid, 'skipped'))
-        if task.get('evidence') or task.get('monthly_task_id'):
-            with st.expander('Details / 查看对应目标', expanded=False):
-                if task.get('evidence'):
-                    st.write('**Evidence:**', task['evidence'])
-                if task.get('monthly_task_id'):
-                    st.write('**Monthly deliverable:**', task['monthly_task_id'])
-                gid = task.get('goal_id')
-                if gid in goal_by_id:
-                    st.write('**Annual objective:**', goal_by_id[gid].get('title_zh') or goal_by_id[gid].get('title', gid))
+                        on_change=update_todo, args=(tid, 'skipped'),
+                        help='N/A excludes a step from weekly count, but does not prove monthly delivery.')
+        with st.expander('Acceptance / 验收与关联目标'):
+            st.write('**This step:** ' + task.get('acceptance_criteria', 'Complete actual work.'))
+            if parent_id in todo_by_id:
+                parent = todo_by_id[parent_id]
+                st.write('**Monthly deliverable:** ' + parent.get('title', parent_id))
+                st.write('**Monthly acceptance:** ' + parent.get('acceptance_criteria', parent.get('evidence', '—')))
         st.divider()
 
 def export_backup():
@@ -421,6 +508,15 @@ with tabs[1]:
                 st.markdown('**Decision rule / 决策原则**')
                 st.write(strategy.get('decision_rule', ''))
                 st.caption(strategy.get('success_rule', ''))
+        st.markdown('### Execution contribution / 年度执行贡献')
+        st.caption('These are verified deliverables, not proof that a real-world outcome or KPI has been achieved.')
+        execution_rows = []
+        for g in items:
+            completed, applicable = execution_stats_for_goal(g['id'])
+            execution_rows.append({'Objective': milestone_title(g), 'Delivered': completed,
+                                   'Planned': applicable,
+                                   'Execution %': round(100*completed/applicable) if applicable else 0})
+        st.dataframe(pd.DataFrame(execution_rows), hide_index=True, use_container_width=True)
         st.markdown('### Detailed objectives / 详细年度目标')
         for g in items:
             goal_card(g)
@@ -467,6 +563,14 @@ with tabs[2]:
                     'Actual': st.session_state.kpi_records[k['id']].get('actual'),
                     'Deadline': k.get('deadline', '')
                 } for k in linked]), hide_index=True, use_container_width=True)
+        related_months = [m for m in monthly_plans if m.get('quarter') == q and
+                          m.get('id', '').startswith(source_plan['domain_id'] + '-')]
+        qtasks = [task for month in related_months for task in month.get('tasks', [])]
+        qdone, qtotal = todo_progress(qtasks) if qtasks else (0, 0)
+        st.metric('Quarter execution / 当季已验收交付', f'{qdone}/{qtotal}')
+        if qtotal:
+            st.progress(qdone / qtotal)
+        st.caption('Quarter execution is calculated from monthly deliverables; KPI outcomes remain separately verified.')
         st.markdown('**Objective milestones / 各目标季度里程碑**')
         for entry in quarter_plan.get('objective_milestones', []):
             g = goal_by_id.get(entry.get('goal_id'))
@@ -527,7 +631,11 @@ with tabs[3]:
         with st.container(border=True):
             st.markdown('### Monthly outcome / 本月成果')
             st.write(m.get('outcome', '—'))
-        render_todos(m.get('tasks', []), 'month')
+        render_deliverables(m.get('tasks', []))
+        if m.get('guidance'):
+            with st.expander('Guidance / 非打卡建议'):
+                for suggestion in m['guidance']:
+                    st.markdown('- ' + str(suggestion))
         st.caption('Monthly delivery and weekly actions are separate checklists. Each has its own progress.')
 
 with tabs[4]:
@@ -552,6 +660,8 @@ with tabs[4]:
             st.markdown(f"### {w.get('title', week_id)}")
             st.caption(f"{w.get('start')} – {w.get('end')} · {w.get('quarter', '')}")
         render_todos(w.get('tasks', []), 'week')
+        if w.get('guidance'):
+            st.caption('Guidance / 建议：' + w['guidance'])
         st.caption('Checkboxes track execution, not automatic attainment of annual KPIs.')
 
 with tabs[5]:
@@ -561,7 +671,7 @@ with tabs[5]:
         st.info('Upload a domain plan to start tracking.')
     else:
         st.subheader('Execution / 2026–2028 执行完成率')
-        st.caption('Monthly and weekly completion are shown separately, including the 2026 launch stage.')
+        st.caption('Weekly steps automatically roll up to monthly deliverables. Verified early deliverables count immediately. Annual KPI results are NOT inferred from execution checkboxes.')
         period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
         review_period = st.selectbox('Review period / 进度阶段', period_options,
             format_func=lambda x: 'All periods · Full personal year' if x == 'All' else period_name(x), key='v31_progress_period')
