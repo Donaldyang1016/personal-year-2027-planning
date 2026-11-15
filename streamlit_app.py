@@ -11,7 +11,7 @@ DATA_DIR = ROOT / 'data' / 'domains'
 STATUSES = ['Not started', 'In progress', 'At risk', 'Completed', 'Paused']
 
 @st.cache_data(show_spinner=False)
-def load_plans():
+def load_plans(data_signature):
     plans, errors = [], []
     paths = sorted(DATA_DIR.glob('D[0-9][0-9].json')) if DATA_DIR.is_dir() else []
     if not paths and (ROOT / 'data' / 'goals.json').exists():
@@ -48,7 +48,12 @@ def load_plans():
             errors.append(f'{path.name}: {exc}')
     return plans, errors
 
-plans, load_errors = load_plans()
+# Cache invalidation depends on actual JSON file metadata, not solely Python changes.
+file_signature = tuple(sorted(
+    (p.name, p.stat().st_mtime_ns, p.stat().st_size)
+    for p in DATA_DIR.glob('D[0-9][0-9].json')
+)) if DATA_DIR.is_dir() else ()
+plans, load_errors = load_plans(file_signature)
 by_domain = {p['domain_id']: p for p in plans}
 domain_ids = [f'D{i:02d}' for i in range(1, 13)]
 goals = [g for p in plans for g in p.get('goals', [])]
@@ -348,6 +353,9 @@ with st.sidebar:
         for err in load_errors:
             st.error('Domain data: ' + err)
     st.caption(f"Loaded domains: {len(plans)} · Months: {len(monthly_plans)} · Weeks: {len(weekly_plans)}")
+    if by_domain.get('D01'):
+        st.caption('D01 version: ' + str(by_domain['D01'].get('plan_version', 'unknown')))
+        st.caption('Timeline: ' + str(monthly_plans[0].get('month')) + ' → ' + str(monthly_plans[-1].get('month')) if monthly_plans else 'No months')
 
 tabs = st.tabs([
     '🏠 Dashboard', '🎯 Annual', '📅 Quarterly',
@@ -473,44 +481,78 @@ with tabs[2]:
             for g in filtered:
                 goal_card(g, quarter=q)
 
+def period_name(pid):
+    periods = by_domain.get('D01', {}).get('planning_periods', [])
+    item = next((p for p in periods if p.get('id') == pid), None)
+    return f"{pid} · {item['start']} – {item['end']}" if item else pid
+
+
+def month_periods(m):
+    return m.get('period_ids') or [m.get('quarter', '')]
+
+
+def execution_overview(items, unit_label):
+    done = applicable = 0
+    for item in items:
+        a, b = todo_progress(item.get('tasks', []))
+        done += a
+        applicable += b
+    x, y = st.columns(2)
+    x.metric(f'{unit_label} plans / 计划', len(items))
+    y.metric('Tasks done / 已完成', f'{done}/{applicable}')
+    if applicable:
+        st.progress(done / applicable, text=f'Completion / 完成率 {round(done / applicable * 100)}%')
+
+
 with tabs[3]:
     page_header('EXECUTION · 月度交付', 'Monthly Planner / 月度计划',
-                'Outcome first, then a short checklist. Check off only what is actually delivered.')
+                'Includes 2026 launch months, 2027 and the January 2028 closeout. Select a period to see its actionable deliverables.')
     months = sorted(monthly_plans, key=month_sort)
     if not months:
-        st.info('No monthly_plans loaded. Check the deployed JSON and data cache.')
+        st.error('No monthly plans loaded. Check GitHub JSON and the loaded data version shown below.')
     else:
+        period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
+        period_choice = st.selectbox('Planning period / 五阶段筛选', period_options,
+            format_func=lambda x: 'All periods · 2026–2028' if x == 'All' else period_name(x), key='v31_month_period')
+        visible = [m for m in months if period_choice == 'All' or period_choice in month_periods(m)]
+        execution_overview(visible, 'Monthly')
         current_month = date.today().strftime('%Y-%m')
-        idx = next((i for i, m in enumerate(months) if m.get('month') == current_month), 0)
+        idx = next((i for i, m in enumerate(visible) if m.get('month') == current_month), 0)
         selected_month_id = st.selectbox('Month / 选择月份',
-            [m['id'] for m in months], index=idx,
-            format_func=lambda mid: next(f"{m['month']} · {m['title']}" for m in months if m['id'] == mid),
-            key='v3_month')
-        m = next(item for item in months if item['id'] == selected_month_id)
+            [m['id'] for m in visible], index=idx,
+            format_func=lambda mid: next(f"{m['month']} · {m['title']}" for m in visible if m['id'] == mid),
+            key='v31_month')
+        m = next(item for item in visible if item['id'] == selected_month_id)
+        st.caption(f"Selected month: {m['month']} · {', '.join(month_periods(m))}")
         with st.container(border=True):
             st.markdown('### Monthly outcome / 本月成果')
             st.write(m.get('outcome', '—'))
         render_todos(m.get('tasks', []), 'month')
-        st.caption('Monthly and weekly tasks have separate completion states. Weekly work does not automatically prove monthly delivery.')
+        st.caption('Monthly delivery and weekly actions are separate checklists. Each has its own progress.')
 
 with tabs[4]:
     page_header('EXECUTION · 每周行动', 'Weekly To-do / 每周任务',
-                'Your weekly action list: check tasks, mark N/A where appropriate, and review progress.')
+                'Starts November 16, 2026. Use the stage filter and weekly checkboxes.')
     weeks = sorted(weekly_plans, key=week_sort)
     if not weeks:
-        st.info('No weekly_plans loaded. Check the deployed JSON and data cache.')
+        st.error('No weekly plans loaded. Check GitHub JSON and the loaded data version shown below.')
     else:
+        period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
+        period_choice = st.selectbox('Planning period / 五阶段筛选', period_options,
+            format_func=lambda x: 'All periods · 2026–2028' if x == 'All' else period_name(x), key='v31_week_period')
+        visible = [w for w in weeks if period_choice == 'All' or w.get('quarter') == period_choice]
+        execution_overview(visible, 'Weekly')
         today_str = date.today().isoformat()
-        idx = next((i for i, w in enumerate(weeks) if w.get('start', '') <= today_str <= w.get('end', '')), 0)
-        week_id = st.selectbox('Week / 选择周', [w['id'] for w in weeks], index=idx,
-            format_func=lambda wid: next(f"{w['start']} → {w['end']} · {w['title']}" for w in weeks if w['id'] == wid),
-            key='v3_week')
-        w = next(item for item in weeks if item['id'] == week_id)
+        idx = next((i for i, w in enumerate(visible) if w.get('start', '') <= today_str <= w.get('end', '')), 0)
+        week_id = st.selectbox('Week / 选择周', [w['id'] for w in visible], index=idx,
+            format_func=lambda wid: next(f"{w['start']} → {w['end']} · {w['title']}" for w in visible if w['id'] == wid),
+            key='v31_week')
+        w = next(item for item in visible if item['id'] == week_id)
         with st.container(border=True):
             st.markdown(f"### {w.get('title', week_id)}")
-            st.caption(f"{w.get('start')} – {w.get('end')} · {w.get('month', '')}")
+            st.caption(f"{w.get('start')} – {w.get('end')} · {w.get('quarter', '')}")
         render_todos(w.get('tasks', []), 'week')
-        st.caption('A checked task tracks execution, not automatic achievement of an annual KPI.')
+        st.caption('Checkboxes track execution, not automatic attainment of annual KPIs.')
 
 with tabs[5]:
     page_header('REVIEW · 结果复盘', 'Progress & Evidence / 进度追踪',
@@ -518,14 +560,30 @@ with tabs[5]:
     if not goals:
         st.info('Upload a domain plan to start tracking.')
     else:
-        st.subheader('Execution / 执行完成率')
-        rows = []
-        for m in sorted(monthly_plans, key=month_sort):
-            done, total = todo_progress(m.get('tasks', []))
-            rows.append({'Month': m.get('month'), 'Completed': done, 'Applicable': total,
-                         'Completion %': round(100 * done / total) if total else 0})
-        if rows:
-            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+        st.subheader('Execution / 2026–2028 执行完成率')
+        st.caption('Monthly and weekly completion are shown separately, including the 2026 launch stage.')
+        period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
+        review_period = st.selectbox('Review period / 进度阶段', period_options,
+            format_func=lambda x: 'All periods · Full personal year' if x == 'All' else period_name(x), key='v31_progress_period')
+        for heading, items, filter_function, name_key in [
+            ('Monthly deliverables / 月度成果', sorted(monthly_plans, key=month_sort),
+             lambda item: review_period == 'All' or review_period in month_periods(item), 'month'),
+            ('Weekly actions / 每周行动', sorted(weekly_plans, key=week_sort),
+             lambda item: review_period == 'All' or item.get('quarter') == review_period, 'start'),
+        ]:
+            selected_items = [item for item in items if filter_function(item)]
+            st.markdown('**' + heading + '**')
+            rows = []
+            for item in selected_items:
+                done, total = todo_progress(item.get('tasks', []))
+                rows.append({'Period': item.get('quarter'), 'Date': item.get(name_key),
+                             'Plan': item.get('title'), 'Done': done, 'Applicable': total,
+                             'Completion %': round(100 * done / total) if total else 0})
+            if rows:
+                execution_overview(selected_items, 'Monthly' if name_key == 'month' else 'Weekly')
+                st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+            else:
+                st.info('No execution tasks for this period.')
         st.subheader('Annual objective review / 年度目标评估')
         gid = st.selectbox('Objective', list(goal_by_id),
             format_func=lambda x: f"{x} · {milestone_title(goal_by_id[x])}", key='v3_review_goal')
