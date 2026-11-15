@@ -1,0 +1,829 @@
+{
+  "plan_version": "D01 Year-Level Plan V2.0",
+  "last_reviewed": "2026-11-15",
+  "north_star": {
+    "vision_zh": "2027年底获得稳定正式全职风险岗位，争取Senior Analyst或等效职级与CAD 100,000–110,000年基本工资，并通过业务成果、风险分析能力和项目领导经验为Market Risk、Credit Methodology、CCR方向的未来Manager Scope打基础。",
+    "core_outcomes": [
+      "PFT by 2027-06-30",
+      "Senior Analyst / equivalent by 2027-12-31",
+      "Annual base salary >= CAD 100000 by 2027-12-31"
+    ],
+    "career_horizon_2030": "Manager scope or above in Market Risk / Credit Methodology / CCR"
+  },
+  "quarterly_review_dates": [
+    "2027-03-31",
+    "2027-06-30",
+    "2027-09-30",
+    "2027-12-31"
+  ],
+  "contingencies": [
+    {
+      "id": "A",
+      "trigger": "BMO正式PFT已签署且开始",
+      "action": "工作成果和内部晋升优先，保留外部选择权",
+      "review_by": "2027-06-30"
+    },
+    {
+      "id": "B",
+      "trigger": "只有短期合同延期、没有批准的PFT",
+      "action": "维持合法工作和收入，积极申请外部正式岗位",
+      "review_by": "Immediately; assess again 2027-06-30"
+    },
+    {
+      "id": "C",
+      "trigger": "合同终止或不续约",
+      "action": "就业、现金流和工作资格优先；激活全面外部求职",
+      "review_by": "Immediately"
+    },
+    {
+      "id": "D",
+      "trigger": "BMO PFT但2027Q3仍无可信晋升路径",
+      "action": "保留职位并扩大外部Senior Analyst/高质量岗位市场测试",
+      "review_by": "2027-09-30"
+    },
+    {
+      "id": "E",
+      "trigger": "外部平级但明显更高的专业成长机会",
+      "action": "用薪资25/Scope25/成长25/专业匹配15/团队稳定10的评分框架比较，不唯Title",
+      "review_by": "When actual offer exists"
+    }
+  ],
+  "cross_domain_rules": [
+    "PFT和PR/TCF NCLC7同为最高优先事项；有就业风险时临时优先求职",
+    "每周工作外职业发展投入参考10–12小时，可随季调整而非刚性承诺",
+    "只按可验证证据计算成果，禁止泄露雇主保密资料",
+    "Stretch文章与研究可降级，不得挤占P0/P1"
+  ],
+  "policy": {
+    "priority_order": [
+      "P0",
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "must_target_stretch": "Level of achievement within each objective; priority is not achievement level",
+    "salary_currency": "CAD",
+    "salary_type": "Annual base salary excluding bonuses",
+    "tracking_rule": "Do not default new goals or KPIs to achieved; verify against dated evidence",
+    "privacy": "Do not commit salary, employer-confidential facts, health records, or personal tracker backups to public repositories",
+    "decision_preferences": {
+      "title_salary": "Equal",
+      "specialization": "Flexible among Credit Risk, Methodology, Market Risk, CCR",
+      "management_track": "Retain; manager title stretch"
+    }
+  },
+  "schema_version": 1,
+  "domain_id": "D01",
+  "domain_name": "Career & Professional Development",
+  "status": "Year Plan V2.0 — Proposed",
+  "goals": [
+    {
+      "id": "D01-O1",
+      "domain": "D01",
+      "section": "1.1 Career Strategy",
+      "title": "Define a long-term risk career direction",
+      "priority": "P2",
+      "must": "形成1套岗位评分规则及1份Career Positioning Statement",
+      "target": "完成至少3个方向、12份JD比较，Q2确定1个主方向与1个备选方向，Q4形成1份2030路线图",
+      "stretch": "获得1份目标专业领域岗位或1项直接相关业务项目",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "完成职业定位文件；分析至少2个方向和6份JD",
+        "Q2": "累计完成3个专业方向和12份JD分析；选定主要+备选方向",
+        "Q3": "根据实际岗位和面试反馈复核方向匹配",
+        "Q4": "形成2028–2030职业路线图"
+      },
+      "section_id": "D01.1",
+      "title_zh": "形成灵活且有竞争力的风险管理职业路线",
+      "kpis": [
+        {
+          "id": "D01-K01",
+          "label": "专门风险方向比较数",
+          "unit": "directions",
+          "target": 3,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Documented analysis across Credit Methodology / Market Risk / CCR",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 2,
+            "Q2": 3,
+            "Q3": 3,
+            "Q4": 3
+          }
+        },
+        {
+          "id": "D01-K02",
+          "label": "有效目标岗位JD样本",
+          "unit": "job_descriptions",
+          "target": 12,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Unique relevant job descriptions reviewed",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 6,
+            "Q2": 12,
+            "Q3": 12,
+            "Q4": 12
+          }
+        },
+        {
+          "id": "D01-K03",
+          "label": "正式职业定位文件",
+          "unit": "documents",
+          "target": 1,
+          "deadline": "2027-03-31",
+          "level": "Target",
+          "verification": "Saved positioning statement",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K04",
+          "label": "重点+备选职业方向",
+          "unit": "tracks",
+          "target": 2,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Ranked main and backup specialization",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K05",
+          "label": "2028-2030职业路线图",
+          "unit": "documents",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Dated career roadmap",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "实际岗位供给",
+        "目标专业岗位的能力要求",
+        "个人职业取舍"
+      ],
+      "plan_b": "Q2未形成优先方向时维持灵活赛道，但必须保留评分矩阵并到Q3复盘。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K01",
+        "D01-K02",
+        "D01-K03",
+        "D01-K04",
+        "D01-K05"
+      ]
+    },
+    {
+      "id": "D01-O2",
+      "domain": "D01",
+      "section": "1.2 Career Stability",
+      "title": "Secure a stable permanent full-time role",
+      "priority": "P0",
+      "must": "在无PFT状态下激活求职与风险预案；按季完成4次就业状态复盘",
+      "target": "2027-06-30前获得并开始1份合适的正式PFT职位",
+      "stretch": "拥有至少2份可比较的正式PFT Offer",
+      "due": "2027-06-30",
+      "quarterly": {
+        "Q1": "落实合同/转正状态；若无PFT启动条件性求职；完成季度风险复盘",
+        "Q2": "6月30日前争取获得并开始合适PFT；完成第2次风险复盘",
+        "Q3": "稳定交付，必要时持续外部市场测试；完成第3次复盘",
+        "Q4": "复核岗位长期稳定和成长条件；完成第4次复盘"
+      },
+      "section_id": "D01.2",
+      "title_zh": "在2027年Q2前实现稳定PFT就业",
+      "kpis": [
+        {
+          "id": "D01-K06",
+          "label": "适合的正式PFT职位",
+          "unit": "roles",
+          "target": 1,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Signed offer / employer contract and actual employment status",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K07",
+          "label": "就业风险正式复盘",
+          "unit": "reviews",
+          "target": 4,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "One dated quarterly review",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 1,
+            "Q2": 2,
+            "Q3": 3,
+            "Q4": 4
+          }
+        },
+        {
+          "id": "D01-K08",
+          "label": "活跃求职月份有效岗位申请",
+          "unit": "applications_per_month",
+          "target": 8,
+          "deadline": "2027-12-31",
+          "level": "Must",
+          "verification": "Unique qualified applications in months when job search contingency is active; planned band 8-12",
+          "condition": "Only when active external search"
+        },
+        {
+          "id": "D01-K09",
+          "label": "可比正式Offers",
+          "unit": "offers",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Stretch",
+          "verification": "Actual written offers; not interviews",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "BMO PFT审批与HC",
+        "外部招聘市场",
+        "当时有效的工作许可条件"
+      ],
+      "plan_b": "无正式PFT或仅延期时采取收入保护+外部正式岗位搜索；合同终止立即进入就业优先模式。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K06",
+        "D01-K07",
+        "D01-K08",
+        "D01-K09"
+      ]
+    },
+    {
+      "id": "D01-O3",
+      "domain": "D01",
+      "section": "1.3 Promotion & Compensation",
+      "title": "Reach Senior Analyst level and CAD 100k–110k base",
+      "priority": "P1",
+      "must": "获取至少10个薪资/职级样本并建立每季1次的Scope对标",
+      "target": "年底同时满足Senior Analyst/等效职级及年基本工资CAD100000以上",
+      "stretch": "Manager Title或正式管理职责；或年基本工资至少CAD110000",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "职位和薪酬基准调研；首次Scope对标",
+        "Q2": "累计至少10个薪酬样本和1次正式发展讨论；明确晋升标准",
+        "Q3": "累计至少2次发展讨论；如晋升受阻评估外部机会",
+        "Q4": "验证Senior Analyst等效职级和有效Base>=CAD100k两个独立结果"
+      },
+      "section_id": "D01.3",
+      "title_zh": "实现Senior Analyst职级与CAD100k–110k基本年薪",
+      "kpis": [
+        {
+          "id": "D01-K10",
+          "label": "Senior Analyst或认可的等效职级",
+          "unit": "binary",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Effective title and comparable role responsibilities",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K11",
+          "label": "基本年薪下限",
+          "unit": "CAD_per_year",
+          "target": 100000,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Effective annual base in contract / payroll; bonus excluded",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K12",
+          "label": "有效薪酬与职位样本",
+          "unit": "job_pay_samples",
+          "target": 10,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Distinct, relevant pay data points",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K13",
+          "label": "正式职业发展/晋升讨论",
+          "unit": "discussions",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Dated documented conversation",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 2
+          }
+        },
+        {
+          "id": "D01-K14",
+          "label": "职级和Scope季度对标",
+          "unit": "reviews",
+          "target": 4,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Written quarterly gap notes",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 1,
+            "Q2": 2,
+            "Q3": 3,
+            "Q4": 4
+          }
+        },
+        {
+          "id": "D01-K15",
+          "label": "Manager title或正式管理职位",
+          "unit": "binary",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Stretch",
+          "verification": "Written role confirmation",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "招聘市场的薪资与职级结构",
+        "现任雇主的晋升审批",
+        "实际Scope和岗位需求"
+      ],
+      "plan_b": "Q3内部晋升路径仍不明确则外部市场测试；Title与Base分别打分，不以单项替代双目标。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K10",
+        "D01-K11",
+        "D01-K12",
+        "D01-K13",
+        "D01-K14",
+        "D01-K15"
+      ]
+    },
+    {
+      "id": "D01-O4",
+      "domain": "D01",
+      "section": "1.4 Work Performance",
+      "title": "Own important risk work and show business impact",
+      "priority": "P1",
+      "must": "维持岗位要求的交付质量，记录重大问题与处理证据",
+      "target": "至少2项重要Ownership项目，至少1项量化业务影响、至少2次管理层反馈",
+      "stretch": "领导至少1项重要跨团队项目并获得正式业务采用或认可",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "明确现有责任范围，记录交付和质量基线",
+        "Q2": "累计1项独立Ownership成果及首项业务影响候选",
+        "Q3": "累计2项重要Ownership成果；争取完整跨团队交付",
+        "Q4": "完成至少1项量化业务影响和3个STAR成果案例"
+      },
+      "section_id": "D01.4",
+      "title_zh": "形成可量化的关键业务成果",
+      "kpis": [
+        {
+          "id": "D01-K16",
+          "label": "重要项目或工作流ownership",
+          "unit": "projects",
+          "target": 2,
+          "deadline": "2027-09-30",
+          "level": "Target",
+          "verification": "Documented role, ownership and outcome",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 2
+          }
+        },
+        {
+          "id": "D01-K17",
+          "label": "量化Business Impact成果",
+          "unit": "impacts",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Baseline, change, measured result, documented business relevance",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K18",
+          "label": "复杂UAT/Migration/Change交付",
+          "unit": "projects",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Actual assigned project and completion evidence",
+          "condition": "Only if relevant work is available"
+        },
+        {
+          "id": "D01-K19",
+          "label": "管理层展示或正式反馈",
+          "unit": "events",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Dated presentation or documented performance feedback",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K20",
+          "label": "完整面试工作成果案例",
+          "unit": "stories",
+          "target": 3,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "STAR format and evidence",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "实际项目分配与权限",
+        "Stakeholder协作",
+        "可获得的业务基线与验收数据"
+      ],
+      "plan_b": "更换团队或项目分配不匹配时替换项目类型，维持可验证Ownership与Impact标准。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K16",
+        "D01-K17",
+        "D01-K18",
+        "D01-K19",
+        "D01-K20"
+      ]
+    },
+    {
+      "id": "D01-O5",
+      "domain": "D01",
+      "section": "1.5 Professional Skills",
+      "title": "Develop advanced risk analytics and methodology capabilities",
+      "priority": "P2",
+      "must": "Q1前形成1份岗位技能差距分析并维持SQL/Python相关能力",
+      "target": "Q3前完成2个有完整方法和验证的风险技术案例",
+      "stretch": "高级方法用于真实项目或产出高质量独立研究",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "完成技术技能差距分析，选定两个案例主题",
+        "Q2": "完成Credit Risk/Data Analytics技术案例1",
+        "Q3": "完成Market/CCR/Methodology技术案例2",
+        "Q4": "进行至少2次案例复盘并评价岗位匹配能力"
+      },
+      "section_id": "D01.5",
+      "title_zh": "建立高级Risk Analytics与Methodology能力",
+      "kpis": [
+        {
+          "id": "D01-K21",
+          "label": "技能差距分析",
+          "unit": "documents",
+          "target": 1,
+          "deadline": "2027-03-31",
+          "level": "Target",
+          "verification": "Role-mapped skills gap assessment",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K22",
+          "label": "Credit/Data Analytics技术案例",
+          "unit": "cases",
+          "target": 1,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Dataset, method, validation, outcome and limitations",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K23",
+          "label": "Market/CCR/Methodology技术案例",
+          "unit": "cases",
+          "target": 1,
+          "deadline": "2027-09-30",
+          "level": "Target",
+          "verification": "Same 6-component evidence rubric",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K24",
+          "label": "技术案例总数",
+          "unit": "cases",
+          "target": 2,
+          "deadline": "2027-09-30",
+          "level": "Target",
+          "verification": "Completed distinct cases, not just drafts",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 0,
+            "Q2": 1,
+            "Q3": 2,
+            "Q4": 2
+          }
+        },
+        {
+          "id": "D01-K25",
+          "label": "案例复盘",
+          "unit": "reviews",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Saved technical reviews",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "技术学习时间",
+        "公开/合成数据",
+        "目标方向决策"
+      ],
+      "plan_b": "若失业/法语冲刺则优先技术案例1，第二案例适当推迟；不得以不完整案例计完成。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K21",
+        "D01-K22",
+        "D01-K23",
+        "D01-K24",
+        "D01-K25"
+      ]
+    },
+    {
+      "id": "D01-O6",
+      "domain": "D01",
+      "section": "1.6 Leadership",
+      "title": "Build observable manager-level leadership skills",
+      "priority": "P2",
+      "must": "能独立管理关键交付和相关Stakeholder沟通",
+      "target": "至少1次跨团队领导/协调Ownership、2项协作案例和2次具体反馈",
+      "stretch": "获得正式Team Lead/Acting Manager/Manager职责",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "识别项目领导机会与工作边界",
+        "Q2": "承担实际跨团队协调工作并积累案例",
+        "Q3": "完成至少1项领导或协调Ownership",
+        "Q4": "汇总至少2项跨团队案例、2项建议案例、3个Leadership故事及2次反馈"
+      },
+      "section_id": "D01.6",
+      "title_zh": "积累Manager-Level领导力证据",
+      "kpis": [
+        {
+          "id": "D01-K26",
+          "label": "项目领导或协调ownership",
+          "unit": "initiatives",
+          "target": 1,
+          "deadline": "2027-09-30",
+          "level": "Target",
+          "verification": "Clear cross-functional deliverable and role",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K27",
+          "label": "跨团队协作案例",
+          "unit": "cases",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Named stakeholders by role, contribution, outcome; no confidential names required",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K28",
+          "label": "业务决策建议或复杂问题解决案例",
+          "unit": "cases",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Context, options, recommendation, outcome",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K29",
+          "label": "Leadership面试故事",
+          "unit": "stories",
+          "target": 3,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Well-structured STAR stories",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K30",
+          "label": "具体领导能力反馈",
+          "unit": "feedback_events",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Dated specific feedback from stakeholder",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "项目分配和协作机会",
+        "上级授权",
+        "项目成果可归因性"
+      ],
+      "plan_b": "没有正式lead机会时以跨部门关键交付coordination项目代替，记录实质决策影响。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K26",
+        "D01-K27",
+        "D01-K28",
+        "D01-K29",
+        "D01-K30"
+      ]
+    },
+    {
+      "id": "D01-O7",
+      "domain": "D01",
+      "section": "1.7 Networking",
+      "title": "Build a durable professional network",
+      "priority": "P2",
+      "must": "建立联系人日志并完成每季度1次人脉复盘",
+      "target": "36–48次实质职业交流和至少3位持续联系的专业联系人",
+      "stretch": "形成至少1位长期Mentor关系并获得高质量职业机会",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "职业交流累计9次；完成第一季度联系人复盘",
+        "Q2": "累计18次交流；加强跨行与校友联系",
+        "Q3": "累计27次交流；培育潜在Mentor关系",
+        "Q4": "累计至少36次交流；3位长期联系人和4次复盘"
+      },
+      "section_id": "D01.7",
+      "title_zh": "建立长期有效的风险领域职业网络",
+      "kpis": [
+        {
+          "id": "D01-K31",
+          "label": "有意义职业交流",
+          "unit": "conversations",
+          "target": 36,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Dated substantive 1:1 conversations; desired range 36-48",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 9,
+            "Q2": 18,
+            "Q3": 27,
+            "Q4": 36
+          }
+        },
+        {
+          "id": "D01-K32",
+          "label": "持续联系的专业联系人",
+          "unit": "people",
+          "target": 3,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Two or more meaningful interactions during year",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K33",
+          "label": "季度Networking复盘",
+          "unit": "reviews",
+          "target": 4,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Dated quarterly review",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 1,
+            "Q2": 2,
+            "Q3": 3,
+            "Q4": 4
+          }
+        },
+        {
+          "id": "D01-K34",
+          "label": "长期Mentor关系",
+          "unit": "people",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Stretch",
+          "verification": "Mutual agreement and continuing engagement",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "专业人士的时间与回应",
+        "法语和求职高峰期精力"
+      ],
+      "plan_b": "紧急求职阶段交流优先服务求职；法语冲刺可阶段性降低，但年末审视质量。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K31",
+        "D01-K32",
+        "D01-K33",
+        "D01-K34"
+      ]
+    },
+    {
+      "id": "D01-O8",
+      "domain": "D01",
+      "section": "1.8 Professional Brand",
+      "title": "Establish a credible risk professional brand",
+      "priority": "P3",
+      "must": "保证LinkedIn、现有简历和基本面试材料可用",
+      "target": "3套Risk简历、40题技术题库、12个行为故事、4次Mock Interview",
+      "stretch": "完成1–2篇高质量专业文章或研究",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "更新LinkedIn和现有简历；至少1次Mock Interview",
+        "Q2": "完成Credit/Market/Quant三套简历及第2次Mock",
+        "Q3": "形成40题Technical、12个Behavioral故事及第3次Mock",
+        "Q4": "完成第4次Mock及2项能力证据；视资源完成文章/研究Stretch"
+      },
+      "section_id": "D01.8",
+      "title_zh": "形成高级风险岗位的职业品牌",
+      "kpis": [
+        {
+          "id": "D01-K35",
+          "label": "目标岗位专用简历",
+          "unit": "versions",
+          "target": 3,
+          "deadline": "2027-06-30",
+          "level": "Target",
+          "verification": "Credit, Market and Quant tailored resumes",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K36",
+          "label": "Technical Interview题库",
+          "unit": "questions",
+          "target": 40,
+          "deadline": "2027-09-30",
+          "level": "Target",
+          "verification": "Reviewed questions with solutions / outline",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K37",
+          "label": "Behavioral Interview案例库",
+          "unit": "stories",
+          "target": 12,
+          "deadline": "2027-09-30",
+          "level": "Target",
+          "verification": "Distinct STAR narratives; overlapping leadership stories can count",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K38",
+          "label": "Mock Interviews",
+          "unit": "sessions",
+          "target": 4,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Completed practice with feedback",
+          "condition": "Always",
+          "quarterly_cumulative_targets": {
+            "Q1": 1,
+            "Q2": 2,
+            "Q3": 3,
+            "Q4": 4
+          }
+        },
+        {
+          "id": "D01-K39",
+          "label": "公开展示或可描述技术能力证据",
+          "unit": "artifacts",
+          "target": 2,
+          "deadline": "2027-12-31",
+          "level": "Target",
+          "verification": "Public-source portfolio or non-confidential project summaries",
+          "condition": "Always"
+        },
+        {
+          "id": "D01-K40",
+          "label": "专业文章/研究产出",
+          "unit": "outputs",
+          "target": 1,
+          "deadline": "2027-12-31",
+          "level": "Stretch",
+          "verification": "Completed substantial article or paper; aspirational 1-2",
+          "condition": "Always"
+        }
+      ],
+      "dependencies": [
+        "真实求职需求",
+        "技术案例进度",
+        "雇主保密规定",
+        "研究可用时间"
+      ],
+      "plan_b": "论文/文章优先降级；保留可用的简历和面试准备，不因Stretch影响P0/P1。",
+      "review_cadence": "Quarterly",
+      "achievement_status": "Not assessed",
+      "metric_ids": [
+        "D01-K35",
+        "D01-K36",
+        "D01-K37",
+        "D01-K38",
+        "D01-K39",
+        "D01-K40"
+      ]
+    }
+  ]
+}
