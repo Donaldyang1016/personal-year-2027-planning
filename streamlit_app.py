@@ -54,26 +54,62 @@ domain_ids = [f'D{i:02d}' for i in range(1, 13)]
 goals = [g for p in plans for g in p.get('goals', [])]
 goal_by_id = {g['id']: g for g in goals}
 kpis = {k['id']: k for g in goals for k in g.get('kpis', [])}
+monthly_plans = [m for p in plans for m in p.get('monthly_plans', [])]
+weekly_plans = [w for p in plans for w in p.get('weekly_plans', [])]
+todo_by_id = {t['id']: t for plan in monthly_plans + weekly_plans for t in plan.get('tasks', [])}
+
 
 if 'goal_records' not in st.session_state:
     st.session_state.goal_records = {}
 if 'kpi_records' not in st.session_state:
     st.session_state.kpi_records = {}
+if 'todo_records' not in st.session_state:
+    st.session_state.todo_records = {}
 if 'activity_log' not in st.session_state:
     st.session_state.activity_log = []
 for g in goals:
     st.session_state.goal_records.setdefault(g['id'], {'status': 'Not started', 'progress': 0, 'notes': '', 'updated_at': ''})
 for kid in kpis:
     st.session_state.kpi_records.setdefault(kid, {'actual': None, 'notes': '', 'updated_at': ''})
+for tid in todo_by_id:
+    st.session_state.todo_records.setdefault(tid, {'done': False, 'skipped': False, 'updated_at': ''})
+
+def todo_progress(tasks):
+    # Skipped conditional tasks are excluded from the completion denominator.
+    included = [t for t in tasks if not st.session_state.todo_records[t['id']]['skipped']]
+    completed = sum(bool(st.session_state.todo_records[t['id']]['done']) for t in included)
+    return completed, len(included)
+
+def render_todos(tasks, key_prefix):
+    if not tasks:
+        st.info('暂无任务 / No tasks yet')
+        return
+    completed, total = todo_progress(tasks)
+    st.progress(completed / total if total else 1.0, text=f'{completed}/{total} completed · {round(completed / total * 100) if total else 100}%')
+    for task in tasks:
+        tid = task['id']
+        record = st.session_state.todo_records[tid]
+        col_a, col_b = st.columns([0.83, 0.17], vertical_alignment='center')
+        with col_a:
+            marked = st.checkbox(task['title'], value=record['done'], key=f'{key_prefix}_done_{tid}', disabled=record['skipped'])
+        with col_b:
+            skipped = st.checkbox('Skip / N/A', value=record['skipped'], key=f'{key_prefix}_skip_{tid}', help='Exclude unavailable or conditional tasks')
+        if marked != record['done'] or skipped != record['skipped']:
+            record.update({'done': marked if not skipped else False, 'skipped': skipped, 'updated_at':datetime.now().isoformat(timespec='seconds')})
+            st.session_state.activity_log.insert(0,{'task_id':tid,'date':record['updated_at'],'done':record['done'],'skipped':skipped})
+            st.rerun()
+        st.caption(f"{tid}  ·  {task.get('goal_id','')}  ·  {task.get('priority','')}")
+
 
 def export_backup():
-    return {'schema_version': 2, 'exported_at': datetime.now().isoformat(timespec='seconds'),
+    return {'schema_version': 3, 'exported_at': datetime.now().isoformat(timespec='seconds'),
             'records': {k: v for k,v in st.session_state.goal_records.items() if k in goal_by_id},
             'kpi_records': {k: v for k,v in st.session_state.kpi_records.items() if k in kpis},
+            'todo_records': {k:v for k,v in st.session_state.todo_records.items() if k in todo_by_id},
             'activity': st.session_state.activity_log[:1500]}
 
 def restore_backup(data):
-    if not isinstance(data, dict) or data.get('schema_version') not in (1,2):
+    if not isinstance(data, dict) or data.get('schema_version') not in (1,2,3):
         raise ValueError('Unsupported tracker backup version')
     recs = data.get('records', {})
     if not isinstance(recs, dict):
@@ -95,6 +131,14 @@ def restore_backup(data):
                 if actual is None or (isinstance(actual, (int,float)) and not isinstance(actual,bool)):
                     st.session_state.kpi_records[kid] = {'actual': actual, 'notes': str(rec.get('notes',''))[:10000],
                                                           'updated_at': str(rec.get('updated_at',''))[:40]}
+    todos = data.get('todo_records', {})
+    if isinstance(todos, dict):
+        for tid, rec in todos.items():
+            if tid in todo_by_id and isinstance(rec, dict):
+                st.session_state.todo_records[tid] = {
+                    'done': bool(rec.get('done', False)) and not bool(rec.get('skipped', False)),
+                    'skipped': bool(rec.get('skipped', False)),
+                    'updated_at': str(rec.get('updated_at', ''))[:40]}
     if isinstance(data.get('activity'), list):
         st.session_state.activity_log = [a for a in data['activity'] if isinstance(a,dict)][:1500]
 
@@ -158,236 +202,130 @@ with tabs[0]:
     completed = sum(st.session_state.goal_records[g['id']]['status'] == 'Completed' for g in goals)
     cols = st.columns(4)
     cols[0].metric('Life domains', 12)
-
-
     cols[1].metric('Imported domains', len(plans))
     cols[2].metric('Annual objectives', len(goals))
-    cols[3].metric('KPI targets', len(kpis))
-
-    st.subheader('12 Life Domains')
-
-    rows = [
-        {
-            'Domain': did,
-            'Name': domain_name(did),
-            'Status': by_domain.get(did, {}).get('status', 'Not imported'),
-            'Objectives': len(by_domain.get(did, {}).get('goals', []))
-        }
-        for did in domain_ids
-    ]
+    cols[3].metric('Completed objectives', completed)
+    if todo_by_id:
+        done, total = todo_progress(list(todo_by_id.values()))
+        st.metric('Checklist tasks completed / 待办完成', f'{done} / {total}')
+        st.progress(done / total if total else 1.0)
+    st.subheader('12 life domains')
+    rows = [{'Domain': did, 'Name': domain_name(did),
+             'Plan status': by_domain.get(did,{}).get('status','Not imported'),
+             'Objectives': len(by_domain.get(did,{}).get('goals',[]))} for did in domain_ids]
     st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
-
     if goals:
-        st.subheader('Highlighted Objectives')
+        st.subheader('Highlighted objectives')
         for g in goals[:4]:
             render_goal(g, details=False)
 
-
-# ANNUAL PAGE
 with tabs[1]:
-    st.header('Annual Goals')
-
-    selected_domain = st.selectbox(
-        'Life Domain',
-        domain_ids,
-        format_func=lambda did: f'{did} - {domain_name(did)}'
-    )
-
+    st.header('Annual goals')
+    selected_domain = st.selectbox('Life domain', domain_ids, format_func=lambda did: f'{did} · {domain_name(did)}', key='annual_domain')
     plan = by_domain.get(selected_domain)
-
     if plan is None:
-        st.info(f'No plan uploaded for {selected_domain}.')
+        st.info(f'No approved plan uploaded yet. Add data/domains/{selected_domain}.json on GitHub.')
     else:
-        st.caption(plan.get('plan_version', 'Draft'))
-
+        st.caption(f"{plan.get('plan_version','Draft')} · {plan.get('status','')}")
         if plan.get('north_star'):
-            st.subheader('Annual Vision')
-            vision = plan['north_star']
-            if isinstance(vision, dict):
-                st.write(vision.get('vision_zh', ''))
-                for outcome in vision.get('core_outcomes', []):
-                    st.write('- ' + outcome)
-            else:
-                st.write(vision)
-
-        for g in plan.get('goals', []):
+            st.markdown('**Annual vision / North Star**')
+            st.write(plan['north_star'])
+        for g in plan.get('goals',[]):
             render_goal(g)
-
         if plan.get('contingencies'):
-            st.subheader('Plan B / Contingencies')
-            st.dataframe(
-                pd.DataFrame(plan['contingencies']),
-                hide_index=True,
-                use_container_width=True
-            )
+            st.subheader('Contingencies')
+            st.dataframe(pd.DataFrame(plan['contingencies']), hide_index=True, use_container_width=True)
 
-
-# QUARTERLY PAGE
 with tabs[2]:
-    st.header('Quarterly Milestones')
-
-    quarter = st.selectbox(
-        'Select Quarter',
-        ['Q1', 'Q2', 'Q3', 'Q4']
-    )
-
-    selected_domain = st.selectbox(
-        'Select Domain',
-        ['All'] + domain_ids
-    )
-
-    filtered = [
-        g for g in goals
-        if selected_domain == 'All'
-        or g['domain'] == selected_domain
-    ]
-
-    rows = [
-        {
-            'Domain': g['domain'],
-            'Goal': g['id'],
-            'Objective': g.get('title_zh', g.get('title', '')),
-            'Milestone': g.get('quarterly', {}).get(quarter, ''),
-            'Status': st.session_state.goal_records[g['id']]['status']
-        }
-        for g in filtered
-    ]
-
+    st.header('Quarterly milestones')
+    quarter = st.selectbox('Quarter', ['Q1','Q2','Q3','Q4'])
+    filt = st.selectbox('Domain', ['All'] + domain_ids, format_func=lambda d: d if d=='All' else f'{d} · {domain_name(d)}')
+    filtered = [g for g in goals if filt=='All' or g['domain']==filt]
+    rows = [{'Domain': g['domain'], 'Goal': g['id'], 'Objective': g.get('title_zh') or g.get('title',''),
+             'Milestone': g.get('quarterly',{}).get(quarter, 'Not defined'),
+             'Status': st.session_state.goal_records[g['id']]['status']} for g in filtered]
     if rows:
-        st.dataframe(
-            pd.DataFrame(rows),
-            hide_index=True,
-            use_container_width=True
-        )
+        st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
     else:
-        st.info('No quarterly milestones available.')
+        st.info('No milestones imported for this domain.')
 
-
-# MONTHLY PAGE
 with tabs[3]:
-    st.header('Monthly Goals')
-    st.info(
-        'Monthly plans will be added after annual '
-        'and quarterly planning is completed.'
-    )
-
-
-# WEEKLY PAGE
-with tabs[4]:
-    st.header('Weekly Goals')
-    st.info(
-        'Weekly plans will be added after monthly '
-        'planning is completed.'
-    )
-
-
-# TRACKER PAGE
-with tabs[5]:
-    st.header('Progress Tracker')
-
-    if not goals:
-        st.warning('No domain data loaded.')
-
+    st.header('Monthly Goals · 月度计划')
+    if not monthly_plans:
+        st.info('请先在 data/domains/DNN.json 上传 monthly_plans。')
     else:
-        selected = st.selectbox(
-            'Select Objective',
-            list(goal_by_id),
-            format_func=lambda gid: (
-                f"{gid} - "
-                f"{goal_by_id[gid].get('title_zh', '')}"
-            )
-        )
+        choices = [m['id'] for m in monthly_plans]
+        cur_month = f'2027-{date.today().month:02d}' if date.today().year == 2027 else '2027-01'
+        default = next((i for i,m in enumerate(monthly_plans) if m.get('month') == cur_month), 0)
+        selected = st.selectbox('Select month / 选择月份', choices, index=default,
+            format_func=lambda key: next(f"{m['month']} · {m['title']}" for m in monthly_plans if m['id']==key))
+        month = next(m for m in monthly_plans if m['id'] == selected)
+        st.subheader(month['title'])
+        st.write('**Monthly outcome / 月度关键成果：** ' + month.get('outcome',''))
+        st.caption('Check off tasks as completed; Skip / N/A excludes inapplicable tasks from denominator.')
+        render_todos(month['tasks'], 'monthly')
+        st.caption('Monthly and weekly checklists are separate views; completing a weekly task does not auto-complete its parent month task.')
 
+with tabs[4]:
+    st.header('Weekly Goals · 每周 To-do')
+    if not weekly_plans:
+        st.info('请先在 data/domains/DNN.json 上传 weekly_plans。')
+    else:
+        today = date.today().isoformat()
+        default = next((i for i,w in enumerate(weekly_plans) if w['start']<=today<=w['end']), 0)
+        selected = st.selectbox('Select week / 选择周', [w['id'] for w in weekly_plans], index=default,
+            format_func=lambda key: next(f"{w['start']} → {w['end']} · {w['title']}" for w in weekly_plans if w['id']==key))
+        week = next(w for w in weekly_plans if w['id']==selected)
+        st.subheader(week['title'])
+        st.caption(f"Week dates: {week['start']} – {week['end']}")
+        render_todos(week['tasks'], 'weekly')
+        st.caption('To-do changes live in session memory. Export the tracker backup before leaving.')
+
+with tabs[5]:
+    st.header('Progress tracker')
+    if not goals:
+        st.info('Upload at least one domain plan first.')
+    else:
+        st.caption('Goal progress is a self-assessment; KPI actual values are separate. Export a backup after edits.')
+        selected = st.selectbox('Objective', list(goal_by_id), format_func=lambda gid: f'{gid} · {goal_by_id[gid].get("title_zh") or goal_by_id[gid].get("title","")}')
         rec = st.session_state.goal_records[selected]
-
-        with st.form('goal_tracker'):
-            status = st.selectbox(
-                'Status',
-                STATUSES,
-                index=STATUSES.index(rec['status'])
-            )
-
-            progress = st.slider(
-                'Progress (%)',
-                0,
-                100,
-                int(rec['progress'])
-            )
-
-            notes = st.text_area(
-                'Notes / Evidence',
-                value=rec['notes']
-            )
-
-            if st.form_submit_button('Save Goal Progress'):
+        with st.form('edit_goal'):
+            status = st.selectbox('Status', STATUSES, index=STATUSES.index(rec['status']))
+            progress = st.slider('Self-reported progress (%)', 0, 100, int(rec['progress']))
+            notes = st.text_area('Evidence / notes', value=rec['notes'])
+            if st.form_submit_button('Save objective progress'):
                 stamp = datetime.now().isoformat(timespec='seconds')
-
-                st.session_state.goal_records[selected] = {
-                    'status': status,
-                    'progress': progress,
-                    'notes': notes,
-                    'updated_at': stamp
-                }
-
-                st.success('Progress saved in this session.')
-
+                st.session_state.goal_records[selected] = {'status': status,'progress':progress,'notes':notes,'updated_at':stamp}
+                st.session_state.activity_log.insert(0, {'goal_id':selected,'date':stamp,'status':status,'progress':progress})
+                st.success('Saved to current session. Export backup to keep it.')
         target_goal = goal_by_id[selected]
-
         if target_goal.get('kpis'):
-            st.subheader('KPI Tracking')
-
-            kid = st.selectbox(
-                'Choose KPI',
-                [k['id'] for k in target_goal['kpis']],
-                format_func=lambda x: (
-                    f"{x} - {kpis[x]['label']}"
-                )
-            )
-
-            kpi = kpis[kid]
-            old = st.session_state.kpi_records[kid]
-
-            st.caption(
-                f"Target: {kpi.get('target')} "
-                f"{kpi.get('unit', '')} | "
-                f"Deadline: {kpi.get('deadline', '')}"
-            )
-
-            with st.form('kpi_tracker'):
-                actual = st.number_input(
-                    'Actual Value',
-                    value=float(old['actual'] or 0),
-                    step=1.0
-                )
-
-                evidence = st.text_area(
-                    'KPI Evidence',
-                    value=old['notes']
-                )
-
-                if st.form_submit_button('Save KPI'):
+            st.subheader('Numeric KPI tracking')
+            selected_kpi = st.selectbox('KPI', [k['id'] for k in target_goal['kpis']],
+                                        format_func=lambda kid: f'{kid} · {kpis[kid]["label"]}')
+            kpi = kpis[selected_kpi]
+            old_record = st.session_state.kpi_records[selected_kpi]
+            st.caption(f"Target: {kpi.get('target')} {kpi.get('unit','')} | Deadline: {kpi.get('deadline','')} | Condition: {kpi.get('condition','Always')}")
+            with st.form('edit_kpi'):
+                numeric = st.number_input('Actual value', value=float(old_record['actual'] or 0), step=1.0)
+                evidence = st.text_area('KPI evidence / notes', value=old_record['notes'])
+                if st.form_submit_button('Save KPI actual'):
                     stamp = datetime.now().isoformat(timespec='seconds')
-
-                    st.session_state.kpi_records[kid] = {
-                        'actual': actual,
-                        'notes': evidence,
-                        'updated_at': stamp
-                    }
-
-                    st.success('KPI saved in this session.')
-
-        st.subheader('All Goal Progress')
-
-        st.dataframe(
-            pd.DataFrame([
-                {
-                    'Domain': g['domain'],
-                    'Goal': g['id'],
-                    'Status': st.session_state.goal_records[g['id']]['status'],
-                    'Progress': st.session_state.goal_records[g['id']]['progress']
-                }
-                for g in goals
-            ]),
-            hide_index=True,
-            use_container_width=True
-        )
+                    st.session_state.kpi_records[selected_kpi] = {'actual':numeric,'notes':evidence,'updated_at':stamp}
+                    st.session_state.activity_log.insert(0, {'kpi_id':selected_kpi,'actual':numeric,'date':stamp})
+                    st.success('KPI saved to current session. Export backup to keep it.')
+        st.subheader('Checklist overview · Todo completion')
+        rows = []
+        for m in monthly_plans:
+            c, n = todo_progress(m['tasks'])
+            rows.append({'Month': m.get('month'), 'Done': c, 'Applicable': n, 'Completion (%)': round(100*c/n) if n else 100})
+        if rows:
+            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+        st.subheader('All objectives')
+        st.dataframe(pd.DataFrame([{'Domain':g['domain'], 'Goal':g['id'],
+                   'Status':st.session_state.goal_records[g['id']]['status'],
+                   'Progress (%)':st.session_state.goal_records[g['id']]['progress']} for g in goals]),
+                   hide_index=True, use_container_width=True)
+        if st.session_state.activity_log:
+            st.subheader('Recent activity')
+            st.dataframe(pd.DataFrame(st.session_state.activity_log[:20]), hide_index=True, use_container_width=True)
