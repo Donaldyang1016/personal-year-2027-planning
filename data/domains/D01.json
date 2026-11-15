@@ -1,5 +1,5 @@
 {
-  "plan_version": "D01 Year-Level Plan V2.1 — Monthly & Weekly Execution",
+  "plan_version": "D01 V3.0 — Strategic Planning & Execution",
   "last_reviewed": "2026-11-15",
   "north_star": {
     "vision_zh": "2027年底获得稳定正式全职风险岗位，争取Senior Analyst或等效职级与CAD 100,000–110,000年基本工资，并通过业务成果、风险分析能力和项目领导经验为Market Risk、Credit Methodology、CCR方向的未来Manager Scope打基础。",
@@ -826,7 +826,7 @@
       ]
     }
   ],
-  "execution_version": "2027.1",
+  "execution_version": "2027.2",
   "planning_notes": [
     "月度/周度项目为建议执行路线，实际工作条件触发的任务可标记 Skipped，不视为失败。",
     "求职行动只在需要时启动；不能因 checklist 驱动无意义投递。",
@@ -845,7 +845,9 @@
           "goal_id": "D01-O2",
           "priority": "Critical",
           "evidence": "职位状态记录 / job status decision",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M01-T02",
@@ -853,7 +855,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "3份JD及能力要求",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M01-T03",
@@ -861,7 +865,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "成果档案初版",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M01-T04",
@@ -869,7 +875,9 @@
           "goal_id": "D01-O8",
           "priority": "High",
           "evidence": "2份可用简历",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M01-T05",
@@ -877,8 +885,19 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q1",
+      "goal_ids": [
+        "D01-O2",
+        "D01-O1",
+        "D01-O4",
+        "D01-O8",
+        "D01-O7"
       ]
     },
     {
@@ -893,7 +912,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "累计6份JD",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M02-T02",
@@ -901,7 +922,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "1份定位文件",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M02-T03",
@@ -909,7 +932,9 @@
           "goal_id": "D01-O8",
           "priority": "High",
           "evidence": "Interview题库v1",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M02-T04",
@@ -917,7 +942,9 @@
           "goal_id": "D01-O4",
           "priority": "Medium",
           "evidence": "项目反馈1项",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M02-T05",
@@ -925,8 +952,18 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q1",
+      "goal_ids": [
+        "D01-O1",
+        "D01-O8",
+        "D01-O4",
+        "D01-O7"
       ]
     },
     {
@@ -941,7 +978,9 @@
           "goal_id": "D01-O2",
           "priority": "Critical",
           "evidence": "季度复盘记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M03-T02",
@@ -949,7 +988,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Skill gap document",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M03-T03",
@@ -957,7 +998,9 @@
           "goal_id": "D01-O2",
           "priority": "High",
           "evidence": "Plan B决策",
-          "conditional": true
+          "conditional": true,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M03-T04",
@@ -965,7 +1008,9 @@
           "goal_id": "D01-O8",
           "priority": "Medium",
           "evidence": "Mock Interview 1",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M03-T05",
@@ -973,8 +1018,18 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "全年累计9次",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q1",
+      "goal_ids": [
+        "D01-O2",
+        "D01-O5",
+        "D01-O8",
+        "D01-O7"
       ]
     },
     {
@@ -989,7 +1044,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Case 1 design",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M04-T02",
@@ -997,7 +1054,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "可运行notebook",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M04-T03",
@@ -1005,7 +1064,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "责任范围记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M04-T04",
@@ -1013,7 +1074,9 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M04-T05",
@@ -1021,8 +1084,18 @@
           "goal_id": "D01-O3",
           "priority": "Medium",
           "evidence": "薪资对标资料",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q2",
+      "goal_ids": [
+        "D01-O5",
+        "D01-O4",
+        "D01-O7",
+        "D01-O3"
       ]
     },
     {
@@ -1037,7 +1110,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Case 1完整草稿",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M05-T02",
@@ -1045,7 +1120,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "业务影响证据",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M05-T03",
@@ -1053,7 +1130,9 @@
           "goal_id": "D01-O3",
           "priority": "High",
           "evidence": "谈话纪要",
-          "conditional": true
+          "conditional": true,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M05-T04",
@@ -1061,7 +1140,9 @@
           "goal_id": "D01-O3",
           "priority": "Medium",
           "evidence": "10个market samples",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M05-T05",
@@ -1069,8 +1150,18 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q2",
+      "goal_ids": [
+        "D01-O5",
+        "D01-O4",
+        "D01-O3",
+        "D01-O7"
       ]
     },
     {
@@ -1085,7 +1176,9 @@
           "goal_id": "D01-O2",
           "priority": "Critical",
           "evidence": "PFT或Plan B文档",
-          "conditional": true
+          "conditional": true,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M06-T02",
@@ -1093,7 +1186,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Case 1 final",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M06-T03",
@@ -1101,7 +1196,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "职业路径优先级表",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M06-T04",
@@ -1109,7 +1206,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "Q2 Review",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M06-T05",
@@ -1117,8 +1216,19 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "累计18次交流",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q2",
+      "goal_ids": [
+        "D01-O2",
+        "D01-O5",
+        "D01-O1",
+        "D01-O4",
+        "D01-O7"
       ]
     },
     {
@@ -1133,7 +1243,9 @@
           "goal_id": "D01-O6",
           "priority": "High",
           "evidence": "Leadership scope",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M07-T02",
@@ -1141,7 +1253,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Case 2 outline",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M07-T03",
@@ -1149,7 +1263,9 @@
           "goal_id": "D01-O6",
           "priority": "Medium",
           "evidence": "Behavioral story",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M07-T04",
@@ -1157,7 +1273,9 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M07-T05",
@@ -1165,8 +1283,18 @@
           "goal_id": "D01-O3",
           "priority": "High",
           "evidence": "晋升机会复核",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q3",
+      "goal_ids": [
+        "D01-O6",
+        "D01-O5",
+        "D01-O7",
+        "D01-O3"
       ]
     },
     {
@@ -1181,7 +1309,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Case 2 notebook",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M08-T02",
@@ -1189,7 +1319,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "成果档案2",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M08-T03",
@@ -1197,7 +1329,9 @@
           "goal_id": "D01-O6",
           "priority": "Medium",
           "evidence": "Leadership feedback",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M08-T04",
@@ -1205,7 +1339,9 @@
           "goal_id": "D01-O8",
           "priority": "Medium",
           "evidence": "Interview review",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M08-T05",
@@ -1213,8 +1349,19 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q3",
+      "goal_ids": [
+        "D01-O5",
+        "D01-O4",
+        "D01-O6",
+        "D01-O8",
+        "D01-O7"
       ]
     },
     {
@@ -1229,7 +1376,9 @@
           "goal_id": "D01-O5",
           "priority": "High",
           "evidence": "Case 2 final",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M09-T02",
@@ -1237,7 +1386,9 @@
           "goal_id": "D01-O3",
           "priority": "Critical",
           "evidence": "Q3 Career decision",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M09-T03",
@@ -1245,7 +1396,9 @@
           "goal_id": "D01-O6",
           "priority": "High",
           "evidence": "Project leadership record",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M09-T04",
@@ -1253,7 +1406,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "Q3 Review",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M09-T05",
@@ -1261,8 +1416,19 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "累计27次",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q3",
+      "goal_ids": [
+        "D01-O5",
+        "D01-O3",
+        "D01-O6",
+        "D01-O1",
+        "D01-O7"
       ]
     },
     {
@@ -1277,7 +1443,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "Promotion evidence pack",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M10-T02",
@@ -1285,7 +1453,9 @@
           "goal_id": "D01-O8",
           "priority": "High",
           "evidence": "Credit/Market/Quant resumes",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M10-T03",
@@ -1293,7 +1463,9 @@
           "goal_id": "D01-O3",
           "priority": "High",
           "evidence": "Career discussion",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M10-T04",
@@ -1301,7 +1473,9 @@
           "goal_id": "D01-O8",
           "priority": "Medium",
           "evidence": "Mock interview log",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M10-T05",
@@ -1309,8 +1483,18 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4",
+      "goal_ids": [
+        "D01-O4",
+        "D01-O8",
+        "D01-O3",
+        "D01-O7"
       ]
     },
     {
@@ -1325,7 +1509,9 @@
           "goal_id": "D01-O3",
           "priority": "Critical",
           "evidence": "Title/Base assessment",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M11-T02",
@@ -1333,7 +1519,9 @@
           "goal_id": "D01-O2",
           "priority": "High",
           "evidence": "Opportunity pipeline",
-          "conditional": true
+          "conditional": true,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M11-T03",
@@ -1341,7 +1529,9 @@
           "goal_id": "D01-O6",
           "priority": "Medium",
           "evidence": "Leadership story bank",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M11-T04",
@@ -1349,7 +1539,9 @@
           "goal_id": "D01-O8",
           "priority": "Low",
           "evidence": "Optional research draft",
-          "conditional": true
+          "conditional": true,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M11-T05",
@@ -1357,8 +1549,19 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "3次交流记录",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4",
+      "goal_ids": [
+        "D01-O3",
+        "D01-O2",
+        "D01-O6",
+        "D01-O8",
+        "D01-O7"
       ]
     },
     {
@@ -1373,7 +1576,9 @@
           "goal_id": "D01-O3",
           "priority": "Critical",
           "evidence": "Year-end outcome evidence",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M12-T02",
@@ -1381,7 +1586,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "Annual KPI review",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M12-T03",
@@ -1389,7 +1596,9 @@
           "goal_id": "D01-O1",
           "priority": "High",
           "evidence": "2030 roadmap",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M12-T04",
@@ -1397,7 +1606,9 @@
           "goal_id": "D01-O4",
           "priority": "High",
           "evidence": "Annual evidence report",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         },
         {
           "id": "D01-M12-T05",
@@ -1405,8 +1616,18 @@
           "goal_id": "D01-O7",
           "priority": "Medium",
           "evidence": "Networking year-end",
-          "conditional": false
+          "conditional": false,
+          "task_type": "deliverable",
+          "tracking": "checkbox_with_evidence"
         }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4",
+      "goal_ids": [
+        "D01-O3",
+        "D01-O1",
+        "D01-O4",
+        "D01-O7"
       ]
     }
   ],
@@ -1423,28 +1644,38 @@
           "title": "推进本月重点 / Focus: 确认当前雇佣状态与PFT文件；若仅延约则启动正式岗位求职",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M01-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W01-T02",
           "title": "交付或记录下一项证据 / Evidence: 3份JD及能力要求",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M01-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W01-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W01-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W02",
@@ -1458,34 +1689,46 @@
           "title": "推进本月重点 / Focus: 确认当前雇佣状态与PFT文件；若仅延约则启动正式岗位求职",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M01-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W02-T02",
           "title": "交付或记录下一项证据 / Evidence: 3份JD及能力要求",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M01-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W02-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W02-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W02-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W03",
@@ -1499,34 +1742,46 @@
           "title": "推进本月重点 / Focus: 梳理Credit / Market / CCR岗位需求，收集首批3份JD",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M01-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W03-T02",
           "title": "交付或记录下一项证据 / Evidence: 成果档案初版",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M01-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W03-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W03-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W03-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W04",
@@ -1540,34 +1795,46 @@
           "title": "推进本月重点 / Focus: 建立个人项目成果档案，记录至少1个工作项目的scope与基线",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M01-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W04-T02",
           "title": "交付或记录下一项证据 / Evidence: 2份可用简历",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M01-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W04-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W04-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W04-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W05",
@@ -1581,28 +1848,38 @@
           "title": "推进本月重点 / Focus: 更新Credit与Market简历、LinkedIn核心信息",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M01-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W05-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M01-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W05-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W05-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W06",
@@ -1616,34 +1893,46 @@
           "title": "推进本月重点 / Focus: 累计分析6份目标JD，比较至少2条Risk职业路线",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M02-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W06-T02",
           "title": "交付或记录下一项证据 / Evidence: 1份定位文件",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M02-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W06-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W06-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W06-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W07",
@@ -1657,34 +1946,46 @@
           "title": "推进本月重点 / Focus: 完成Career Positioning Statement第一版",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M02-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W07-T02",
           "title": "交付或记录下一项证据 / Evidence: Interview题库v1",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M02-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W07-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W07-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W07-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W08",
@@ -1698,34 +1999,46 @@
           "title": "推进本月重点 / Focus: 准备10道Technical问题与3个Behavioral故事",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M02-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W08-T02",
           "title": "交付或记录下一项证据 / Evidence: 项目反馈1项",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M02-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W08-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W08-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W08-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W09",
@@ -1739,28 +2052,38 @@
           "title": "推进本月重点 / Focus: 取得一份真实项目的工作反馈或交付证据",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M02-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W09-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M02-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W09-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W09-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W10",
@@ -1774,34 +2097,46 @@
           "title": "推进本月重点 / Focus: 执行Q1 PFT、晋升路径及风险状态Review",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M03-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W10-T02",
           "title": "交付或记录下一项证据 / Evidence: Skill gap document",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M03-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W10-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W10-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W10-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W11",
@@ -1815,34 +2150,46 @@
           "title": "推进本月重点 / Focus: 完成首份技能差距分析，并选择技术Case 1主题",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M03-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W11-T02",
           "title": "交付或记录下一项证据 / Evidence: Plan B决策",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M03-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W11-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W11-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W11-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W12",
@@ -1856,34 +2203,46 @@
           "title": "推进本月重点 / Focus: 针对内部/外部机会更新岗位申请策略（按条件启动）",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M03-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W12-T02",
           "title": "交付或记录下一项证据 / Evidence: Mock Interview 1",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M03-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W12-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W12-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W12-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W13",
@@ -1897,28 +2256,38 @@
           "title": "推进本月重点 / Focus: 完成首场Mock Interview并复盘",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M03-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W13-T02",
           "title": "交付或记录下一项证据 / Evidence: 全年累计9次",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M03-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W13-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W13-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W14",
@@ -1932,28 +2301,38 @@
           "title": "推进本月重点 / Focus: 完成首场Mock Interview并复盘",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M03-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W14-T02",
           "title": "交付或记录下一项证据 / Evidence: 全年累计9次",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M03-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W14-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W14-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q1"
     },
     {
       "id": "D01-W15",
@@ -1967,34 +2346,46 @@
           "title": "推进本月重点 / Focus: 确定Credit Risk Case 1研究问题、公开/合成数据及评估指标",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M04-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W15-T02",
           "title": "交付或记录下一项证据 / Evidence: 可运行notebook",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M04-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W15-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W15-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W15-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W16",
@@ -2008,34 +2399,46 @@
           "title": "推进本月重点 / Focus: 实现数据清理、基础风险指标及初版分析脚本",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M04-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W16-T02",
           "title": "交付或记录下一项证据 / Evidence: 责任范围记录",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M04-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W16-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W16-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W16-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W17",
@@ -2049,34 +2452,46 @@
           "title": "推进本月重点 / Focus: 落实一项工作流的独立Owner范围",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M04-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W17-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M04-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W17-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W17-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W17-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W18",
@@ -2090,28 +2505,38 @@
           "title": "推进本月重点 / Focus: 完成当月3次职业交流",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M04-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W18-T02",
           "title": "交付或记录下一项证据 / Evidence: 薪资对标资料",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M04-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W18-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W18-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W19",
@@ -2125,34 +2550,46 @@
           "title": "推进本月重点 / Focus: Case 1完成验证、局限性及Business Interpretation",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M05-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W19-T02",
           "title": "交付或记录下一项证据 / Evidence: 业务影响证据",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M05-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W19-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W19-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W19-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W20",
@@ -2166,34 +2603,46 @@
           "title": "推进本月重点 / Focus: 记录至少1项量化Business Impact并核对基线",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M05-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W20-T02",
           "title": "交付或记录下一项证据 / Evidence: 谈话纪要",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M05-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W20-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W20-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W20-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W21",
@@ -2207,34 +2656,46 @@
           "title": "推进本月重点 / Focus: 完成一次正式职业发展或晋升讨论（适用时）",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M05-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W21-T02",
           "title": "交付或记录下一项证据 / Evidence: 10个market samples",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M05-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W21-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W21-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W21-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W22",
@@ -2248,28 +2709,38 @@
           "title": "推进本月重点 / Focus: 累计收集10个岗位及薪酬样本",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M05-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W22-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M05-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W22-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W22-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W23",
@@ -2283,28 +2754,38 @@
           "title": "推进本月重点 / Focus: 累计收集10个岗位及薪酬样本",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M05-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W23-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M05-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W23-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W23-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W24",
@@ -2318,34 +2799,46 @@
           "title": "推进本月重点 / Focus: 核实截至6月30日PFT状态；未达成则升级求职计划",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M06-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W24-T02",
           "title": "交付或记录下一项证据 / Evidence: Case 1 final",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M06-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W24-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W24-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W24-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W25",
@@ -2359,34 +2852,46 @@
           "title": "推进本月重点 / Focus: 完成Case 1最终版并汇总项目证据",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M06-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W25-T02",
           "title": "交付或记录下一项证据 / Evidence: 职业路径优先级表",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M06-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W25-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W25-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W25-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W26",
@@ -2400,34 +2905,46 @@
           "title": "推进本月重点 / Focus: 完成3个Risk方向和12份JD对比并选主/备选路线",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M06-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W26-T02",
           "title": "交付或记录下一项证据 / Evidence: Q2 Review",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M06-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W26-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W26-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W26-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W27",
@@ -2441,28 +2958,38 @@
           "title": "推进本月重点 / Focus: 完成Q2复盘及至少1项关键Ownership成果记录",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M06-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W27-T02",
           "title": "交付或记录下一项证据 / Evidence: 累计18次交流",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M06-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W27-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W27-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q2"
     },
     {
       "id": "D01-W28",
@@ -2476,34 +3003,46 @@
           "title": "推进本月重点 / Focus: 识别并承担一个跨团队项目/工作流的协调责任",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M07-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W28-T02",
           "title": "交付或记录下一项证据 / Evidence: Case 2 outline",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M07-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W28-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W28-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W28-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W29",
@@ -2517,34 +3056,46 @@
           "title": "推进本月重点 / Focus: 选择第二个Technical Case方向（Market / CCR / Methodology）",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M07-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W29-T02",
           "title": "交付或记录下一项证据 / Evidence: Behavioral story",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M07-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W29-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W29-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W29-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W30",
@@ -2558,34 +3109,46 @@
           "title": "推进本月重点 / Focus: 总结一个Stakeholder conflict及解决路线",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M07-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W30-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M07-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W30-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W30-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W30-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W31",
@@ -2599,28 +3162,38 @@
           "title": "推进本月重点 / Focus: 完成3次职业交流",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M07-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W31-T02",
           "title": "交付或记录下一项证据 / Evidence: 晋升机会复核",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M07-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W31-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W31-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W32",
@@ -2634,34 +3207,46 @@
           "title": "推进本月重点 / Focus: 完成Case 2的数据/模型/验证主要部分",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M08-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W32-T02",
           "title": "交付或记录下一项证据 / Evidence: 成果档案2",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M08-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W32-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W32-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W32-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W33",
@@ -2675,34 +3260,46 @@
           "title": "推进本月重点 / Focus: 形成第二项重要业务Owner成果记录",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M08-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W33-T02",
           "title": "交付或记录下一项证据 / Evidence: Leadership feedback",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M08-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W33-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W33-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W33-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W34",
@@ -2716,34 +3313,46 @@
           "title": "推进本月重点 / Focus: 取得一次具体的领导/项目协调反馈",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M08-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W34-T02",
           "title": "交付或记录下一项证据 / Evidence: Interview review",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M08-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W34-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W34-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W34-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W35",
@@ -2757,28 +3366,38 @@
           "title": "推进本月重点 / Focus: 完成一次Mock Interview并更新题库",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M08-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W35-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M08-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W35-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W35-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W36",
@@ -2792,28 +3411,38 @@
           "title": "推进本月重点 / Focus: 完成一次Mock Interview并更新题库",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M08-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W36-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M08-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W36-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W36-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W37",
@@ -2827,34 +3456,46 @@
           "title": "推进本月重点 / Focus: 完成Case 2，并达到2个技术案例累计目标",
           "goal_id": "D01-O5",
           "monthly_task_id": "D01-M09-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W37-T02",
           "title": "交付或记录下一项证据 / Evidence: Q3 Career decision",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M09-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W37-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W37-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W37-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W38",
@@ -2868,34 +3509,46 @@
           "title": "推进本月重点 / Focus: 评估目标岗位实际Senior Analyst/薪酬进展；无可信路径则扩大外部搜索",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M09-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W38-T02",
           "title": "交付或记录下一项证据 / Evidence: Project leadership record",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M09-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W38-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W38-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W38-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W39",
@@ -2909,34 +3562,46 @@
           "title": "推进本月重点 / Focus: 完成至少1项跨团队领导经历并记录成果",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M09-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W39-T02",
           "title": "交付或记录下一项证据 / Evidence: Q3 Review",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M09-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W39-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W39-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W39-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W40",
@@ -2950,28 +3615,38 @@
           "title": "推进本月重点 / Focus: 完成Q3正式Review，核对KPI和优先级",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M09-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W40-T02",
           "title": "交付或记录下一项证据 / Evidence: 累计27次",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M09-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W40-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W40-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q3"
     },
     {
       "id": "D01-W41",
@@ -2985,34 +3660,46 @@
           "title": "推进本月重点 / Focus: 整理2项Ownership、1项Business Impact和Leadership案例",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M10-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W41-T02",
           "title": "交付或记录下一项证据 / Evidence: Credit/Market/Quant resumes",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M10-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W41-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W41-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W41-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W42",
@@ -3026,34 +3713,46 @@
           "title": "推进本月重点 / Focus: 更新三套专用简历并匹配当前岗位JD",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M10-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W42-T02",
           "title": "交付或记录下一项证据 / Evidence: Career discussion",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M10-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W42-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W42-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W42-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W43",
@@ -3067,34 +3766,46 @@
           "title": "推进本月重点 / Focus: 完成一次职业发展/晋升讨论或市场对标",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M10-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W43-T02",
           "title": "交付或记录下一项证据 / Evidence: Mock interview log",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M10-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W43-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W43-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W43-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W44",
@@ -3108,28 +3819,38 @@
           "title": "推进本月重点 / Focus: 复盘全年Mock Interview进度，补齐缺口",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M10-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W44-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M10-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W44-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W44-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W45",
@@ -3143,34 +3864,46 @@
           "title": "推进本月重点 / Focus: 审查当前正式职级及Base，与Senior Analyst和$100k目标对标",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M11-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W45-T02",
           "title": "交付或记录下一项证据 / Evidence: Opportunity pipeline",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M11-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W45-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W45-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W45-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W46",
@@ -3184,34 +3917,46 @@
           "title": "推进本月重点 / Focus: 必要时启动/继续目标岗位申请与面试（不强制数量）",
           "goal_id": "D01-O2",
           "monthly_task_id": "D01-M11-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W46-T02",
           "title": "交付或记录下一项证据 / Evidence: Leadership story bank",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M11-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W46-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W46-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W46-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W47",
@@ -3225,34 +3970,46 @@
           "title": "推进本月重点 / Focus: 完成至少3份Leadership面试案例的最终复盘",
           "goal_id": "D01-O6",
           "monthly_task_id": "D01-M11-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W47-T02",
           "title": "交付或记录下一项证据 / Evidence: Optional research draft",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M11-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W47-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W47-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W47-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W48",
@@ -3266,28 +4023,38 @@
           "title": "推进本月重点 / Focus: 整理行业文章或研究初稿（仅空余时）",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M11-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W48-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M11-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W48-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W48-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W49",
@@ -3301,28 +4068,38 @@
           "title": "推进本月重点 / Focus: 整理行业文章或研究初稿（仅空余时）",
           "goal_id": "D01-O8",
           "monthly_task_id": "D01-M11-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W49-T02",
           "title": "交付或记录下一项证据 / Evidence: 3次交流记录",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M11-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W49-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W49-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W50",
@@ -3336,34 +4113,46 @@
           "title": "推进本月重点 / Focus: 核验12月31日正式职级、Base和雇佣状态",
           "goal_id": "D01-O3",
           "monthly_task_id": "D01-M12-T01",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W50-T02",
           "title": "交付或记录下一项证据 / Evidence: Annual KPI review",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M12-T02",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W50-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W50-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W50-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W51",
@@ -3377,34 +4166,46 @@
           "title": "推进本月重点 / Focus: 核对全部40项KPI的实际数据及适用性",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M12-T02",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W51-T02",
           "title": "交付或记录下一项证据 / Evidence: 2030 roadmap",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M12-T03",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W51-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W51-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W51-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W52",
@@ -3418,34 +4219,46 @@
           "title": "推进本月重点 / Focus: 完成2028–2030 Career Roadmap和下一年优先级",
           "goal_id": "D01-O1",
           "monthly_task_id": "D01-M12-T03",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W52-T02",
           "title": "交付或记录下一项证据 / Evidence: Annual evidence report",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M12-T04",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W52-T05",
           "title": "完成1次有价值Coffee Chat或跟进既有职业联系人 / Networking",
           "goal_id": "D01-O7",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W52-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W52-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         }
-      ]
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
     },
     {
       "id": "D01-W53",
@@ -3459,26 +4272,338 @@
           "title": "推进本月重点 / Focus: 总结项目、技术、Leadership和Networking年度成果",
           "goal_id": "D01-O4",
           "monthly_task_id": "D01-M12-T04",
-          "priority": "High"
+          "priority": "High",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W53-T02",
           "title": "交付或记录下一项证据 / Evidence: Networking year-end",
           "goal_id": "D01-O7",
           "monthly_task_id": "D01-M12-T05",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W53-T03",
           "title": "更新本周工作成果日志：新增1条真实贡献、风险或学习记录 / Work evidence log",
           "goal_id": "D01-O4",
-          "priority": "Medium"
+          "priority": "Medium",
+          "task_type": "next_action",
+          "tracking": "checkbox"
         },
         {
           "id": "D01-W53-T04",
           "title": "完成周末10分钟职业复盘：下周优先级与时间冲突 / Weekly review",
           "goal_id": "D01-O1",
-          "priority": "Low"
+          "priority": "Low",
+          "task_type": "next_action",
+          "tracking": "checkbox"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4"
+    }
+  ],
+  "information_architecture": {
+    "annual": "Strategic outcomes and evidence-based success criteria; not a checklist",
+    "quarterly": "Strategic milestones, decision gates, KPI targets and contingency triggers",
+    "monthly": "Concrete deliverables, actionable checklist with evidence",
+    "weekly": "Next actions / checkboxes, with optional links to monthly deliverables",
+    "tracker": "Completion is action tracking; KPI actuals and annual achievement are verified separately"
+  },
+  "annual_strategy": {
+    "title": "2027 Career Strategy / 职业发展总战略",
+    "primary_outcomes": [
+      {
+        "goal_id": "D01-O2",
+        "description": "2027-06-30 前获得并开始稳定正式 PFT 工作 / Secure permanent employment"
+      },
+      {
+        "goal_id": "D01-O3",
+        "description": "2027-12-31 前实现 Senior Analyst/等效职级与 >= CAD 100,000 base salary，两者独立验证"
+      },
+      {
+        "goal_id": "D01-O4",
+        "description": "通过实际 Ownership 与量化业务影响积累晋升证据"
+      }
+    ],
+    "supporting_capabilities": [
+      "Risk Analytics / Methodology skill cases",
+      "Cross-functional leadership",
+      "Durable professional network",
+      "Interview and professional branding"
+    ],
+    "decision_rule": "Employment stability first when at risk; Senior Analyst title and base salary are distinct, equally important outcomes.",
+    "success_rule": "Checklist completion measures execution, never substitutes for signed employment status, title, salary, project evidence or KPI actual."
+  },
+  "quarterly_plans": [
+    {
+      "quarter": "Q1",
+      "title": "Stabilize & Position / 稳定就业与职业定位",
+      "dates": "2027-01-01 — 2027-03-31",
+      "strategic_focus": "清楚确定就业风险、职业定位与可迁移优势，为 Q2 正式岗位和成长路径创造条件。",
+      "decision_gate": "3月31日前确认 PFT 进展质量，若只有延约/讨论则外部正式职位搜索持续推进。",
+      "must_win": [
+        "明确合同/PFT 真实状态与应对路径",
+        "完成职业定位文件、至少2个方向与6份JD初步比较",
+        "形成可描述的工作成果档案与技能差距分析"
+      ],
+      "risk_trigger": "无可靠岗位稳定进展、合同终止风险或工作许可条件变化",
+      "kpi_ids": [
+        "D01-K03",
+        "D01-K07",
+        "D01-K21",
+        "D01-K31",
+        "D01-K38"
+      ],
+      "monthly_ids": [
+        "D01-M01",
+        "D01-M02",
+        "D01-M03"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D01-O1",
+          "title": "形成灵活且有竞争力的风险管理职业路线",
+          "milestone": "完成职业定位文件；分析至少2个方向和6份JD"
+        },
+        {
+          "goal_id": "D01-O2",
+          "title": "在2027年Q2前实现稳定PFT就业",
+          "milestone": "落实合同/转正状态；若无PFT启动条件性求职；完成季度风险复盘"
+        },
+        {
+          "goal_id": "D01-O3",
+          "title": "实现Senior Analyst职级与CAD100k–110k基本年薪",
+          "milestone": "职位和薪酬基准调研；首次Scope对标"
+        },
+        {
+          "goal_id": "D01-O4",
+          "title": "形成可量化的关键业务成果",
+          "milestone": "明确现有责任范围，记录交付和质量基线"
+        },
+        {
+          "goal_id": "D01-O5",
+          "title": "建立高级Risk Analytics与Methodology能力",
+          "milestone": "完成技术技能差距分析，选定两个案例主题"
+        },
+        {
+          "goal_id": "D01-O6",
+          "title": "积累Manager-Level领导力证据",
+          "milestone": "识别项目领导机会与工作边界"
+        },
+        {
+          "goal_id": "D01-O7",
+          "title": "建立长期有效的风险领域职业网络",
+          "milestone": "职业交流累计9次；完成第一季度联系人复盘"
+        },
+        {
+          "goal_id": "D01-O8",
+          "title": "形成高级风险岗位的职业品牌",
+          "milestone": "更新LinkedIn和现有简历；至少1次Mock Interview"
+        }
+      ]
+    },
+    {
+      "quarter": "Q2",
+      "title": "Secure & Deliver / 确保正式岗位与交付",
+      "dates": "2027-04-01 — 2027-06-30",
+      "strategic_focus": "以 6月30日 PFT 为硬节点，同时形成第一项可展示的 Risk Analytics Case 和明确的晋升标准。",
+      "decision_gate": "6月30日前核验正式PFT已开始；未实现则把就业安全和高质量外部求职置于首位。",
+      "must_win": [
+        "取得并开始合适正式 PFT（若未达成则执行 Plan B）",
+        "累计比较至少3个方向与12份JD，选择主备路线",
+        "完成Credit/Data Analytics Case 1，明确1项 Ownership 成果"
+      ],
+      "risk_trigger": "仅续约无正式 PFT，或内部发展讨论缺乏可执行条件",
+      "kpi_ids": [
+        "D01-K06",
+        "D01-K12",
+        "D01-K22",
+        "D01-K35",
+        "D01-K31"
+      ],
+      "monthly_ids": [
+        "D01-M04",
+        "D01-M05",
+        "D01-M06"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D01-O1",
+          "title": "形成灵活且有竞争力的风险管理职业路线",
+          "milestone": "累计完成3个专业方向和12份JD分析；选定主要+备选方向"
+        },
+        {
+          "goal_id": "D01-O2",
+          "title": "在2027年Q2前实现稳定PFT就业",
+          "milestone": "6月30日前争取获得并开始合适PFT；完成第2次风险复盘"
+        },
+        {
+          "goal_id": "D01-O3",
+          "title": "实现Senior Analyst职级与CAD100k–110k基本年薪",
+          "milestone": "累计至少10个薪酬样本和1次正式发展讨论；明确晋升标准"
+        },
+        {
+          "goal_id": "D01-O4",
+          "title": "形成可量化的关键业务成果",
+          "milestone": "累计1项独立Ownership成果及首项业务影响候选"
+        },
+        {
+          "goal_id": "D01-O5",
+          "title": "建立高级Risk Analytics与Methodology能力",
+          "milestone": "完成Credit Risk/Data Analytics技术案例1"
+        },
+        {
+          "goal_id": "D01-O6",
+          "title": "积累Manager-Level领导力证据",
+          "milestone": "承担实际跨团队协调工作并积累案例"
+        },
+        {
+          "goal_id": "D01-O7",
+          "title": "建立长期有效的风险领域职业网络",
+          "milestone": "累计18次交流；加强跨行与校友联系"
+        },
+        {
+          "goal_id": "D01-O8",
+          "title": "形成高级风险岗位的职业品牌",
+          "milestone": "完成Credit/Market/Quant三套简历及第2次Mock"
+        }
+      ]
+    },
+    {
+      "quarter": "Q3",
+      "title": "Advance & Lead / 专业深化与领导力证据",
+      "dates": "2027-07-01 — 2027-09-30",
+      "strategic_focus": "构建 Senior Analyst 级别的技术深度、项目 Ownership 与跨团队协调能力，明确晋升可能性。",
+      "decision_gate": "9月30日前审视内部职级与薪资路线是否可信；若不可信，启动更强的外部机会测试。",
+      "must_win": [
+        "完成第二个 Market/CCR/Methodology Case，累计2个技术案例",
+        "累计2项重要 Ownership 与至少1项跨团队协调成果",
+        "对照Senior Analyst的scope和compensation完成Q3判断"
+      ],
+      "risk_trigger": "无可验证的晋升路径、重要项目长期不可获得或实际成长停滞",
+      "kpi_ids": [
+        "D01-K16",
+        "D01-K23",
+        "D01-K24",
+        "D01-K26",
+        "D01-K36"
+      ],
+      "monthly_ids": [
+        "D01-M07",
+        "D01-M08",
+        "D01-M09"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D01-O1",
+          "title": "形成灵活且有竞争力的风险管理职业路线",
+          "milestone": "根据实际岗位和面试反馈复核方向匹配"
+        },
+        {
+          "goal_id": "D01-O2",
+          "title": "在2027年Q2前实现稳定PFT就业",
+          "milestone": "稳定交付，必要时持续外部市场测试；完成第3次复盘"
+        },
+        {
+          "goal_id": "D01-O3",
+          "title": "实现Senior Analyst职级与CAD100k–110k基本年薪",
+          "milestone": "累计至少2次发展讨论；如晋升受阻评估外部机会"
+        },
+        {
+          "goal_id": "D01-O4",
+          "title": "形成可量化的关键业务成果",
+          "milestone": "累计2项重要Ownership成果；争取完整跨团队交付"
+        },
+        {
+          "goal_id": "D01-O5",
+          "title": "建立高级Risk Analytics与Methodology能力",
+          "milestone": "完成Market/CCR/Methodology技术案例2"
+        },
+        {
+          "goal_id": "D01-O6",
+          "title": "积累Manager-Level领导力证据",
+          "milestone": "完成至少1项领导或协调Ownership"
+        },
+        {
+          "goal_id": "D01-O7",
+          "title": "建立长期有效的风险领域职业网络",
+          "milestone": "累计27次交流；培育潜在Mentor关系"
+        },
+        {
+          "goal_id": "D01-O8",
+          "title": "形成高级风险岗位的职业品牌",
+          "milestone": "形成40题Technical、12个Behavioral故事及第3次Mock"
+        }
+      ]
+    },
+    {
+      "quarter": "Q4",
+      "title": "Convert & Review / 职级薪酬兑现与年终验收",
+      "dates": "2027-10-01 — 2027-12-31",
+      "strategic_focus": "把全年可验证的业务、技术与领导成果转化为正式职级和薪酬结果，并规划2028–2030路径。",
+      "decision_gate": "12月31日分别核验正式 Title（Senior Analyst+）与 Base（至少 CAD 100k），不以其他替代。",
+      "must_win": [
+        "核验 Senior Analyst 或等效职级与CAD 100k+ base salary两个独立结果",
+        "完成至少1项量化Business Impact、领导力/面试材料总结",
+        "完成年度40项 KPI 审核与2028–2030职业路线图"
+      ],
+      "risk_trigger": "年底薪酬或职级不达标且无可信短期路径",
+      "kpi_ids": [
+        "D01-K10",
+        "D01-K11",
+        "D01-K17",
+        "D01-K31",
+        "D01-K38"
+      ],
+      "monthly_ids": [
+        "D01-M10",
+        "D01-M11",
+        "D01-M12"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D01-O1",
+          "title": "形成灵活且有竞争力的风险管理职业路线",
+          "milestone": "形成2028–2030职业路线图"
+        },
+        {
+          "goal_id": "D01-O2",
+          "title": "在2027年Q2前实现稳定PFT就业",
+          "milestone": "复核岗位长期稳定和成长条件；完成第4次复盘"
+        },
+        {
+          "goal_id": "D01-O3",
+          "title": "实现Senior Analyst职级与CAD100k–110k基本年薪",
+          "milestone": "验证Senior Analyst等效职级和有效Base>=CAD100k两个独立结果"
+        },
+        {
+          "goal_id": "D01-O4",
+          "title": "形成可量化的关键业务成果",
+          "milestone": "完成至少1项量化业务影响和3个STAR成果案例"
+        },
+        {
+          "goal_id": "D01-O5",
+          "title": "建立高级Risk Analytics与Methodology能力",
+          "milestone": "进行至少2次案例复盘并评价岗位匹配能力"
+        },
+        {
+          "goal_id": "D01-O6",
+          "title": "积累Manager-Level领导力证据",
+          "milestone": "汇总至少2项跨团队案例、2项建议案例、3个Leadership故事及2次反馈"
+        },
+        {
+          "goal_id": "D01-O7",
+          "title": "建立长期有效的风险领域职业网络",
+          "milestone": "累计至少36次交流；3位长期联系人和4次复盘"
+        },
+        {
+          "goal_id": "D01-O8",
+          "title": "形成高级风险岗位的职业品牌",
+          "milestone": "完成第4次Mock及2项能力证据；视资源完成文章/研究Stretch"
         }
       ]
     }
