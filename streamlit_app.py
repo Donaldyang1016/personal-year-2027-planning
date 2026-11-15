@@ -80,26 +80,68 @@ def todo_progress(tasks):
     completed = sum(bool(st.session_state.todo_records[t['id']]['done']) for t in included)
     return completed, len(included)
 
-def render_todos(tasks, key_prefix):
+
+def update_todo(tid, field):
+    rec = st.session_state.todo_records[tid]
+    new_value = bool(st.session_state[f'{field}_{tid}'])
+    rec[field] = new_value
+    if new_value:
+        rec['skipped' if field == 'done' else 'done'] = False
+    rec['updated_at'] = datetime.now().isoformat(timespec='seconds')
+    st.session_state.activity_log.insert(0, {
+        'task_id': tid, 'date': rec['updated_at'],
+        'done': rec['done'], 'skipped': rec['skipped']
+    })
+    st.session_state.activity_log = st.session_state.activity_log[:1500]
+
+
+def progress_bar(tasks, label='Completion / 完成率'):
+    done, total = todo_progress(tasks)
+    pct = round(100 * done / total) if total else 0
+    a, b = st.columns([4, 1], vertical_alignment='center')
+    with a:
+        st.caption(label)
+        st.progress(done / total if total else 0)
+    with b:
+        st.metric('Completed', f'{done}/{total}')
+    return pct
+
+
+def render_todos(tasks, key_prefix='todo'):
+    """Short action rows with reliable session-state callbacks."""
     if not tasks:
-        st.info('暂无任务 / No tasks yet')
+        st.info('暂无任务 / No tasks available')
         return
-    completed, total = todo_progress(tasks)
-    st.progress(completed / total if total else 1.0, text=f'{completed}/{total} completed · {round(completed / total * 100) if total else 100}%')
+    progress_bar(tasks)
     for task in tasks:
         tid = task['id']
         record = st.session_state.todo_records[tid]
-        col_a, col_b = st.columns([0.83, 0.17], vertical_alignment='center')
-        with col_a:
-            marked = st.checkbox(task['title'], value=record['done'], key=f'{key_prefix}_done_{tid}', disabled=record['skipped'])
-        with col_b:
-            skipped = st.checkbox('Skip / N/A', value=record['skipped'], key=f'{key_prefix}_skip_{tid}', help='Exclude unavailable or conditional tasks')
-        if marked != record['done'] or skipped != record['skipped']:
-            record.update({'done': marked if not skipped else False, 'skipped': skipped, 'updated_at':datetime.now().isoformat(timespec='seconds')})
-            st.session_state.activity_log.insert(0,{'task_id':tid,'date':record['updated_at'],'done':record['done'],'skipped':skipped})
-            st.rerun()
-        st.caption(f"{tid}  ·  {task.get('goal_id','')}  ·  {task.get('priority','')}")
-
+        check_key, skip_key = f'done_{tid}', f'skipped_{tid}'
+        # Widget state is initialized once. Restore-backup clears these keys.
+        if check_key not in st.session_state:
+            st.session_state[check_key] = bool(record['done'])
+        if skip_key not in st.session_state:
+            st.session_state[skip_key] = bool(record['skipped'])
+        left, right = st.columns([5, 1], vertical_alignment='center')
+        with left:
+            st.checkbox(task.get('title', tid), key=check_key,
+                        disabled=bool(record['skipped']),
+                        on_change=update_todo, args=(tid, 'done'))
+            st.caption(f"{task.get('priority','Normal')} priority  ·  {task.get('goal_id','')}  ·  {tid}")
+        with right:
+            st.checkbox('N/A', key=skip_key,
+                        help='Not applicable — exclude from progress',
+                        on_change=update_todo, args=(tid, 'skipped'))
+        if task.get('evidence') or task.get('monthly_task_id'):
+            with st.expander('Details / 查看对应目标', expanded=False):
+                if task.get('evidence'):
+                    st.write('**Evidence:**', task['evidence'])
+                if task.get('monthly_task_id'):
+                    st.write('**Monthly deliverable:**', task['monthly_task_id'])
+                gid = task.get('goal_id')
+                if gid in goal_by_id:
+                    st.write('**Annual objective:**', goal_by_id[gid].get('title_zh') or goal_by_id[gid].get('title', gid))
+        st.divider()
 
 def export_backup():
     return {'schema_version': 3, 'exported_at': datetime.now().isoformat(timespec='seconds'),
@@ -174,158 +216,303 @@ def render_goal(g, details=True):
         if rec['notes']:
             st.caption('Latest note: ' + rec['notes'])
 
-st.markdown('''<style>.block-container{padding-top:1.5rem;max-width:1300px}
-[data-testid="stMetric"]{border:1px solid rgba(128,128,128,.2);padding:12px;border-radius:12px}</style>''', unsafe_allow_html=True)
+
+# ---------------------------------------------------------------------------
+# Personal Year 2027 V3 — Planning (rich) and Execution (action-first)
+# ---------------------------------------------------------------------------
+st.markdown("""
+<style>
+.block-container{padding-top:1.4rem;max-width:1240px}
+[data-testid="stMetric"]{border:1px solid rgba(128,128,128,.18);padding:12px;border-radius:12px}
+[data-testid="stVerticalBlock"] > div{scroll-margin-top:1rem}
+</style>
+""", unsafe_allow_html=True)
+
+DOMAIN_LABELS = {
+    'D01': 'Career & Professional Development',
+    'D02': 'Immigration & PR', 'D03': 'Learning & Skills',
+    'D04': 'Health & Fitness', 'D05': 'Personal Image',
+    'D06': 'Personal Finance', 'D07': 'Relationships',
+    'D08': 'Social Life', 'D09': 'Travel',
+    'D10': 'Interests', 'D11': 'Daily Life',
+    'D12': 'Mental Wellbeing'
+}
+
+def pretty_domain(did):
+    return f"{did} · {by_domain.get(did, {}).get('domain_name') or DOMAIN_LABELS.get(did, did)}"
+
+def active_goals(did):
+    return by_domain.get(did, {}).get('goals', [])
+
+def objectives_status(tasks):
+    d, n = todo_progress(tasks)
+    return f'{d}/{n} completed'
+
+def milestone_title(g):
+    return g.get('title_zh') or g.get('title') or g['id']
+
+def plan_vision(plan):
+    star = plan.get('north_star', {})
+    if isinstance(star, dict):
+        if star.get('vision_zh'):
+            st.write(star['vision_zh'])
+        if star.get('core_outcomes'):
+            st.markdown('**Annual outcomes / 年度结果**')
+            for item in star['core_outcomes']:
+                st.markdown('- ' + str(item))
+        if star.get('career_horizon_2030'):
+            st.caption('Long-term / 长期方向：' + str(star['career_horizon_2030']))
+    elif star:
+        st.write(star)
+
+def goal_card(g, quarter=None):
+    gid = g['id']
+    rec = st.session_state.goal_records[gid]
+    heading = milestone_title(g)
+    with st.expander(f"{gid} · {heading}  |  {rec['status']}", expanded=False):
+        st.caption(f"Priority: {g.get('priority', '—')}  ·  Deadline: {g.get('due', 'TBD')}")
+        if quarter:
+            st.markdown(f"**{quarter} Milestone / 本季度交付**")
+            st.write(g.get('quarterly', {}).get(quarter, 'No milestone defined'))
+        else:
+            cols = st.columns(3)
+            for col, (name, field) in zip(cols, [('MUST · 底线', 'must'), ('TARGET · 目标', 'target'), ('STRETCH · 冲刺', 'stretch')]):
+                with col:
+                    st.markdown('**' + name + '**')
+                    st.write(g.get(field, '—'))
+            st.markdown('**Quarterly roadmap / 季度路径**')
+            for q, value in g.get('quarterly', {}).items():
+                st.markdown(f'**{q}** · {value}')
+        if g.get('kpis'):
+            st.markdown('**Success metrics / KPI**')
+            metrics = []
+            for k in g['kpis']:
+                metrics.append({
+                    'Metric / 指标': k.get('label', k['id']),
+                    'Target': k.get('target'),
+                    'Actual': st.session_state.kpi_records[k['id']].get('actual'),
+                    'Unit': k.get('unit', ''),
+                    'Deadline': k.get('deadline', ''),
+                    'Level': k.get('level', '')
+                })
+            st.dataframe(pd.DataFrame(metrics), hide_index=True, use_container_width=True)
+        if g.get('plan_b'):
+            st.markdown('**Plan B / 备选方案**')
+            st.write(g['plan_b'])
+        st.progress(rec['progress'] / 100, text=f"Self-reported objective progress: {rec['progress']}%")
+        if rec.get('notes'):
+            st.caption('Evidence: ' + rec['notes'])
+
+def page_header(kicker, headline, description):
+    st.caption(kicker)
+    st.title(headline)
+    st.write(description)
+
+def month_sort(m):
+    return (m.get('month', ''), m.get('id', ''))
+
+def week_sort(w):
+    return (w.get('start', ''), w.get('id', ''))
+
 with st.sidebar:
     st.title('🎯 Personal Year 2027')
-    st.caption('Modular Dashboard · Domain files auto-discovered')
-    st.info('Goal definitions come from GitHub JSON files. Tracker edits remain in this browser session until exported.')
-    st.download_button('⬇️ Export tracker backup', data=json.dumps(export_backup(), ensure_ascii=False, indent=2),
-                       file_name=f'tracker-backup-{date.today().isoformat()}.json', mime='application/json', use_container_width=True)
+    st.caption('V3 · Planning + Execution')
+    st.markdown('**PLANNING / 战略**')
+    st.caption('Annual & Quarterly → detailed goals, milestones, KPIs, Plan B')
+    st.markdown('**EXECUTION / 执行**')
+    st.caption('Monthly & Weekly → tasks, checkboxes, progress')
+    st.divider()
+    st.caption('Tracker data is held in this Streamlit session. Export backup regularly.')
+    st.download_button(
+        '⬇️ Export tracker backup',
+        data=json.dumps(export_backup(), ensure_ascii=False, indent=2),
+        file_name=f'tracker-backup-{date.today().isoformat()}.json',
+        mime='application/json', use_container_width=True
+    )
     upload = st.file_uploader('Restore tracker backup', type='json')
-    if upload and st.button('Import backup', use_container_width=True):
+    if upload is not None and st.button('Import backup', use_container_width=True):
         try:
             restore_backup(json.load(upload))
-            st.success('Backup restored')
+            # Synchronize Streamlit widget state with the restored records.
+            for tid in todo_by_id:
+                st.session_state.pop(f'done_{tid}', None)
+                st.session_state.pop(f'skipped_{tid}', None)
+            st.success('Backup restored.')
             st.rerun()
         except (ValueError, json.JSONDecodeError, UnicodeDecodeError) as exc:
             st.error(str(exc))
     if load_errors:
         for err in load_errors:
             st.error('Domain data: ' + err)
+    st.caption(f"Loaded domains: {len(plans)} · Months: {len(monthly_plans)} · Weeks: {len(weekly_plans)}")
 
-st.title('Personal Year 2027')
-st.caption('Annual vision → Quarterly milestones → Monthly goals → Weekly action → Tracker')
-tabs = st.tabs(['🏠 Home','🎯 Annual','📅 Quarterly','🗓️ Monthly','✅ Weekly','📈 Tracker'])
+tabs = st.tabs([
+    '🏠 Dashboard', '🎯 Annual', '📅 Quarterly',
+    '🗓️ Monthly', '✅ Weekly', '📈 Progress'
+])
 
 with tabs[0]:
-    completed = sum(st.session_state.goal_records[g['id']]['status'] == 'Completed' for g in goals)
-    cols = st.columns(4)
-    cols[0].metric('Life domains', 12)
-    cols[1].metric('Imported domains', len(plans))
-    cols[2].metric('Annual objectives', len(goals))
-    cols[3].metric('Completed objectives', completed)
-    if todo_by_id:
-        done, total = todo_progress(list(todo_by_id.values()))
-        st.metric('Checklist tasks completed / 待办完成', f'{done} / {total}')
-        st.progress(done / total if total else 1.0)
-    st.subheader('12 life domains')
-    rows = [{'Domain': did, 'Name': domain_name(did),
-             'Plan status': by_domain.get(did,{}).get('status','Not imported'),
-             'Objectives': len(by_domain.get(did,{}).get('goals',[]))} for did in domain_ids]
-    st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+    page_header('OVERVIEW · 全年总览', 'Personal Year 2027',
+                'Strategy lives in Annual / Quarterly. Actions live in Monthly / Weekly.')
+    complete = sum(st.session_state.goal_records[g['id']]['status'] == 'Completed' for g in goals)
+    done, total = todo_progress(list(todo_by_id.values())) if todo_by_id else (0, 0)
+    a, b, c, d = st.columns(4)
+    a.metric('Life domains', '12')
+    b.metric('Imported plans', len(plans))
+    c.metric('Annual objectives', len(goals))
+    d.metric('Tasks completed', f'{done}/{total}')
+    if total:
+        st.progress(done / total, text=f'Execution completion: {round(100*done/total)}%')
+    st.subheader('Your 12 domains / 领域一览')
+    for i in range(0, 12, 3):
+        cols = st.columns(3)
+        for j, did in enumerate(domain_ids[i:i+3]):
+            with cols[j]:
+                plan = by_domain.get(did)
+                with st.container(border=True):
+                    st.markdown('**' + pretty_domain(did) + '**')
+                    if plan:
+                        st.caption(f"{len(plan.get('goals', []))} annual goals · Plan loaded")
+                    else:
+                        st.caption('Pending · 尚未导入')
+    st.subheader('What matters now / 当前重点')
     if goals:
-        st.subheader('Highlighted objectives')
-        for g in goals[:4]:
-            render_goal(g, details=False)
+        for g in goals:
+            if g.get('priority') in ('P0', 'P1'):
+                st.markdown(f"**{g['id']} · {milestone_title(g)}** — Due {g.get('due', 'TBD')}")
+    else:
+        st.info('Upload data/domains/D01.json to begin.')
 
 with tabs[1]:
-    st.header('Annual goals')
-    selected_domain = st.selectbox('Life domain', domain_ids, format_func=lambda did: f'{did} · {domain_name(did)}', key='annual_domain')
-    plan = by_domain.get(selected_domain)
-    if plan is None:
-        st.info(f'No approved plan uploaded yet. Add data/domains/{selected_domain}.json on GitHub.')
+    page_header('PLANNING · 年度规划', 'Annual Goals / 年度目标',
+                'Read the detailed goals here. Track daily work in Weekly.')
+    did = st.selectbox('Domain / 选择领域', domain_ids,
+                       format_func=pretty_domain, key='v3_annual_domain')
+    plan = by_domain.get(did)
+    if not plan:
+        st.info(f'No plan uploaded for {did}. Expected: data/domains/{did}.json')
     else:
-        st.caption(f"{plan.get('plan_version','Draft')} · {plan.get('status','')}")
-        if plan.get('north_star'):
-            st.markdown('**Annual vision / North Star**')
-            st.write(plan['north_star'])
-        for g in plan.get('goals',[]):
-            render_goal(g)
+        st.caption(str(plan.get('plan_version', 'Annual plan')))
+        with st.container(border=True):
+            st.markdown('### North Star / 年度愿景')
+            plan_vision(plan)
+        items = active_goals(did)
+        a, b, c = st.columns(3)
+        a.metric('Objectives', len(items))
+        b.metric('KPIs', sum(len(g.get('kpis', [])) for g in items))
+        c.metric('Objectives completed', sum(st.session_state.goal_records[g['id']]['status'] == 'Completed' for g in items))
+        st.markdown('### Detailed objectives / 详细年度目标')
+        for g in items:
+            goal_card(g)
         if plan.get('contingencies'):
-            st.subheader('Contingencies')
-            st.dataframe(pd.DataFrame(plan['contingencies']), hide_index=True, use_container_width=True)
+            with st.expander('Contingency scenarios / 风险预案'):
+                st.dataframe(pd.DataFrame(plan['contingencies']), hide_index=True, use_container_width=True)
 
 with tabs[2]:
-    st.header('Quarterly milestones')
-    quarter = st.selectbox('Quarter', ['Q1','Q2','Q3','Q4'])
-    filt = st.selectbox('Domain', ['All'] + domain_ids, format_func=lambda d: d if d=='All' else f'{d} · {domain_name(d)}')
-    filtered = [g for g in goals if filt=='All' or g['domain']==filt]
-    rows = [{'Domain': g['domain'], 'Goal': g['id'], 'Objective': g.get('title_zh') or g.get('title',''),
-             'Milestone': g.get('quarterly',{}).get(quarter, 'Not defined'),
-             'Status': st.session_state.goal_records[g['id']]['status']} for g in filtered]
-    if rows:
-        st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
-    else:
-        st.info('No milestones imported for this domain.')
+    page_header('PLANNING · 季度里程碑', 'Quarterly Goals / 季度目标',
+                'See each objective’s milestone, linked KPI, deadline and risk response.')
+    q = st.selectbox('Quarter / 选择季度', ['Q1', 'Q2', 'Q3', 'Q4'], key='v3_q')
+    filter_domain = st.selectbox('Domain', ['All'] + domain_ids,
+                                 format_func=lambda d: 'All imported domains' if d == 'All' else pretty_domain(d), key='v3_q_domain')
+    filtered = [g for g in goals if (filter_domain == 'All' or g['domain'] == filter_domain) and g.get('quarterly', {}).get(q)]
+    st.metric(f'{q} milestone objectives', len(filtered))
+    if not filtered:
+        st.info('No quarterly goals available for this selection.')
+    for g in filtered:
+        goal_card(g, quarter=q)
 
 with tabs[3]:
-    st.header('Monthly Goals · 月度计划')
-    if not monthly_plans:
-        st.info('请先在 data/domains/DNN.json 上传 monthly_plans。')
+    page_header('EXECUTION · 月度交付', 'Monthly Planner / 月度计划',
+                'Outcome first, then a short checklist. Check off only what is actually delivered.')
+    months = sorted(monthly_plans, key=month_sort)
+    if not months:
+        st.info('No monthly_plans loaded. Check the deployed JSON and data cache.')
     else:
-        choices = [m['id'] for m in monthly_plans]
-        cur_month = f'2027-{date.today().month:02d}' if date.today().year == 2027 else '2027-01'
-        default = next((i for i,m in enumerate(monthly_plans) if m.get('month') == cur_month), 0)
-        selected = st.selectbox('Select month / 选择月份', choices, index=default,
-            format_func=lambda key: next(f"{m['month']} · {m['title']}" for m in monthly_plans if m['id']==key))
-        month = next(m for m in monthly_plans if m['id'] == selected)
-        st.subheader(month['title'])
-        st.write('**Monthly outcome / 月度关键成果：** ' + month.get('outcome',''))
-        st.caption('Check off tasks as completed; Skip / N/A excludes inapplicable tasks from denominator.')
-        render_todos(month['tasks'], 'monthly')
-        st.caption('Monthly and weekly checklists are separate views; completing a weekly task does not auto-complete its parent month task.')
+        current_month = date.today().strftime('%Y-%m')
+        idx = next((i for i, m in enumerate(months) if m.get('month') == current_month), 0)
+        selected_month_id = st.selectbox('Month / 选择月份',
+            [m['id'] for m in months], index=idx,
+            format_func=lambda mid: next(f"{m['month']} · {m['title']}" for m in months if m['id'] == mid),
+            key='v3_month')
+        m = next(item for item in months if item['id'] == selected_month_id)
+        with st.container(border=True):
+            st.markdown('### Monthly outcome / 本月成果')
+            st.write(m.get('outcome', '—'))
+        render_todos(m.get('tasks', []), 'month')
+        st.caption('Monthly and weekly tasks have separate completion states. Weekly work does not automatically prove monthly delivery.')
 
 with tabs[4]:
-    st.header('Weekly Goals · 每周 To-do')
-    if not weekly_plans:
-        st.info('请先在 data/domains/DNN.json 上传 weekly_plans。')
+    page_header('EXECUTION · 每周行动', 'Weekly To-do / 每周任务',
+                'Your weekly action list: check tasks, mark N/A where appropriate, and review progress.')
+    weeks = sorted(weekly_plans, key=week_sort)
+    if not weeks:
+        st.info('No weekly_plans loaded. Check the deployed JSON and data cache.')
     else:
-        today = date.today().isoformat()
-        default = next((i for i,w in enumerate(weekly_plans) if w['start']<=today<=w['end']), 0)
-        selected = st.selectbox('Select week / 选择周', [w['id'] for w in weekly_plans], index=default,
-            format_func=lambda key: next(f"{w['start']} → {w['end']} · {w['title']}" for w in weekly_plans if w['id']==key))
-        week = next(w for w in weekly_plans if w['id']==selected)
-        st.subheader(week['title'])
-        st.caption(f"Week dates: {week['start']} – {week['end']}")
-        render_todos(week['tasks'], 'weekly')
-        st.caption('To-do changes live in session memory. Export the tracker backup before leaving.')
+        today_str = date.today().isoformat()
+        idx = next((i for i, w in enumerate(weeks) if w.get('start', '') <= today_str <= w.get('end', '')), 0)
+        week_id = st.selectbox('Week / 选择周', [w['id'] for w in weeks], index=idx,
+            format_func=lambda wid: next(f"{w['start']} → {w['end']} · {w['title']}" for w in weeks if w['id'] == wid),
+            key='v3_week')
+        w = next(item for item in weeks if item['id'] == week_id)
+        with st.container(border=True):
+            st.markdown(f"### {w.get('title', week_id)}")
+            st.caption(f"{w.get('start')} – {w.get('end')} · {w.get('month', '')}")
+        render_todos(w.get('tasks', []), 'week')
+        st.caption('A checked task tracks execution, not automatic achievement of an annual KPI.')
 
 with tabs[5]:
-    st.header('Progress tracker')
+    page_header('REVIEW · 结果复盘', 'Progress & Evidence / 进度追踪',
+                'Execution completion and real objective achievement are tracked separately.')
     if not goals:
-        st.info('Upload at least one domain plan first.')
+        st.info('Upload a domain plan to start tracking.')
     else:
-        st.caption('Goal progress is a self-assessment; KPI actual values are separate. Export a backup after edits.')
-        selected = st.selectbox('Objective', list(goal_by_id), format_func=lambda gid: f'{gid} · {goal_by_id[gid].get("title_zh") or goal_by_id[gid].get("title","")}')
-        rec = st.session_state.goal_records[selected]
-        with st.form('edit_goal'):
-            status = st.selectbox('Status', STATUSES, index=STATUSES.index(rec['status']))
-            progress = st.slider('Self-reported progress (%)', 0, 100, int(rec['progress']))
-            notes = st.text_area('Evidence / notes', value=rec['notes'])
-            if st.form_submit_button('Save objective progress'):
-                stamp = datetime.now().isoformat(timespec='seconds')
-                st.session_state.goal_records[selected] = {'status': status,'progress':progress,'notes':notes,'updated_at':stamp}
-                st.session_state.activity_log.insert(0, {'goal_id':selected,'date':stamp,'status':status,'progress':progress})
-                st.success('Saved to current session. Export backup to keep it.')
-        target_goal = goal_by_id[selected]
-        if target_goal.get('kpis'):
-            st.subheader('Numeric KPI tracking')
-            selected_kpi = st.selectbox('KPI', [k['id'] for k in target_goal['kpis']],
-                                        format_func=lambda kid: f'{kid} · {kpis[kid]["label"]}')
-            kpi = kpis[selected_kpi]
-            old_record = st.session_state.kpi_records[selected_kpi]
-            st.caption(f"Target: {kpi.get('target')} {kpi.get('unit','')} | Deadline: {kpi.get('deadline','')} | Condition: {kpi.get('condition','Always')}")
-            with st.form('edit_kpi'):
-                numeric = st.number_input('Actual value', value=float(old_record['actual'] or 0), step=1.0)
-                evidence = st.text_area('KPI evidence / notes', value=old_record['notes'])
-                if st.form_submit_button('Save KPI actual'):
-                    stamp = datetime.now().isoformat(timespec='seconds')
-                    st.session_state.kpi_records[selected_kpi] = {'actual':numeric,'notes':evidence,'updated_at':stamp}
-                    st.session_state.activity_log.insert(0, {'kpi_id':selected_kpi,'actual':numeric,'date':stamp})
-                    st.success('KPI saved to current session. Export backup to keep it.')
-        st.subheader('Checklist overview · Todo completion')
+        st.subheader('Execution / 执行完成率')
         rows = []
-        for m in monthly_plans:
-            c, n = todo_progress(m['tasks'])
-            rows.append({'Month': m.get('month'), 'Done': c, 'Applicable': n, 'Completion (%)': round(100*c/n) if n else 100})
+        for m in sorted(monthly_plans, key=month_sort):
+            done, total = todo_progress(m.get('tasks', []))
+            rows.append({'Month': m.get('month'), 'Completed': done, 'Applicable': total,
+                         'Completion %': round(100 * done / total) if total else 0})
         if rows:
             st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
-        st.subheader('All objectives')
-        st.dataframe(pd.DataFrame([{'Domain':g['domain'], 'Goal':g['id'],
-                   'Status':st.session_state.goal_records[g['id']]['status'],
-                   'Progress (%)':st.session_state.goal_records[g['id']]['progress']} for g in goals]),
-                   hide_index=True, use_container_width=True)
+        st.subheader('Annual objective review / 年度目标评估')
+        gid = st.selectbox('Objective', list(goal_by_id),
+            format_func=lambda x: f"{x} · {milestone_title(goal_by_id[x])}", key='v3_review_goal')
+        rec = st.session_state.goal_records[gid]
+        with st.form('v3_goal_form'):
+            status = st.selectbox('Status', STATUSES, index=STATUSES.index(rec['status']))
+            progress = st.slider('Self-reported progress (%)', 0, 100, int(rec['progress']))
+            notes = st.text_area('Evidence / 证据备注', value=rec['notes'])
+            if st.form_submit_button('Save objective assessment'):
+                stamp = datetime.now().isoformat(timespec='seconds')
+                st.session_state.goal_records[gid] = {
+                    'status': status, 'progress': progress,
+                    'notes': notes, 'updated_at': stamp
+                }
+                st.session_state.activity_log.insert(0, {'goal_id': gid, 'date': stamp, 'status': status, 'progress': progress})
+                st.success('Saved in this session. Export backup when finished.')
+        kpi_items = goal_by_id[gid].get('kpis', [])
+        if kpi_items:
+            st.subheader('KPI actual / 实际指标')
+            kid = st.selectbox('Metric', [k['id'] for k in kpi_items],
+                format_func=lambda x: f"{x} · {kpis[x].get('label', '')}", key='v3_kpi')
+            item = kpis[kid]
+            previous = st.session_state.kpi_records[kid]
+            st.caption(f"Target: {item.get('target', '—')} {item.get('unit', '')} · Deadline: {item.get('deadline', '')}")
+            with st.form('v3_kpi_form'):
+                actual = st.number_input('Actual value', value=float(previous['actual'] or 0), step=1.0)
+                evidence = st.text_area('Evidence / Notes', value=previous['notes'])
+                if st.form_submit_button('Save KPI'):
+                    stamp = datetime.now().isoformat(timespec='seconds')
+                    st.session_state.kpi_records[kid] = {'actual': actual, 'notes': evidence, 'updated_at': stamp}
+                    st.session_state.activity_log.insert(0, {'kpi_id': kid, 'date': stamp, 'actual': actual})
+                    st.success('KPI saved for this session.')
+        with st.expander('All objective status / 全部目标'):
+            st.dataframe(pd.DataFrame([
+                {'Domain': g['domain'], 'Objective': milestone_title(g),
+                 'Status': st.session_state.goal_records[g['id']]['status'],
+                 'Progress %': st.session_state.goal_records[g['id']]['progress']}
+                for g in goals
+            ]), hide_index=True, use_container_width=True)
         if st.session_state.activity_log:
-            st.subheader('Recent activity')
-            st.dataframe(pd.DataFrame(st.session_state.activity_log[:20]), hide_index=True, use_container_width=True)
+            with st.expander('Recent activity / 最近更新'):
+                st.dataframe(pd.DataFrame(st.session_state.activity_log[:25]), hide_index=True, use_container_width=True)
