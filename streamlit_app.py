@@ -423,7 +423,11 @@ with tabs[1]:
 with tabs[2]:
     page_header('PLANNING · 季度里程碑', 'Quarterly Goals / 季度目标',
                 'Strategic decisions, outcomes and KPI gates — not daily checklists.')
-    q = st.selectbox('Quarter / 选择季度', ['Q1', 'Q2', 'Q3', 'Q4'], key='v3_q')
+    periods = by_domain.get('D01', {}).get('planning_periods', [])
+    quarter_options = [p['id'] for p in periods] if periods else ['Q1', 'Q2', 'Q3', 'Q4', 'Q5']
+    period_labels = {p['id']: f"{p['id']} · {p['start']} → {p['end']} · {p.get('title', '')}" for p in periods}
+    q = st.selectbox('Planning period / 规划阶段', quarter_options,
+                     format_func=lambda x: period_labels.get(x, x), key='v3_q')
     filter_domain = st.selectbox('Domain', ['All'] + domain_ids,
                                  format_func=lambda d: 'All imported domains' if d == 'All' else pretty_domain(d), key='v3_q_domain')
     strategic = []
