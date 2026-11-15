@@ -404,6 +404,15 @@ with tabs[1]:
         a.metric('Objectives', len(items))
         b.metric('KPIs', sum(len(g.get('kpis', [])) for g in items))
         c.metric('Objectives completed', sum(st.session_state.goal_records[g['id']]['status'] == 'Completed' for g in items))
+        strategy = plan.get('annual_strategy', {})
+        if strategy:
+            with st.container(border=True):
+                st.markdown('### Strategic outcomes / 年度战略成果')
+                for item in strategy.get('primary_outcomes', []):
+                    st.markdown(f"**{item.get('goal_id', '')}** · {item.get('description', '')}")
+                st.markdown('**Decision rule / 决策原则**')
+                st.write(strategy.get('decision_rule', ''))
+                st.caption(strategy.get('success_rule', ''))
         st.markdown('### Detailed objectives / 详细年度目标')
         for g in items:
             goal_card(g)
@@ -413,16 +422,52 @@ with tabs[1]:
 
 with tabs[2]:
     page_header('PLANNING · 季度里程碑', 'Quarterly Goals / 季度目标',
-                'See each objective’s milestone, linked KPI, deadline and risk response.')
+                'Strategic decisions, outcomes and KPI gates — not daily checklists.')
     q = st.selectbox('Quarter / 选择季度', ['Q1', 'Q2', 'Q3', 'Q4'], key='v3_q')
     filter_domain = st.selectbox('Domain', ['All'] + domain_ids,
                                  format_func=lambda d: 'All imported domains' if d == 'All' else pretty_domain(d), key='v3_q_domain')
-    filtered = [g for g in goals if (filter_domain == 'All' or g['domain'] == filter_domain) and g.get('quarterly', {}).get(q)]
-    st.metric(f'{q} milestone objectives', len(filtered))
-    if not filtered:
-        st.info('No quarterly goals available for this selection.')
-    for g in filtered:
-        goal_card(g, quarter=q)
+    strategic = []
+    source_plans = plans if filter_domain == 'All' else [by_domain[filter_domain]] if filter_domain in by_domain else []
+    for source_plan in source_plans:
+        for quarter_plan in source_plan.get('quarterly_plans', []):
+            if quarter_plan.get('quarter') == q:
+                strategic.append((source_plan, quarter_plan))
+    for source_plan, quarter_plan in strategic:
+        st.subheader(f"{source_plan['domain_id']} · {quarter_plan.get('title', q)}")
+        with st.container(border=True):
+            st.caption(quarter_plan.get('dates', ''))
+            st.markdown('**Strategic focus / 战略方向**')
+            st.write(quarter_plan.get('strategic_focus', ''))
+            st.markdown('**Must-win outcomes / 本季关键成果**')
+            for item in quarter_plan.get('must_win', []):
+                st.markdown('- ' + str(item))
+            st.markdown('**Decision gate / 决策节点**')
+            st.write(quarter_plan.get('decision_gate', ''))
+            if quarter_plan.get('risk_trigger'):
+                st.markdown('**Risk trigger / 风险预案触发条件**')
+                st.write(quarter_plan['risk_trigger'])
+            linked = [kpis[kid] for kid in quarter_plan.get('kpi_ids', []) if kid in kpis]
+            if linked:
+                st.markdown('**Priority KPIs / 重点指标**')
+                st.dataframe(pd.DataFrame([{
+                    'KPI': k.get('label', k['id']),
+                    'Target': k.get('target'),
+                    'Actual': st.session_state.kpi_records[k['id']].get('actual'),
+                    'Deadline': k.get('deadline', '')
+                } for k in linked]), hide_index=True, use_container_width=True)
+        st.markdown('**Objective milestones / 各目标季度里程碑**')
+        for entry in quarter_plan.get('objective_milestones', []):
+            g = goal_by_id.get(entry.get('goal_id'))
+            if g:
+                goal_card(g, quarter=q)
+    if not strategic:
+        filtered = [g for g in goals if (filter_domain == 'All' or g['domain'] == filter_domain) and g.get('quarterly', {}).get(q)]
+        if not filtered:
+            st.info('No quarterly goals available for this selection.')
+        else:
+            st.caption('Legacy quarterly format / 兼容旧领域数据')
+            for g in filtered:
+                goal_card(g, quarter=q)
 
 with tabs[3]:
     page_header('EXECUTION · 月度交付', 'Monthly Planner / 月度计划',
