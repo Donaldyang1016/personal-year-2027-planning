@@ -86,7 +86,10 @@ def update_todo(tid, field):
     new_value = bool(st.session_state[f'{field}_{tid}'])
     rec[field] = new_value
     if new_value:
-        rec['skipped' if field == 'done' else 'done'] = False
+        opposite = 'skipped' if field == 'done' else 'done'
+        rec[opposite] = False
+        # A callback runs before widgets are instantiated on this rerun.
+        st.session_state[f'{opposite}_{tid}'] = False
     rec['updated_at'] = datetime.now().isoformat(timespec='seconds')
     st.session_state.activity_log.insert(0, {
         'task_id': tid, 'date': rec['updated_at'],
