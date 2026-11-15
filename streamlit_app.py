@@ -158,3 +158,236 @@ with tabs[0]:
     completed = sum(st.session_state.goal_records[g['id']]['status'] == 'Completed' for g in goals)
     cols = st.columns(4)
     cols[0].metric('Life domains', 12)
+
+
+    cols[1].metric('Imported domains', len(plans))
+    cols[2].metric('Annual objectives', len(goals))
+    cols[3].metric('KPI targets', len(kpis))
+
+    st.subheader('12 Life Domains')
+
+    rows = [
+        {
+            'Domain': did,
+            'Name': domain_name(did),
+            'Status': by_domain.get(did, {}).get('status', 'Not imported'),
+            'Objectives': len(by_domain.get(did, {}).get('goals', []))
+        }
+        for did in domain_ids
+    ]
+    st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+
+    if goals:
+        st.subheader('Highlighted Objectives')
+        for g in goals[:4]:
+            render_goal(g, details=False)
+
+
+# ANNUAL PAGE
+with tabs[1]:
+    st.header('Annual Goals')
+
+    selected_domain = st.selectbox(
+        'Life Domain',
+        domain_ids,
+        format_func=lambda did: f'{did} - {domain_name(did)}'
+    )
+
+    plan = by_domain.get(selected_domain)
+
+    if plan is None:
+        st.info(f'No plan uploaded for {selected_domain}.')
+    else:
+        st.caption(plan.get('plan_version', 'Draft'))
+
+        if plan.get('north_star'):
+            st.subheader('Annual Vision')
+            vision = plan['north_star']
+            if isinstance(vision, dict):
+                st.write(vision.get('vision_zh', ''))
+                for outcome in vision.get('core_outcomes', []):
+                    st.write('- ' + outcome)
+            else:
+                st.write(vision)
+
+        for g in plan.get('goals', []):
+            render_goal(g)
+
+        if plan.get('contingencies'):
+            st.subheader('Plan B / Contingencies')
+            st.dataframe(
+                pd.DataFrame(plan['contingencies']),
+                hide_index=True,
+                use_container_width=True
+            )
+
+
+# QUARTERLY PAGE
+with tabs[2]:
+    st.header('Quarterly Milestones')
+
+    quarter = st.selectbox(
+        'Select Quarter',
+        ['Q1', 'Q2', 'Q3', 'Q4']
+    )
+
+    selected_domain = st.selectbox(
+        'Select Domain',
+        ['All'] + domain_ids
+    )
+
+    filtered = [
+        g for g in goals
+        if selected_domain == 'All'
+        or g['domain'] == selected_domain
+    ]
+
+    rows = [
+        {
+            'Domain': g['domain'],
+            'Goal': g['id'],
+            'Objective': g.get('title_zh', g.get('title', '')),
+            'Milestone': g.get('quarterly', {}).get(quarter, ''),
+            'Status': st.session_state.goal_records[g['id']]['status']
+        }
+        for g in filtered
+    ]
+
+    if rows:
+        st.dataframe(
+            pd.DataFrame(rows),
+            hide_index=True,
+            use_container_width=True
+        )
+    else:
+        st.info('No quarterly milestones available.')
+
+
+# MONTHLY PAGE
+with tabs[3]:
+    st.header('Monthly Goals')
+    st.info(
+        'Monthly plans will be added after annual '
+        'and quarterly planning is completed.'
+    )
+
+
+# WEEKLY PAGE
+with tabs[4]:
+    st.header('Weekly Goals')
+    st.info(
+        'Weekly plans will be added after monthly '
+        'planning is completed.'
+    )
+
+
+# TRACKER PAGE
+with tabs[5]:
+    st.header('Progress Tracker')
+
+    if not goals:
+        st.warning('No domain data loaded.')
+
+    else:
+        selected = st.selectbox(
+            'Select Objective',
+            list(goal_by_id),
+            format_func=lambda gid: (
+                f"{gid} - "
+                f"{goal_by_id[gid].get('title_zh', '')}"
+            )
+        )
+
+        rec = st.session_state.goal_records[selected]
+
+        with st.form('goal_tracker'):
+            status = st.selectbox(
+                'Status',
+                STATUSES,
+                index=STATUSES.index(rec['status'])
+            )
+
+            progress = st.slider(
+                'Progress (%)',
+                0,
+                100,
+                int(rec['progress'])
+            )
+
+            notes = st.text_area(
+                'Notes / Evidence',
+                value=rec['notes']
+            )
+
+            if st.form_submit_button('Save Goal Progress'):
+                stamp = datetime.now().isoformat(timespec='seconds')
+
+                st.session_state.goal_records[selected] = {
+                    'status': status,
+                    'progress': progress,
+                    'notes': notes,
+                    'updated_at': stamp
+                }
+
+                st.success('Progress saved in this session.')
+
+        target_goal = goal_by_id[selected]
+
+        if target_goal.get('kpis'):
+            st.subheader('KPI Tracking')
+
+            kid = st.selectbox(
+                'Choose KPI',
+                [k['id'] for k in target_goal['kpis']],
+                format_func=lambda x: (
+                    f"{x} - {kpis[x]['label']}"
+                )
+            )
+
+            kpi = kpis[kid]
+            old = st.session_state.kpi_records[kid]
+
+            st.caption(
+                f"Target: {kpi.get('target')} "
+                f"{kpi.get('unit', '')} | "
+                f"Deadline: {kpi.get('deadline', '')}"
+            )
+
+            with st.form('kpi_tracker'):
+                actual = st.number_input(
+                    'Actual Value',
+                    value=float(old['actual'] or 0),
+                    step=1.0
+                )
+
+                evidence = st.text_area(
+                    'KPI Evidence',
+                    value=old['notes']
+                )
+
+                if st.form_submit_button('Save KPI'):
+                    stamp = datetime.now().isoformat(timespec='seconds')
+
+                    st.session_state.kpi_records[kid] = {
+                        'actual': actual,
+                        'notes': evidence,
+                        'updated_at': stamp
+                    }
+
+                    st.success('KPI saved in this session.')
+
+        st.subheader('All Goal Progress')
+
+        st.dataframe(
+            pd.DataFrame([
+                {
+                    'Domain': g['domain'],
+                    'Goal': g['id'],
+                    'Status': st.session_state.goal_records[g['id']]['status'],
+                    'Progress': st.session_state.goal_records[g['id']]['progress']
+                }
+                for g in goals
+            ]),
+            hide_index=True,
+            use_container_width=True
+        )
