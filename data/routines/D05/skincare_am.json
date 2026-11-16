@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "routine_id": "D05-AM",
+  "label": "Morning skincare",
+  "version": "1.0",
+  "notes": "Plan definition only; actual records belong in private persistence. Enable conditional steps after product/frequency review.",
+  "steps": [
+    {
+      "step_id": "D05-AM-CLEANSE",
+      "title": "AM Cleansing",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "温和洁面；如早晨无需洁面，按个人肤质调整"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-AM-TREATMENT",
+      "title": "AM Treatment",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "只有确认过具体产品与频率后才启用"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-AM-MOISTURIZER",
+      "title": "AM Moisturizer",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "按实际产品及皮肤状态调整"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-AM-SUNSCREEN",
+      "title": "AM Sunscreen",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "使用适合自己的SPF30+防晒；按日间暴露和产品说明补涂"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    }
+  ]
+}
