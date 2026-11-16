@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "plan_version": "D03 V2.0 Annual & Quarterly — Batch 1 execution architecture",
+  "last_reviewed": "2026-11-16",
+  "domain_id": "D03",
+  "domain_name": "Learning & Skills",
+  "status": "Annual & Quarterly approved; Monthly/Weekly not generated",
+  "north_star": {
+    "vision_zh": "法语NCLC7最高优先；BCF31章、市场研究24份、AI Economics两个自建学期、1篇Working Paper；韩语低强度起步。",
+    "core_outcomes": [
+      "四项NCLC7",
+      "31章逐章通过阅读、计算复现和80%测验",
+      "12份Market Brief和12份Deep Dive及3个高级模型",
+      "两个自建研究生级学期、1项可运行AI应用",
+      "完成1篇Working Paper",
+      "韩语基础日常交流；6本或等值阅读"
+    ]
+  },
+  "planning_periods": [
+    {
+      "id": "Q1",
+      "start": "2026-11-16",
+      "end": "2027-01-03"
+    },
+    {
+      "id": "Q2",
+      "start": "2027-01-04",
+      "end": "2027-04-04"
+    },
+    {
+      "id": "Q3",
+      "start": "2027-04-05",
+      "end": "2027-07-04"
+    },
+    {
+      "id": "Q4",
+      "start": "2027-07-05",
+      "end": "2027-10-03"
+    },
+    {
+      "id": "Q5",
+      "start": "2027-10-04",
+      "end": "2028-01-02"
+    }
+  ],
+  "goals": [
+    {
+      "id": "D03-O1",
+      "domain": "D03",
+      "section": "D03.1",
+      "title": "TCF Canada & French",
+      "title_zh": "TCF Canada & French",
+      "priority": "P0",
+      "must": "系统法语学习与测评",
+      "target": "四项NCLC7",
+      "stretch": "达标后持续自然交流",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "A1基础和学习习惯",
+        "Q2": "A1/A2进展",
+        "Q3": "考试专项诊断",
+        "Q4": "7–9月评估首考",
+        "Q5": "正式成绩达标；未达标则重考"
+      },
+      "kpis": [
+        {
+          "id": "D03-K1",
+          "label": "TCF四项NCLC7",
+          "target": 1,
+          "unit": "verified_result",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "verification": "官方成绩单，不由学习打卡推断"
+        }
+      ]
+    },
+    {
+      "id": "D03-O2",
+      "domain": "D03",
+      "section": "D03.2",
+      "title": "Bank Corporate Finance & Risk",
+      "title_zh": "Bank Corporate Finance & Risk",
+      "priority": "P1",
+      "must": "完成核心银行风险知识系统学习",
+      "target": "31章逐章通过阅读、计算复现和80%测验",
+      "stretch": "深化银行综合案例分析",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "通过Ch1–3",
+        "Q2": "累计通过Ch1–10",
+        "Q3": "累计通过Ch1–18",
+        "Q4": "累计通过Ch1–25（考试期可调整）",
+        "Q5": "累计31/31章"
+      },
+      "kpis": [
+        {
+          "id": "D03-K2",
+          "label": "BCF已验证章节",
+          "target": 31,
+          "unit": "chapters",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "每章三项验收；编写状态与学习状态独立"
+        }
+      ]
+    },
+    {
+      "id": "D03-O3",
+      "domain": "D03",
+      "section": "D03.3",
+      "title": "Financial Markets & Investment",
+      "title_zh": "Financial Markets & Investment",
+      "priority": "P1",
+      "must": "建立早晚观察、股票债券宏观研究体系",
+      "target": "12份Market Brief和12份Deep Dive及3个高级模型",
+      "stretch": "跨资产量化与基本面综合研究能力",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "晨晚市场观察结构和研究模板",
+        "Q2": "累计6项2027专题",
+        "Q3": "累计12项专题与至少1项模型",
+        "Q4": "累计18项专题、2项模型",
+        "Q5": "累计24项专题、3项模型"
+      },
+      "kpis": [
+        {
+          "id": "D03-K3",
+          "label": "Market Brief",
+          "target": 12,
+          "unit": "reports",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "报告独立验收"
+        },
+        {
+          "id": "D03-K4",
+          "label": "Asset/Industry Deep Dive",
+          "target": 12,
+          "unit": "reports",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "数据和模型支持的深度分析"
+        },
+        {
+          "id": "D03-K5",
+          "label": "高级投资模型",
+          "target": 3,
+          "unit": "models",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "模型可重现及验证"
+        }
+      ]
+    },
+    {
+      "id": "D03-O4",
+      "domain": "D03",
+      "section": "D03.4",
+      "title": "AI Economics & ML",
+      "title_zh": "AI Economics & ML",
+      "priority": "P1",
+      "must": "完成课程先修和实质考核",
+      "target": "两个自建研究生级学期、1项可运行AI应用",
+      "stretch": "AI金融风险应用形成可复现项目",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "学习路径、先修核查",
+        "Q2": "第一学期考核",
+        "Q3": "第二学期课程推进",
+        "Q4": "考试期间降负荷维护",
+        "Q5": "两学期及应用验收"
+      },
+      "kpis": [
+        {
+          "id": "D03-K6",
+          "label": "AI Economics学习学期",
+          "target": 2,
+          "unit": "study_terms",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "课程考核、项目与完成证明"
+        },
+        {
+          "id": "D03-K7",
+          "label": "AI可运行应用",
+          "target": 1,
+          "unit": "application",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "功能测试与模型评价"
+        }
+      ]
+    },
+    {
+      "id": "D03-O5",
+      "domain": "D03",
+      "section": "D03.5",
+      "title": "Academic Research",
+      "title_zh": "Academic Research",
+      "priority": "P1",
+      "must": "探索Quantitative AI Risk和AI Monetary Economics两条研究线",
+      "target": "完成1篇Working Paper",
+      "stretch": "取得实质学术反馈、具备投稿条件",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "两条研究线的文献地图",
+        "Q2": "两份初步研究设计",
+        "Q3": "主论文和Methodology",
+        "Q4": "初稿和研究结果",
+        "Q5": "Working Paper完稿及复现材料"
+      },
+      "kpis": [
+        {
+          "id": "D03-K8",
+          "label": "Working Paper完稿",
+          "target": 1,
+          "unit": "paper",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "完整论文章节、结果和参考文献"
+        },
+        {
+          "id": "D03-K9",
+          "label": "研究线提案",
+          "target": 2,
+          "unit": "proposals",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "verification": "两份有实质研究问题的设计"
+        }
+      ]
+    },
+    {
+      "id": "D03-O6",
+      "domain": "D03",
+      "section": "D03.6",
+      "title": "Korean & General Education",
+      "title_zh": "Korean & General Education",
+      "priority": "P2",
+      "must": "法语前固定低强度韩语及世界史政治史阅读",
+      "target": "韩语基础日常交流；6本或等值阅读",
+      "stretch": "真实交流及深入专题输出",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "韩语起步、阅读结构",
+        "Q2": "基础发音与会话",
+        "Q3": "保持法语优先",
+        "Q4": "低负荷维护",
+        "Q5": "法语达标后增加韩语学习"
+      },
+      "kpis": [
+        {
+          "id": "D03-K10",
+          "label": "韩语基础会话评估",
+          "target": 1,
+          "unit": "assessment",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "口语能力实际验证"
+        },
+        {
+          "id": "D03-K11",
+          "label": "通识阅读",
+          "target": 6,
+          "unit": "equivalent_books",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "阅读记录及等值专题"
+        }
+      ]
+    }
+  ],
+  "monthly_plans": [],
+  "weekly_plans": [],
+  "tracking_policy": {
+    "weekly_layers": [
+      "quarterly_focus",
+      "concrete_deliverables",
+      "habit_counters"
+    ],
+    "monthly_density": "actual_outcomes_only",
+    "outcome_requires_independent_verification": true,
+    "early_completion": true,
+    "persistence": "private_database_required",
+    "qualitative_focus_is_not_checkbox": true
+  },
+  "cross_domain_references": [
+    "D02:TCF_official_result"
+  ]
+}
