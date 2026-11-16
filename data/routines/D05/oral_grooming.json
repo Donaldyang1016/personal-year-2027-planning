@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "routine_id": "D05-ORAL",
+  "label": "Oral care & grooming",
+  "version": "1.0",
+  "notes": "Plan definition only; actual records belong in private persistence. Enable conditional steps after product/frequency review.",
+  "steps": [
+    {
+      "step_id": "D05-ORAL-BRUSH-AM",
+      "title": "AM Teeth Brushing",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "使用含氟牙膏"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-ORAL-BRUSH-PM",
+      "title": "PM Teeth Brushing",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "使用含氟牙膏"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-ORAL-FLOSS",
+      "title": "Floss / Interdental Cleaning",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "按牙科建议使用适合的工具"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-ORAL-GROOM",
+      "title": "Grooming Maintenance",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "胡须、眉毛、手部指甲按实际需要整理"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    }
+  ]
+}
