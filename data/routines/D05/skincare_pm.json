@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "routine_id": "D05-PM",
+  "label": "Evening skincare",
+  "version": "1.0",
+  "notes": "Plan definition only; actual records belong in private persistence. Enable conditional steps after product/frequency review.",
+  "steps": [
+    {
+      "step_id": "D05-PM-CLEANSE",
+      "title": "PM Cleansing",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "温和清洁；按当日需要"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-PM-TREATMENT",
+      "title": "PM Treatment",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "功效成分应以实际耐受和确认频率为准，不强制每日使用"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-PM-MOISTURIZER",
+      "title": "PM Moisturizer",
+      "frequency": {
+        "type": "weekly",
+        "planned_per_week": 7
+      },
+      "product": {
+        "name": null,
+        "instructions": "晚间保湿修护"
+      },
+      "active": true,
+      "tracking": "daily_checkbox"
+    }
+  ]
+}
