@@ -618,7 +618,13 @@ with tabs[3]:
         period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
         period_choice = st.selectbox('Planning period / 五阶段筛选', period_options,
             format_func=lambda x: 'All periods · 2026–2028' if x == 'All' else period_name(x), key='v31_month_period')
-        visible = [m for m in months if period_choice == 'All' or period_choice in month_periods(m)]
+        monthly_domain = st.selectbox('Domain / 领域', ['All'] + domain_ids,
+            format_func=lambda d: 'All domains' if d == 'All' else pretty_domain(d), key='v_d02_month_domain')
+        visible = [m for m in months if (period_choice == 'All' or period_choice in month_periods(m))
+            and (monthly_domain == 'All' or m.get('id','').startswith(monthly_domain+'-'))]
+        if not visible:
+            st.info('No monthly plans for this selection.')
+            st.stop()
         execution_overview(visible, 'Monthly')
         current_month = date.today().strftime('%Y-%m')
         idx = next((i for i, m in enumerate(visible) if m.get('month') == current_month), 0)
@@ -648,7 +654,13 @@ with tabs[4]:
         period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
         period_choice = st.selectbox('Planning period / 五阶段筛选', period_options,
             format_func=lambda x: 'All periods · 2026–2028' if x == 'All' else period_name(x), key='v31_week_period')
-        visible = [w for w in weeks if period_choice == 'All' or w.get('quarter') == period_choice]
+        execution_domain = st.selectbox('Domain / 领域', ['All'] + domain_ids,
+            format_func=lambda d: 'All domains' if d == 'All' else pretty_domain(d), key='v_d02_week_domain')
+        visible = [w for w in weeks if (period_choice == 'All' or w.get('quarter') == period_choice)
+            and (execution_domain == 'All' or w.get('id','').startswith(execution_domain + '-'))]
+        if not visible:
+            st.info('No weekly plans for this selection.')
+            st.stop()
         execution_overview(visible, 'Weekly')
         today_str = date.today().isoformat()
         idx = next((i for i, w in enumerate(visible) if w.get('start', '') <= today_str <= w.get('end', '')), 0)
@@ -656,6 +668,26 @@ with tabs[4]:
             format_func=lambda wid: next(f"{w['start']} → {w['end']} · {w['title']}" for w in visible if w['id'] == wid),
             key='v31_week')
         w = next(item for item in visible if item['id'] == week_id)
+        # D02 Quarterly Progress Panel V1 — verified monthly deliverables.
+        active_domain = w['id'].split('-')[0]
+        active_quarter = w.get('quarter')
+        quarter_months = [m for m in monthly_plans
+            if m.get('id','').startswith(active_domain+'-')
+            and m.get('quarter') == active_quarter]
+        qtasks = [t for m in quarter_months for t in m.get('tasks', [])]
+        q_done, q_total = todo_progress(qtasks)
+        quarter_data = next((x for x in by_domain.get(active_domain, {}).get('quarterly_plans', [])
+                             if x.get('quarter') == active_quarter), None)
+        with st.container(border=True):
+            st.markdown('#### 📊 Current quarter progress / 本季度进度')
+            a,b=st.columns(2)
+            a.metric('Verified monthly outcomes', f'{q_done}/{q_total}')
+            b.metric('Completion of planned deliverables', f'{round(q_done*100/q_total) if q_total else 0}%')
+            if q_total: st.progress(q_done/q_total)
+            if quarter_data:
+                st.write('**Quarterly objective:** ' + quarter_data.get('strategic_focus', ''))
+                st.caption('Decision gate: ' + quarter_data.get('decision_gate',''))
+            st.caption('Execution only — not proof of EE eligibility, TCF results, ITA or AOR.')
         with st.container(border=True):
             st.markdown(f"### {w.get('title', week_id)}")
             st.caption(f"{w.get('start')} – {w.get('end')} · {w.get('quarter', '')}")
@@ -690,13 +722,16 @@ with tabs[5]:
         period_options = ['All'] + [p['id'] for p in by_domain.get('D01', {}).get('planning_periods', [])]
         review_period = st.selectbox('Review period / 进度阶段', period_options,
             format_func=lambda x: 'All periods · Full personal year' if x == 'All' else period_name(x), key='v31_progress_period')
+        progress_domain = st.selectbox('Domain / 领域', ['All'] + domain_ids,
+            format_func=lambda d: 'All domains' if d == 'All' else pretty_domain(d), key='v_d02_progress_domain')
         for heading, items, filter_function, name_key in [
             ('Monthly deliverables / 月度成果', sorted(monthly_plans, key=month_sort),
              lambda item: review_period == 'All' or review_period in month_periods(item), 'month'),
             ('Weekly actions / 每周行动', sorted(weekly_plans, key=week_sort),
              lambda item: review_period == 'All' or item.get('quarter') == review_period, 'start'),
         ]:
-            selected_items = [item for item in items if filter_function(item)]
+            selected_items = [item for item in items if filter_function(item)
+                and (progress_domain == 'All' or item.get('id','').startswith(progress_domain+'-'))]
             st.markdown('**' + heading + '**')
             rows = []
             for item in selected_items:
