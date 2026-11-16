@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "routine_id": "D05-HAIR",
+  "label": "Hair & scalp",
+  "version": "1.0",
+  "notes": "Plan definition only; actual records belong in private persistence. Enable conditional steps after product/frequency review.",
+  "steps": [
+    {
+      "step_id": "D05-HAIR-WASH",
+      "title": "Hair Washing",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "结合头皮情况与运动出汗调整"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-HAIR-SCALP",
+      "title": "Scalp Care",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "仅在已确认产品及频率时记录；炎症或持续症状就医评估"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    },
+    {
+      "step_id": "D05-HAIR-STYLING",
+      "title": "Hair Styling",
+      "frequency": {
+        "type": "conditional",
+        "planned_per_week": null
+      },
+      "product": {
+        "name": null,
+        "instructions": "自然纹理韩系短发，根据实际场景整理"
+      },
+      "active": false,
+      "tracking": "daily_checkbox"
+    }
+  ]
+}
