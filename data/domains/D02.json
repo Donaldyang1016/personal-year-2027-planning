@@ -1,0 +1,2986 @@
+{
+  "plan_version": "D02 V2.1 — GitHub integration",
+  "last_reviewed": "2026-11-16",
+  "schema_version": 1,
+  "domain_id": "D02",
+  "domain_name": "Immigration & Permanent Residency",
+  "status": "Strategic V2.0 / Monthly and Weekly execution V2.1",
+  "north_star": {
+    "vision_zh": "2027年内取得TCF Canada四项NCLC7及有效EE法语类别资格，争取ITA、冲刺AOR。",
+    "core_outcomes": [
+      "Must: NCLC7 + EE资格 + 合法身份",
+      "Target: ITA",
+      "Stretch: AOR"
+    ]
+  },
+  "annual_strategy": {
+    "primary_outcomes": [
+      {
+        "goal_id": "D02-O1",
+        "description": "Must NCLC7及EE法语类别资格；Target ITA；Stretch AOR"
+      }
+    ],
+    "decision_rule": "先取得FSW或CEC资格即可入池；7–8月模拟达标时允许提前首考；ITA到来立即启动e-APR",
+    "success_rule": "已取得完整法语类别资格但未收到ITA，视为基本成功。"
+  },
+  "planning_periods": [
+    {
+      "id": "Q1",
+      "start": "2026-11-16",
+      "end": "2027-01-03",
+      "title": "FSW/CEC初核、身份台账、CRS初版"
+    },
+    {
+      "id": "Q2",
+      "start": "2027-01-04",
+      "end": "2027-04-04",
+      "title": "专业资格审核及材料第一轮归档"
+    },
+    {
+      "id": "Q3",
+      "start": "2027-04-05",
+      "end": "2027-07-04",
+      "title": "TCF四项诊断及CEC资格预核"
+    },
+    {
+      "id": "Q4",
+      "start": "2027-07-05",
+      "end": "2027-10-03",
+      "title": "CEC资格核验、EE入池与TCF首考"
+    },
+    {
+      "id": "Q5",
+      "start": "2027-10-04",
+      "end": "2028-01-02",
+      "title": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+    }
+  ],
+  "quarterly_review_dates": [
+    "2027-01-03",
+    "2027-04-04",
+    "2027-07-04",
+    "2027-10-03",
+    "2028-01-02"
+  ],
+  "goals": [
+    {
+      "id": "D02-O1",
+      "domain": "D02",
+      "section": "PR Outcomes & EE Strategy",
+      "title": "2027年争取ITA并冲刺AOR",
+      "title_zh": "2027年争取ITA并冲刺AOR",
+      "section_id": "D02.1",
+      "priority": "P0",
+      "must": "核验NCLC7及EE法语类别资格",
+      "target": "2027年取得ITA",
+      "stretch": "2027年取得AOR",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "FSW/CEC初核、身份台账、CRS初版",
+        "Q2": "专业资格审核及材料第一轮归档",
+        "Q3": "TCF四项诊断及CEC资格预核",
+        "Q4": "CEC资格核验、EE入池与TCF首考",
+        "Q5": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      },
+      "kpis": [
+        {
+          "id": "D02-K06",
+          "label": "正式收到ITA",
+          "target": 1,
+          "unit": "binary",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-K07",
+          "label": "正式取得AOR",
+          "target": 1,
+          "unit": "binary",
+          "level": "Stretch",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        }
+      ],
+      "dependencies": [
+        "当时有效的IRCC和安省规则",
+        "工作和语言真实证据"
+      ],
+      "plan_b": "CEC/FSW双线核查；满足任一路径即提前入池；OINP仅在雇主支持和资格成立时启动。",
+      "review_cadence": "Monthly",
+      "achievement_status": "Not assessed"
+    },
+    {
+      "id": "D02-O2",
+      "domain": "D02",
+      "section": "French Immigration / TCF",
+      "title": "TCF Canada四项NCLC7",
+      "title_zh": "TCF Canada四项NCLC7",
+      "section_id": "D02.2",
+      "priority": "P0",
+      "must": "正式四项NCLC7",
+      "target": "9月首考，部分科目NCLC8",
+      "stretch": "模拟达标时7–8月首考",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "FSW/CEC初核、身份台账、CRS初版",
+        "Q2": "专业资格审核及材料第一轮归档",
+        "Q3": "TCF四项诊断及CEC资格预核",
+        "Q4": "CEC资格核验、EE入池与TCF首考",
+        "Q5": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      },
+      "kpis": [
+        {
+          "id": "D02-K01",
+          "label": "TCF四项NCLC7达标",
+          "target": 1,
+          "unit": "binary",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-P01",
+          "label": "法语学习周目标（D03管理）",
+          "target": 20,
+          "unit": "hours_per_week",
+          "level": "Process",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        }
+      ],
+      "dependencies": [
+        "当时有效的IRCC和安省规则",
+        "工作和语言真实证据"
+      ],
+      "plan_b": "CEC/FSW双线核查；满足任一路径即提前入池；OINP仅在雇主支持和资格成立时启动。",
+      "review_cadence": "Monthly",
+      "achievement_status": "Not assessed"
+    },
+    {
+      "id": "D02-O3",
+      "domain": "D02",
+      "section": "CEC / FSW / CRS",
+      "title": "FSW与CEC双路径资格及CRS",
+      "title_zh": "FSW与CEC双路径资格及CRS",
+      "section_id": "D02.3",
+      "priority": "P0",
+      "must": "至少一种EE项目资格",
+      "target": "符合条件及时入池；CEC达标（适用时）",
+      "stretch": "提前取得FSW资格",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "FSW/CEC初核、身份台账、CRS初版",
+        "Q2": "专业资格审核及材料第一轮归档",
+        "Q3": "TCF四项诊断及CEC资格预核",
+        "Q4": "CEC资格核验、EE入池与TCF首考",
+        "Q5": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      },
+      "kpis": [
+        {
+          "id": "D02-K02",
+          "label": "有效EE项目及法语类别资格",
+          "target": 1,
+          "unit": "binary",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-K04",
+          "label": "CEC资格成立（如适用）",
+          "target": 1,
+          "unit": "binary",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "condition": "CEC path applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-K05",
+          "label": "成功创建有效EE Profile",
+          "target": 1,
+          "unit": "binary",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        }
+      ],
+      "dependencies": [
+        "当时有效的IRCC和安省规则",
+        "工作和语言真实证据"
+      ],
+      "plan_b": "CEC/FSW双线核查；满足任一路径即提前入池；OINP仅在雇主支持和资格成立时启动。",
+      "review_cadence": "Monthly",
+      "achievement_status": "Not assessed"
+    },
+    {
+      "id": "D02-O4",
+      "domain": "D02",
+      "section": "OINP / Alternative Pathways",
+      "title": "安省OWP备选通道",
+      "title_zh": "安省OWP备选通道",
+      "section_id": "D02.4",
+      "priority": "P2",
+      "must": "完成条件及雇主支持审查",
+      "target": "条件具备时启动EOI",
+      "stretch": "获安省邀请",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "FSW/CEC初核、身份台账、CRS初版",
+        "Q2": "专业资格审核及材料第一轮归档",
+        "Q3": "TCF四项诊断及CEC资格预核",
+        "Q4": "CEC资格核验、EE入池与TCF首考",
+        "Q5": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      },
+      "kpis": [],
+      "dependencies": [
+        "当时有效的IRCC和安省规则",
+        "工作和语言真实证据"
+      ],
+      "plan_b": "CEC/FSW双线核查；满足任一路径即提前入池；OINP仅在雇主支持和资格成立时启动。",
+      "review_cadence": "Monthly",
+      "achievement_status": "Not assessed"
+    },
+    {
+      "id": "D02-O5",
+      "domain": "D02",
+      "section": "Legal Status & Documentation",
+      "title": "合法身份及PR材料",
+      "title_zh": "合法身份及PR材料",
+      "section_id": "D02.5",
+      "priority": "P0",
+      "must": "维持适用身份和工作授权",
+      "target": "Q2材料归档并完成专业审核",
+      "stretch": "ITA后及时申请",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "FSW/CEC初核、身份台账、CRS初版",
+        "Q2": "专业资格审核及材料第一轮归档",
+        "Q3": "TCF四项诊断及CEC资格预核",
+        "Q4": "CEC资格核验、EE入池与TCF首考",
+        "Q5": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      },
+      "kpis": [
+        {
+          "id": "D02-K03",
+          "label": "合法身份及工作授权合规",
+          "target": 1,
+          "unit": "binary",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-P04",
+          "label": "Q2第一轮材料归档",
+          "target": 1,
+          "unit": "binary",
+          "level": "Process",
+          "deadline": "2027-04-04",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-P05",
+          "label": "Q2正式专业审核",
+          "target": 1,
+          "unit": "binary",
+          "level": "Process",
+          "deadline": "2027-04-04",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        }
+      ],
+      "dependencies": [
+        "当时有效的IRCC和安省规则",
+        "工作和语言真实证据"
+      ],
+      "plan_b": "CEC/FSW双线核查；满足任一路径即提前入池；OINP仅在雇主支持和资格成立时启动。",
+      "review_cadence": "Monthly",
+      "achievement_status": "Not assessed"
+    },
+    {
+      "id": "D02-O6",
+      "domain": "D02",
+      "section": "Immigration Risk & Execution",
+      "title": "CRS和风险管理",
+      "title_zh": "CRS和风险管理",
+      "section_id": "D02.6",
+      "priority": "P1",
+      "must": "身份、工作、资格变化及时核验",
+      "target": "2027年月度CRS/政策复盘12次",
+      "stretch": "建立及时风险预警",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "FSW/CEC初核、身份台账、CRS初版",
+        "Q2": "专业资格审核及材料第一轮归档",
+        "Q3": "TCF四项诊断及CEC资格预核",
+        "Q4": "CEC资格核验、EE入池与TCF首考",
+        "Q5": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      },
+      "kpis": [
+        {
+          "id": "D02-P02",
+          "label": "2027年CRS月度复盘次数",
+          "target": 12,
+          "unit": "reviews",
+          "level": "Process",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        },
+        {
+          "id": "D02-P03",
+          "label": "2027年政策资格复盘次数",
+          "target": 12,
+          "unit": "reviews",
+          "level": "Process",
+          "deadline": "2027-12-31",
+          "condition": "As applicable",
+          "verification": "Official result, documented evidence, or dated review, not inferred from checkbox"
+        }
+      ],
+      "dependencies": [
+        "当时有效的IRCC和安省规则",
+        "工作和语言真实证据"
+      ],
+      "plan_b": "CEC/FSW双线核查；满足任一路径即提前入池；OINP仅在雇主支持和资格成立时启动。",
+      "review_cadence": "Monthly",
+      "achievement_status": "Not assessed"
+    }
+  ],
+  "quarterly_plans": [
+    {
+      "quarter": "Q1",
+      "title": "Q1 · FSW/CEC初核、身份台账、CRS初版",
+      "dates": "2026-11-16 – 2027-01-03",
+      "strategic_focus": "FSW/CEC初核、身份台账、CRS初版",
+      "must_win": [
+        "FSW/CEC初核、身份台账、CRS初版"
+      ],
+      "decision_gate": "核实资格证据，满足条件即可提前行动",
+      "risk_trigger": "就业中断、身份/语言到期、移民政策变化；ITA触发e-APR",
+      "kpi_ids": [
+        "D02-K01",
+        "D02-K02",
+        "D02-K03",
+        "D02-K04",
+        "D02-K05",
+        "D02-K06",
+        "D02-K07"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D02-O1",
+          "description": "FSW/CEC初核、身份台账、CRS初版"
+        },
+        {
+          "goal_id": "D02-O2",
+          "description": "FSW/CEC初核、身份台账、CRS初版"
+        },
+        {
+          "goal_id": "D02-O3",
+          "description": "FSW/CEC初核、身份台账、CRS初版"
+        },
+        {
+          "goal_id": "D02-O4",
+          "description": "FSW/CEC初核、身份台账、CRS初版"
+        },
+        {
+          "goal_id": "D02-O5",
+          "description": "FSW/CEC初核、身份台账、CRS初版"
+        },
+        {
+          "goal_id": "D02-O6",
+          "description": "FSW/CEC初核、身份台账、CRS初版"
+        }
+      ]
+    },
+    {
+      "quarter": "Q2",
+      "title": "Q2 · 专业资格审核及材料第一轮归档",
+      "dates": "2027-01-04 – 2027-04-04",
+      "strategic_focus": "专业资格审核及材料第一轮归档",
+      "must_win": [
+        "专业资格审核及材料第一轮归档"
+      ],
+      "decision_gate": "核实资格证据，满足条件即可提前行动",
+      "risk_trigger": "就业中断、身份/语言到期、移民政策变化；ITA触发e-APR",
+      "kpi_ids": [
+        "D02-K01",
+        "D02-K02",
+        "D02-K03",
+        "D02-K04",
+        "D02-K05",
+        "D02-K06",
+        "D02-K07"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D02-O1",
+          "description": "专业资格审核及材料第一轮归档"
+        },
+        {
+          "goal_id": "D02-O2",
+          "description": "专业资格审核及材料第一轮归档"
+        },
+        {
+          "goal_id": "D02-O3",
+          "description": "专业资格审核及材料第一轮归档"
+        },
+        {
+          "goal_id": "D02-O4",
+          "description": "专业资格审核及材料第一轮归档"
+        },
+        {
+          "goal_id": "D02-O5",
+          "description": "专业资格审核及材料第一轮归档"
+        },
+        {
+          "goal_id": "D02-O6",
+          "description": "专业资格审核及材料第一轮归档"
+        }
+      ]
+    },
+    {
+      "quarter": "Q3",
+      "title": "Q3 · TCF四项诊断及CEC资格预核",
+      "dates": "2027-04-05 – 2027-07-04",
+      "strategic_focus": "TCF四项诊断及CEC资格预核",
+      "must_win": [
+        "TCF四项诊断及CEC资格预核"
+      ],
+      "decision_gate": "核实资格证据，满足条件即可提前行动",
+      "risk_trigger": "就业中断、身份/语言到期、移民政策变化；ITA触发e-APR",
+      "kpi_ids": [
+        "D02-K01",
+        "D02-K02",
+        "D02-K03",
+        "D02-K04",
+        "D02-K05",
+        "D02-K06",
+        "D02-K07"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D02-O1",
+          "description": "TCF四项诊断及CEC资格预核"
+        },
+        {
+          "goal_id": "D02-O2",
+          "description": "TCF四项诊断及CEC资格预核"
+        },
+        {
+          "goal_id": "D02-O3",
+          "description": "TCF四项诊断及CEC资格预核"
+        },
+        {
+          "goal_id": "D02-O4",
+          "description": "TCF四项诊断及CEC资格预核"
+        },
+        {
+          "goal_id": "D02-O5",
+          "description": "TCF四项诊断及CEC资格预核"
+        },
+        {
+          "goal_id": "D02-O6",
+          "description": "TCF四项诊断及CEC资格预核"
+        }
+      ]
+    },
+    {
+      "quarter": "Q4",
+      "title": "Q4 · CEC资格核验、EE入池与TCF首考",
+      "dates": "2027-07-05 – 2027-10-03",
+      "strategic_focus": "CEC资格核验、EE入池与TCF首考",
+      "must_win": [
+        "CEC资格核验、EE入池与TCF首考"
+      ],
+      "decision_gate": "核实资格证据，满足条件即可提前行动",
+      "risk_trigger": "就业中断、身份/语言到期、移民政策变化；ITA触发e-APR",
+      "kpi_ids": [
+        "D02-K01",
+        "D02-K02",
+        "D02-K03",
+        "D02-K04",
+        "D02-K05",
+        "D02-K06",
+        "D02-K07"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D02-O1",
+          "description": "CEC资格核验、EE入池与TCF首考"
+        },
+        {
+          "goal_id": "D02-O2",
+          "description": "CEC资格核验、EE入池与TCF首考"
+        },
+        {
+          "goal_id": "D02-O3",
+          "description": "CEC资格核验、EE入池与TCF首考"
+        },
+        {
+          "goal_id": "D02-O4",
+          "description": "CEC资格核验、EE入池与TCF首考"
+        },
+        {
+          "goal_id": "D02-O5",
+          "description": "CEC资格核验、EE入池与TCF首考"
+        },
+        {
+          "goal_id": "D02-O6",
+          "description": "CEC资格核验、EE入池与TCF首考"
+        }
+      ]
+    },
+    {
+      "quarter": "Q5",
+      "title": "Q5 · 四项NCLC7、ITA/AOR冲刺及2028衔接",
+      "dates": "2027-10-04 – 2028-01-02",
+      "strategic_focus": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+      "must_win": [
+        "四项NCLC7、ITA/AOR冲刺及2028衔接"
+      ],
+      "decision_gate": "核实资格证据，满足条件即可提前行动",
+      "risk_trigger": "就业中断、身份/语言到期、移民政策变化；ITA触发e-APR",
+      "kpi_ids": [
+        "D02-K01",
+        "D02-K02",
+        "D02-K03",
+        "D02-K04",
+        "D02-K05",
+        "D02-K06",
+        "D02-K07"
+      ],
+      "objective_milestones": [
+        {
+          "goal_id": "D02-O1",
+          "description": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+        },
+        {
+          "goal_id": "D02-O2",
+          "description": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+        },
+        {
+          "goal_id": "D02-O3",
+          "description": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+        },
+        {
+          "goal_id": "D02-O4",
+          "description": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+        },
+        {
+          "goal_id": "D02-O5",
+          "description": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+        },
+        {
+          "goal_id": "D02-O6",
+          "description": "四项NCLC7、ITA/AOR冲刺及2028衔接"
+        }
+      ]
+    }
+  ],
+  "monthly_plans": [
+    {
+      "id": "D02-M2026-11",
+      "month": "2026-11",
+      "title": "Immigration · 2026-11",
+      "outcome": "身份及工作授权有效期清单；FSW/CEC工作经历核查表；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2026-11-T01",
+          "title": "身份及工作授权有效期清单",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存身份及工作授权有效期清单的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2026-11-T02",
+          "title": "FSW/CEC工作经历核查表",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存FSW/CEC工作经历核查表的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2026-11-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q5",
+      "period_ids": [
+        "Q5"
+      ],
+      "goal_ids": [
+        "D02-O5",
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2026-12",
+      "month": "2026-12",
+      "title": "Immigration · 2026-12",
+      "outcome": "FSW/CEC资格矩阵及CRS初版；2027年初就业连续性与身份风险决策；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2026-12-T01",
+          "title": "FSW/CEC资格矩阵及CRS初版",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存FSW/CEC资格矩阵及CRS初版的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2026-12-T02",
+          "title": "2027年初就业连续性与身份风险决策",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存2027年初就业连续性与身份风险决策的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2026-12-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q1",
+      "period_ids": [
+        "Q1"
+      ],
+      "goal_ids": [
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-01",
+      "month": "2027-01",
+      "title": "Immigration · 2027-01",
+      "outcome": "PR文件目录和缺失证据表；根据雇佣情况更新CEC预计达标日期；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-01-T01",
+          "title": "PR文件目录和缺失证据表",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存PR文件目录和缺失证据表的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-01-T02",
+          "title": "根据雇佣情况更新CEC预计达标日期",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存根据雇佣情况更新CEC预计达标日期的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-01-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q2",
+      "period_ids": [
+        "Q1",
+        "Q2"
+      ],
+      "goal_ids": [
+        "D02-O5",
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-02",
+      "month": "2027-02",
+      "title": "Immigration · 2027-02",
+      "outcome": "FSW/CEC专业资格审查结论；专业服务范围与成本确认；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-02-T01",
+          "title": "FSW/CEC专业资格审查结论",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存FSW/CEC专业资格审查结论的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-02-T02",
+          "title": "专业服务范围与成本确认",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存专业服务范围与成本确认的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-02-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q2",
+      "period_ids": [
+        "Q2"
+      ],
+      "goal_ids": [
+        "D02-O3",
+        "D02-O5",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-03",
+      "month": "2027-03",
+      "title": "Immigration · 2027-03",
+      "outcome": "PR材料第一轮归档；OWP条件式适用性审核；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-03-T01",
+          "title": "PR材料第一轮归档",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存PR材料第一轮归档的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-03-T02",
+          "title": "OWP条件式适用性审核",
+          "goal_id": "D02-O4",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存OWP条件式适用性审核的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-03-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q2",
+      "period_ids": [
+        "Q2"
+      ],
+      "goal_ids": [
+        "D02-O5",
+        "D02-O4",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-04",
+      "month": "2027-04",
+      "title": "Immigration · 2027-04",
+      "outcome": "TCF四项诊断与弱项报告；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-04-T01",
+          "title": "TCF四项诊断与弱项报告",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存TCF四项诊断与弱项报告的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-04-T02",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q3",
+      "period_ids": [
+        "Q2",
+        "Q3"
+      ],
+      "goal_ids": [
+        "D02-O2",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-05",
+      "month": "2027-05",
+      "title": "Immigration · 2027-05",
+      "outcome": "TCF准备度测评；EE最早资格和缺失证据复查；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-05-T01",
+          "title": "TCF准备度测评",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存TCF准备度测评的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-05-T02",
+          "title": "EE最早资格和缺失证据复查",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存EE最早资格和缺失证据复查的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-05-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q3",
+      "period_ids": [
+        "Q3"
+      ],
+      "goal_ids": [
+        "D02-O2",
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-06",
+      "month": "2027-06",
+      "title": "Immigration · 2027-06",
+      "outcome": "TCF首考窗口和候选考位确定；CEC达标前证据核查；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-06-T01",
+          "title": "TCF首考窗口和候选考位确定",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存TCF首考窗口和候选考位确定的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-06-T02",
+          "title": "CEC达标前证据核查",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存CEC达标前证据核查的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-06-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q3",
+      "period_ids": [
+        "Q3"
+      ],
+      "goal_ids": [
+        "D02-O2",
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-07",
+      "month": "2027-07",
+      "title": "Immigration · 2027-07",
+      "outcome": "CEC资格节点核验；提前首考决策；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-07-T01",
+          "title": "CEC资格节点核验",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存CEC资格节点核验的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-07-T02",
+          "title": "提前首考决策",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": true,
+          "acceptance_criteria": "保存提前首考决策的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-07-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4",
+      "period_ids": [
+        "Q3",
+        "Q4"
+      ],
+      "goal_ids": [
+        "D02-O3",
+        "D02-O2",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-08",
+      "month": "2027-08",
+      "title": "Immigration · 2027-08",
+      "outcome": "TCF正式考位和重考方案确认；EE Profile与CRS信息核查；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-08-T01",
+          "title": "TCF正式考位和重考方案确认",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存TCF正式考位和重考方案确认的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-08-T02",
+          "title": "EE Profile与CRS信息核查",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存EE Profile与CRS信息核查的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-08-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4",
+      "period_ids": [
+        "Q4"
+      ],
+      "goal_ids": [
+        "D02-O2",
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-09",
+      "month": "2027-09",
+      "title": "Immigration · 2027-09",
+      "outcome": "TCF首次考试或确认10月考位；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-09-T01",
+          "title": "TCF首次考试或确认10月考位",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存TCF首次考试或确认10月考位的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-09-T02",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q4",
+      "period_ids": [
+        "Q4"
+      ],
+      "goal_ids": [
+        "D02-O2",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-10",
+      "month": "2027-10",
+      "title": "Immigration · 2027-10",
+      "outcome": "TCF成绩及重考决策；符合条件时更新法语类别和CRS；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-10-T01",
+          "title": "TCF成绩及重考决策",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存TCF成绩及重考决策的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-10-T02",
+          "title": "符合条件时更新法语类别和CRS",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": true,
+          "acceptance_criteria": "保存符合条件时更新法语类别和CRS的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-10-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q5",
+      "period_ids": [
+        "Q4",
+        "Q5"
+      ],
+      "goal_ids": [
+        "D02-O2",
+        "D02-O3",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-11",
+      "month": "2027-11",
+      "title": "Immigration · 2027-11",
+      "outcome": "e-APR申请准备度审核；未达标时执行可行的TCF重考方案；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-11-T01",
+          "title": "e-APR申请准备度审核",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存e-APR申请准备度审核的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-11-T02",
+          "title": "未达标时执行可行的TCF重考方案",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": true,
+          "acceptance_criteria": "保存未达标时执行可行的TCF重考方案的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-11-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q5",
+      "period_ids": [
+        "Q5"
+      ],
+      "goal_ids": [
+        "D02-O5",
+        "D02-O2",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2027-12",
+      "month": "2027-12",
+      "title": "Immigration · 2027-12",
+      "outcome": "ITA/AOR及Must目标正式年度验收；2028资格维护与申请衔接计划；月度CRS与移民风险快照",
+      "tasks": [
+        {
+          "id": "D02-M2027-12-T01",
+          "title": "ITA/AOR及Must目标正式年度验收",
+          "goal_id": "D02-O1",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": true,
+          "acceptance_criteria": "保存ITA/AOR及Must目标正式年度验收的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-12-T02",
+          "title": "2028资格维护与申请衔接计划",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存2028资格维护与申请衔接计划的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        },
+        {
+          "id": "D02-M2027-12-T03",
+          "title": "月度CRS与移民风险快照",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q5",
+      "period_ids": [
+        "Q5"
+      ],
+      "goal_ids": [
+        "D02-O1",
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    },
+    {
+      "id": "D02-M2028-01",
+      "month": "2028-01",
+      "title": "Immigration · 2028-01",
+      "outcome": "跨年申请及未决事项交接",
+      "tasks": [
+        {
+          "id": "D02-M2028-01-T01",
+          "title": "跨年申请及未决事项交接",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "task_type": "verified_deliverable",
+          "completion_mode": "linked_weekly_or_manual_verification",
+          "tracking": "derived_from_steps_or_verified",
+          "conditional": false,
+          "acceptance_criteria": "保存跨年申请及未决事项交接的实际结果、日期、核查依据和证据缺口；不将计划当成结果"
+        }
+      ],
+      "view_type": "execution",
+      "quarter": "Q5",
+      "period_ids": [
+        "Q5"
+      ],
+      "goal_ids": [
+        "D02-O6"
+      ],
+      "guidance": [
+        "只对完成且可核验的结果打卡；证件和个人隐私信息保留在私人存储，不提交公开仓库。"
+      ]
+    }
+  ],
+  "weekly_plans": [
+    {
+      "id": "D02-W20261116",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "month": "2026-11",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-11-16",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20261116-T01",
+          "title": "完成并保存：身份及工作授权有效期清单",
+          "monthly_task_id": "D02-M2026-11-T01",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "acceptance_criteria": "保存身份及工作授权有效期清单的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周重点：身份及工作授权有效期清单",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20261123",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "month": "2026-11",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-11-23",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20261123-T01",
+          "title": "完成并保存：FSW/CEC工作经历核查表",
+          "monthly_task_id": "D02-M2026-11-T02",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存FSW/CEC工作经历核查表的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周重点：FSW/CEC工作经历核查表",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20261130",
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "month": "2026-11",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-11-30",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20261130-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2026-11-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        },
+        {
+          "id": "D02-W20261130-T02",
+          "title": "完成并保存：FSW/CEC资格矩阵及CRS初版",
+          "monthly_task_id": "D02-M2026-12-T01",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存FSW/CEC资格矩阵及CRS初版的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周重点：月度CRS与移民风险快照；FSW/CEC资格矩阵及CRS初版",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20261207",
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-12-07",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20261207-T01",
+          "title": "完成并保存：2027年初就业连续性与身份风险决策",
+          "monthly_task_id": "D02-M2026-12-T02",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存2027年初就业连续性与身份风险决策的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周重点：2027年初就业连续性与身份风险决策",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20261214",
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-12-14",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20261214-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2026-12-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20261221",
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-12-21",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20261228",
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "month": "2026-12",
+      "quarter": "Q1",
+      "title": "Immigration · 2026-12-28",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20261228-T01",
+          "title": "完成并保存：PR文件目录和缺失证据表",
+          "monthly_task_id": "D02-M2027-01-T01",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "acceptance_criteria": "保存PR文件目录和缺失证据表的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "FSW/CEC初核、身份台账、CRS初版",
+        "focus_statement": "本周重点：PR文件目录和缺失证据表",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "FSW/CEC初核、身份台账、CRS初版",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270104",
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "month": "2027-01",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-01-04",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270104-T01",
+          "title": "完成并保存：根据雇佣情况更新CEC预计达标日期",
+          "monthly_task_id": "D02-M2027-01-T02",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存根据雇佣情况更新CEC预计达标日期的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：根据雇佣情况更新CEC预计达标日期",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270111",
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "month": "2027-01",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-01-11",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270111-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-01-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270118",
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "month": "2027-01",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-01-18",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270125",
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "month": "2027-01",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-01-25",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270201",
+      "start": "2027-02-01",
+      "end": "2027-02-07",
+      "month": "2027-02",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-02-01",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270201-T01",
+          "title": "完成并保存：FSW/CEC专业资格审查结论",
+          "monthly_task_id": "D02-M2027-02-T01",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存FSW/CEC专业资格审查结论的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：FSW/CEC专业资格审查结论",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270208",
+      "start": "2027-02-08",
+      "end": "2027-02-14",
+      "month": "2027-02",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-02-08",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270208-T01",
+          "title": "完成并保存：专业服务范围与成本确认",
+          "monthly_task_id": "D02-M2027-02-T02",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "acceptance_criteria": "保存专业服务范围与成本确认的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：专业服务范围与成本确认",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270215",
+      "start": "2027-02-15",
+      "end": "2027-02-21",
+      "month": "2027-02",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-02-15",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270215-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-02-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270222",
+      "start": "2027-02-22",
+      "end": "2027-02-28",
+      "month": "2027-02",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-02-22",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270301",
+      "start": "2027-03-01",
+      "end": "2027-03-07",
+      "month": "2027-03",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-03-01",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270301-T01",
+          "title": "完成并保存：PR材料第一轮归档",
+          "monthly_task_id": "D02-M2027-03-T01",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "acceptance_criteria": "保存PR材料第一轮归档的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：PR材料第一轮归档",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270308",
+      "start": "2027-03-08",
+      "end": "2027-03-14",
+      "month": "2027-03",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-03-08",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270308-T01",
+          "title": "完成并保存：OWP条件式适用性审核",
+          "monthly_task_id": "D02-M2027-03-T02",
+          "goal_id": "D02-O4",
+          "priority": "Normal",
+          "acceptance_criteria": "保存OWP条件式适用性审核的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：OWP条件式适用性审核",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270315",
+      "start": "2027-03-15",
+      "end": "2027-03-21",
+      "month": "2027-03",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-03-15",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270315-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-03-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270322",
+      "start": "2027-03-22",
+      "end": "2027-03-28",
+      "month": "2027-03",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-03-22",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270329",
+      "start": "2027-03-29",
+      "end": "2027-04-04",
+      "month": "2027-03",
+      "quarter": "Q2",
+      "title": "Immigration · 2027-03-29",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270329-T01",
+          "title": "完成并保存：TCF四项诊断与弱项报告",
+          "monthly_task_id": "D02-M2027-04-T01",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存TCF四项诊断与弱项报告的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "专业资格审核及材料第一轮归档",
+        "focus_statement": "本周重点：TCF四项诊断与弱项报告",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "专业资格审核及材料第一轮归档",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270405",
+      "start": "2027-04-05",
+      "end": "2027-04-11",
+      "month": "2027-04",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-04-05",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270405-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-04-T02",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270412",
+      "start": "2027-04-12",
+      "end": "2027-04-18",
+      "month": "2027-04",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-04-12",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270419",
+      "start": "2027-04-19",
+      "end": "2027-04-25",
+      "month": "2027-04",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-04-19",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270426",
+      "start": "2027-04-26",
+      "end": "2027-05-02",
+      "month": "2027-04",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-04-26",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270426-T01",
+          "title": "完成并保存：TCF准备度测评",
+          "monthly_task_id": "D02-M2027-05-T01",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存TCF准备度测评的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：TCF准备度测评",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270503",
+      "start": "2027-05-03",
+      "end": "2027-05-09",
+      "month": "2027-05",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-05-03",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270503-T01",
+          "title": "完成并保存：EE最早资格和缺失证据复查",
+          "monthly_task_id": "D02-M2027-05-T02",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存EE最早资格和缺失证据复查的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：EE最早资格和缺失证据复查",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270510",
+      "start": "2027-05-10",
+      "end": "2027-05-16",
+      "month": "2027-05",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-05-10",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270510-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-05-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270517",
+      "start": "2027-05-17",
+      "end": "2027-05-23",
+      "month": "2027-05",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-05-17",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270524",
+      "start": "2027-05-24",
+      "end": "2027-05-30",
+      "month": "2027-05",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-05-24",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270531",
+      "start": "2027-05-31",
+      "end": "2027-06-06",
+      "month": "2027-05",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-05-31",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270531-T01",
+          "title": "完成并保存：TCF首考窗口和候选考位确定",
+          "monthly_task_id": "D02-M2027-06-T01",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存TCF首考窗口和候选考位确定的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：TCF首考窗口和候选考位确定",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270607",
+      "start": "2027-06-07",
+      "end": "2027-06-13",
+      "month": "2027-06",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-06-07",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270607-T01",
+          "title": "完成并保存：CEC达标前证据核查",
+          "monthly_task_id": "D02-M2027-06-T02",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存CEC达标前证据核查的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：CEC达标前证据核查",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270614",
+      "start": "2027-06-14",
+      "end": "2027-06-20",
+      "month": "2027-06",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-06-14",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270614-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-06-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270621",
+      "start": "2027-06-21",
+      "end": "2027-06-27",
+      "month": "2027-06",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-06-21",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270628",
+      "start": "2027-06-28",
+      "end": "2027-07-04",
+      "month": "2027-06",
+      "quarter": "Q3",
+      "title": "Immigration · 2027-06-28",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270628-T01",
+          "title": "完成并保存：CEC资格节点核验",
+          "monthly_task_id": "D02-M2027-07-T01",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存CEC资格节点核验的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "TCF四项诊断及CEC资格预核",
+        "focus_statement": "本周重点：CEC资格节点核验",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "TCF四项诊断及CEC资格预核",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270705",
+      "start": "2027-07-05",
+      "end": "2027-07-11",
+      "month": "2027-07",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-07-05",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270705-T01",
+          "title": "完成并保存：提前首考决策",
+          "monthly_task_id": "D02-M2027-07-T02",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存提前首考决策的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：提前首考决策",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270712",
+      "start": "2027-07-12",
+      "end": "2027-07-18",
+      "month": "2027-07",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-07-12",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270712-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-07-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270719",
+      "start": "2027-07-19",
+      "end": "2027-07-25",
+      "month": "2027-07",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-07-19",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270726",
+      "start": "2027-07-26",
+      "end": "2027-08-01",
+      "month": "2027-07",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-07-26",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270726-T01",
+          "title": "完成并保存：TCF正式考位和重考方案确认",
+          "monthly_task_id": "D02-M2027-08-T01",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存TCF正式考位和重考方案确认的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：TCF正式考位和重考方案确认",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270802",
+      "start": "2027-08-02",
+      "end": "2027-08-08",
+      "month": "2027-08",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-08-02",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270802-T01",
+          "title": "完成并保存：EE Profile与CRS信息核查",
+          "monthly_task_id": "D02-M2027-08-T02",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存EE Profile与CRS信息核查的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：EE Profile与CRS信息核查",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270809",
+      "start": "2027-08-09",
+      "end": "2027-08-15",
+      "month": "2027-08",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-08-09",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270809-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-08-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270816",
+      "start": "2027-08-16",
+      "end": "2027-08-22",
+      "month": "2027-08",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-08-16",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270823",
+      "start": "2027-08-23",
+      "end": "2027-08-29",
+      "month": "2027-08",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-08-23",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270830",
+      "start": "2027-08-30",
+      "end": "2027-09-05",
+      "month": "2027-08",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-08-30",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270830-T01",
+          "title": "完成并保存：TCF首次考试或确认10月考位",
+          "monthly_task_id": "D02-M2027-09-T01",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存TCF首次考试或确认10月考位的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：TCF首次考试或确认10月考位",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270906",
+      "start": "2027-09-06",
+      "end": "2027-09-12",
+      "month": "2027-09",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-09-06",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270906-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-09-T02",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270913",
+      "start": "2027-09-13",
+      "end": "2027-09-19",
+      "month": "2027-09",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-09-13",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270920",
+      "start": "2027-09-20",
+      "end": "2027-09-26",
+      "month": "2027-09",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-09-20",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20270927",
+      "start": "2027-09-27",
+      "end": "2027-10-03",
+      "month": "2027-09",
+      "quarter": "Q4",
+      "title": "Immigration · 2027-09-27",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20270927-T01",
+          "title": "完成并保存：TCF成绩及重考决策",
+          "monthly_task_id": "D02-M2027-10-T01",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存TCF成绩及重考决策的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "CEC资格核验、EE入池与TCF首考",
+        "focus_statement": "本周重点：TCF成绩及重考决策",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "CEC资格核验、EE入池与TCF首考",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271004",
+      "start": "2027-10-04",
+      "end": "2027-10-10",
+      "month": "2027-10",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-10-04",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271004-T01",
+          "title": "完成并保存：符合条件时更新法语类别和CRS",
+          "monthly_task_id": "D02-M2027-10-T02",
+          "goal_id": "D02-O3",
+          "priority": "High",
+          "acceptance_criteria": "保存符合条件时更新法语类别和CRS的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：符合条件时更新法语类别和CRS",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271011",
+      "start": "2027-10-11",
+      "end": "2027-10-17",
+      "month": "2027-10",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-10-11",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271011-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-10-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271018",
+      "start": "2027-10-18",
+      "end": "2027-10-24",
+      "month": "2027-10",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-10-18",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271025",
+      "start": "2027-10-25",
+      "end": "2027-10-31",
+      "month": "2027-10",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-10-25",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271101",
+      "start": "2027-11-01",
+      "end": "2027-11-07",
+      "month": "2027-11",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-11-01",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271101-T01",
+          "title": "完成并保存：e-APR申请准备度审核",
+          "monthly_task_id": "D02-M2027-11-T01",
+          "goal_id": "D02-O5",
+          "priority": "High",
+          "acceptance_criteria": "保存e-APR申请准备度审核的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：e-APR申请准备度审核",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271108",
+      "start": "2027-11-08",
+      "end": "2027-11-14",
+      "month": "2027-11",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-11-08",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271108-T01",
+          "title": "完成并保存：未达标时执行可行的TCF重考方案",
+          "monthly_task_id": "D02-M2027-11-T02",
+          "goal_id": "D02-O2",
+          "priority": "High",
+          "acceptance_criteria": "保存未达标时执行可行的TCF重考方案的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：未达标时执行可行的TCF重考方案",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271115",
+      "start": "2027-11-15",
+      "end": "2027-11-21",
+      "month": "2027-11",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-11-15",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271115-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-11-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271122",
+      "start": "2027-11-22",
+      "end": "2027-11-28",
+      "month": "2027-11",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-11-22",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271129",
+      "start": "2027-11-29",
+      "end": "2027-12-05",
+      "month": "2027-11",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-11-29",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271129-T01",
+          "title": "完成并保存：ITA/AOR及Must目标正式年度验收",
+          "monthly_task_id": "D02-M2027-12-T01",
+          "goal_id": "D02-O1",
+          "priority": "Normal",
+          "acceptance_criteria": "保存ITA/AOR及Must目标正式年度验收的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：ITA/AOR及Must目标正式年度验收",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271206",
+      "start": "2027-12-06",
+      "end": "2027-12-12",
+      "month": "2027-12",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-12-06",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271206-T01",
+          "title": "完成并保存：2028资格维护与申请衔接计划",
+          "monthly_task_id": "D02-M2027-12-T02",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存2028资格维护与申请衔接计划的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：2028资格维护与申请衔接计划",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271213",
+      "start": "2027-12-13",
+      "end": "2027-12-19",
+      "month": "2027-12",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-12-13",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271213-T01",
+          "title": "完成并保存：月度CRS与移民风险快照",
+          "monthly_task_id": "D02-M2027-12-T03",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存一次带日期的实际CRS（或尚不符合入池资格）、政策与下一步行动记录",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：月度CRS与移民风险快照",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271220",
+      "start": "2027-12-20",
+      "end": "2027-12-26",
+      "month": "2027-12",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-12-20",
+      "view_type": "execution",
+      "tasks": [],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周推进本季度关键资格与移民成果；不制造低价值例行待办。",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    },
+    {
+      "id": "D02-W20271227",
+      "start": "2027-12-27",
+      "end": "2028-01-02",
+      "month": "2027-12",
+      "quarter": "Q5",
+      "title": "Immigration · 2027-12-27",
+      "view_type": "execution",
+      "tasks": [
+        {
+          "id": "D02-W20271227-T01",
+          "title": "完成并保存：跨年申请及未决事项交接",
+          "monthly_task_id": "D02-M2028-01-T01",
+          "goal_id": "D02-O6",
+          "priority": "Normal",
+          "acceptance_criteria": "保存跨年申请及未决事项交接的实际结果、日期、核查依据和证据缺口；不将计划当成结果",
+          "task_type": "concrete_step",
+          "phase": "deliver",
+          "tracking": "checkbox"
+        }
+      ],
+      "guidance": "没有实质行政交付的周不创建打卡；法语训练由D03记录。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "focus_statement": "本周重点：跨年申请及未决事项交接",
+        "judgement_prompt": "未能量化的资格风险与专业判断，作为文字状态维护。",
+        "checkpoint": "四项NCLC7、ITA/AOR冲刺及2028衔接",
+        "track_as_task": false
+      }
+    }
+  ],
+  "tracking_policy": {
+    "weekly": "只有具体行动Checkbox；每周显示所属季度方向",
+    "monthly": "月度交付通过完成关联周行动或提前手动验收",
+    "quarterly": "季度执行率由已验收月度交付派生，非真实资格的替代",
+    "annual": "不根据任务完成率自动认定ITA/AOR",
+    "privacy": "不上传证件号码及个人移民资料到公共GitHub"
+  },
+  "execution_version": "D02 V2.1",
+  "planning_notes": [
+    "首次TCF计划2027年9月，条件具备时提前到7–8月",
+    "法语训练在D03独立跟踪",
+    "月度CRS按适用政策与真实证据更新",
+    "所有资格和ITA/AOR结果必须经过人工证据核验"
+  ]
+}
