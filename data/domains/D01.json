@@ -1,5 +1,5 @@
 {
-  "plan_version": "D01 V4.0 — Outcome-driven execution and cascading progress",
+  "plan_version": "D01 V4.1 — Weekly quarter alignment with qualitative focus",
   "last_reviewed": "2026-11-15",
   "north_star": {
     "vision_zh": "2027年底获得稳定正式全职风险岗位，争取Senior Analyst或等效职级与CAD 100,000–110,000年基本工资，并通过业务成果、风险分析能力和项目领导经验为Market Risk、Credit Methodology、CCR方向的未来Manager Scope打基础。",
@@ -1834,7 +1834,15 @@
         "D01-WPRE01-T03",
         "D01-WPRE01-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成雇佣状态确认和 Plan B 决策",
+        "focus_statement": "本周围绕「在11月20日前记录PFT状态、下一步决定和Plan B触发结论」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "就业决策优先：区分正式 PFT、实质审批和仅有讨论；不要把不确定性当作承诺。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WPRE02",
@@ -1885,7 +1893,15 @@
         "D01-WPRE02-T03",
         "D01-WPRE02-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成雇佣状态确认和 Plan B 决策",
+        "focus_statement": "本周围绕「在11月20日前记录PFT状态、下一步决定和Plan B触发结论」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "同时保留外部职业选择权，不为申请数量而申请。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WPRE03",
@@ -1914,7 +1930,15 @@
         "D01-WPRE03-T03",
         "D01-WPRE03-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成雇佣状态确认和 Plan B 决策",
+        "focus_statement": "本周围绕「完成2027年1月就业保障方案（PFT、延约或外部求职三种情景）」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "用可公开的工作成果与目标岗位要求，建立下一阶段能够复用的职业材料。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WPRE04",
@@ -1954,7 +1978,15 @@
         "D01-WPRE04-T03",
         "D01-WPRE04-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "整理 Credit / Market 风险简历及项目成果档案",
+        "focus_statement": "本周围绕「完成2027年1月就业保障方案（PFT、延约或外部求职三种情景）」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "就业决策优先：区分正式 PFT、实质审批和仅有讨论；不要把不确定性当作承诺。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WPRE05",
@@ -1983,7 +2015,15 @@
         "D01-WPRE05-T03",
         "D01-WPRE05-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "整理 Credit / Market 风险简历及项目成果档案",
+        "focus_statement": "本周围绕「完成2条风险职业赛道对比表（Credit/Market/Methodology/CCR选2）」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "同时保留外部职业选择权，不为申请数量而申请。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WPRE06",
@@ -2012,7 +2052,15 @@
         "D01-WPRE06-T03",
         "D01-WPRE06-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "整理 Credit / Market 风险简历及项目成果档案",
+        "focus_statement": "本周围绕「形成2个不涉密的可面试业务成果STAR案例」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "用可公开的工作成果与目标岗位要求，建立下一阶段能够复用的职业材料。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WPRE07",
@@ -2040,7 +2088,15 @@
         "D01-WPRE07-T02",
         "D01-WPRE07-T03"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "搭建年度职业 KPI 基线、目标 JD 筛选清单与固定 weekly review",
+        "focus_statement": "本周围绕「形成2个不涉密的可面试业务成果STAR案例」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "就业决策优先：区分正式 PFT、实质审批和仅有讨论；不要把不确定性当作承诺。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W01",
@@ -2069,7 +2125,15 @@
         "D01-W01-T03",
         "D01-W01-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "搭建年度职业 KPI 基线、目标 JD 筛选清单与固定 weekly review",
+        "focus_statement": "本周围绕「取得当前雇佣状态的书面确认或明确的下一步决策」判断最有价值的下一步；Q1 的目标是以 2026-11-16 为启动日，明确 BMO PFT / 合同风险，在 11月20日 Plan B 节点作实际判断；完成基础职业材料、执行系统和可调整的工作安排。",
+        "judgement_prompt": "同时保留外部职业选择权，不为申请数量而申请。",
+        "checkpoint": "2026-11-20 核实正式 PFT 批准/offer/审批节点；缺乏实质进展即落实 Plan B。2027-01-03 复盘过渡成果。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W02",
@@ -2110,7 +2174,15 @@
         "D01-W02-T03",
         "D01-W02-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "建立至少2个风险方向的岗位与能力对标",
+        "focus_statement": "本周围绕「取得当前雇佣状态的书面确认或明确的下一步决策」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "优先解决就业稳定性，再选择最有职业回报的专业方向。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W03",
@@ -2140,7 +2212,15 @@
         "D01-W03-T03",
         "D01-W03-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "建立至少2个风险方向的岗位与能力对标",
+        "focus_statement": "本周围绕「完成目标职业路线JD比较累计6份中的首批3份新增分析」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "把正在做的风险分析工作翻译成可以向 Senior Analyst 面试官解释的业务影响。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W04",
@@ -2170,7 +2250,15 @@
         "D01-W04-T03",
         "D01-W04-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "建立至少2个风险方向的岗位与能力对标",
+        "focus_statement": "本周围绕「整理一项可解释的风险项目 Ownership 成果」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "对标岗位是为了识别关键能力差距，而不是积攒无意义的 JD 数量。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W05",
@@ -2199,7 +2287,15 @@
         "D01-W05-T03",
         "D01-W05-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "建立至少2个风险方向的岗位与能力对标",
+        "focus_statement": "本周围绕「整理一项可解释的风险项目 Ownership 成果」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "优先解决就业稳定性，再选择最有职业回报的专业方向。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W06",
@@ -2229,7 +2325,15 @@
         "D01-W06-T03",
         "D01-W06-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "建立至少2个风险方向的岗位与能力对标",
+        "focus_statement": "本周围绕「完成累计6份JD与至少2个职业赛道的比较」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "把正在做的风险分析工作翻译成可以向 Senior Analyst 面试官解释的业务影响。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W07",
@@ -2270,7 +2374,15 @@
         "D01-W07-T03",
         "D01-W07-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Career Positioning Statement 与技术技能差距分析",
+        "focus_statement": "本周围绕「完成累计6份JD与至少2个职业赛道的比较」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "对标岗位是为了识别关键能力差距，而不是积攒无意义的 JD 数量。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W08",
@@ -2311,7 +2423,15 @@
         "D01-W08-T03",
         "D01-W08-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Career Positioning Statement 与技术技能差距分析",
+        "focus_statement": "本周围绕「定稿 Career Positioning Statement v1」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "优先解决就业稳定性，再选择最有职业回报的专业方向。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W09",
@@ -2340,7 +2460,15 @@
         "D01-W09-T03",
         "D01-W09-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Career Positioning Statement 与技术技能差距分析",
+        "focus_statement": "本周围绕「完成10道 Risk Technical Q&A 与3个Behavioral STAR 案例」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "把正在做的风险分析工作翻译成可以向 Senior Analyst 面试官解释的业务影响。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W10",
@@ -2370,7 +2498,15 @@
         "D01-W10-T03",
         "D01-W10-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Career Positioning Statement 与技术技能差距分析",
+        "focus_statement": "本周围绕「完成 Q2 就业风险 Gate Review（截至4月4日）」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "对标岗位是为了识别关键能力差距，而不是积攒无意义的 JD 数量。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W11",
@@ -2411,7 +2547,15 @@
         "D01-W11-T03",
         "D01-W11-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Career Positioning Statement 与技术技能差距分析",
+        "focus_statement": "本周围绕「完成 Q2 就业风险 Gate Review（截至4月4日）」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "优先解决就业稳定性，再选择最有职业回报的专业方向。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W12",
@@ -2441,7 +2585,15 @@
         "D01-W12-T03",
         "D01-W12-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "保留正常工作的可验证成果和适当外部选择权",
+        "focus_statement": "本周围绕「完成岗位映射型 Skills Gap Assessment，并确定 Case I 技术题目」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "把正在做的风险分析工作翻译成可以向 Senior Analyst 面试官解释的业务影响。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W13",
@@ -2470,7 +2622,15 @@
         "D01-W13-T03",
         "D01-W13-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "保留正常工作的可验证成果和适当外部选择权",
+        "focus_statement": "本周围绕「完成一次有反馈的 Mock Interview」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "对标岗位是为了识别关键能力差距，而不是积攒无意义的 JD 数量。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W14",
@@ -2499,7 +2659,15 @@
         "D01-W14-T03",
         "D01-W14-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "保留正常工作的可验证成果和适当外部选择权",
+        "focus_statement": "本周围绕「完成一次有反馈的 Mock Interview」判断最有价值的下一步；Q2 的目标是稳定职业状态、验证市场岗位机会，完成岗位定位、技能差距分析与首季度可复用成果。",
+        "judgement_prompt": "优先解决就业稳定性，再选择最有职业回报的专业方向。",
+        "checkpoint": "到 2027-04-04 验证 PFT/求职进度与目标专业方向，清晰确定 Q3 就业与技术交付重点。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W15",
@@ -2529,7 +2697,15 @@
         "D01-W15-T03",
         "D01-W15-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "争取合适 PFT 正式岗位并开始工作",
+        "focus_statement": "本周围绕「定稿 Credit Risk Case I 的研究设计与合规数据源」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "PFT 是就业成果，不是待办清单；关键是拿到真实且可验证的状态。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W16",
@@ -2570,7 +2746,15 @@
         "D01-W16-T03",
         "D01-W16-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "争取合适 PFT 正式岗位并开始工作",
+        "focus_statement": "本周围绕「定稿 Credit Risk Case I 的研究设计与合规数据源」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "技术案例应以方法可靠、可复现和业务解释为标准，避免为了数量完成。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W17",
@@ -2611,7 +2795,15 @@
         "D01-W17-T03",
         "D01-W17-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "争取合适 PFT 正式岗位并开始工作",
+        "focus_statement": "本周围绕「实现 Case I 数据处理与首版风险指标计算」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "在实际工作允许的范围内争取 ownership，证据比任务数量重要。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W18",
@@ -2640,7 +2832,15 @@
         "D01-W18-T03",
         "D01-W18-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "争取合适 PFT 正式岗位并开始工作",
+        "focus_statement": "本周围绕「形成至少1项可独立负责的业务交付 Scope 记录」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "PFT 是就业成果，不是待办清单；关键是拿到真实且可验证的状态。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W19",
@@ -2670,7 +2870,15 @@
         "D01-W19-T03",
         "D01-W19-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "争取合适 PFT 正式岗位并开始工作",
+        "focus_statement": "本周围绕「完成 Case I 模型验证、解释与局限性章节」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "技术案例应以方法可靠、可复现和业务解释为标准，避免为了数量完成。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W20",
@@ -2711,7 +2919,15 @@
         "D01-W20-T03",
         "D01-W20-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Risk Technical Case I 和业务 Ownership 记录",
+        "focus_statement": "本周围绕「完成 Case I 模型验证、解释与局限性章节」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "在实际工作允许的范围内争取 ownership，证据比任务数量重要。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W21",
@@ -2741,7 +2957,15 @@
         "D01-W21-T03",
         "D01-W21-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Risk Technical Case I 和业务 Ownership 记录",
+        "focus_statement": "本周围绕「确认一项真实业务贡献的前后对比证据」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "PFT 是就业成果，不是待办清单；关键是拿到真实且可验证的状态。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W22",
@@ -2770,7 +2994,15 @@
         "D01-W22-T03",
         "D01-W22-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Risk Technical Case I 和业务 Ownership 记录",
+        "focus_statement": "本周围绕「完成10个有效职级/薪酬样本对标」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "技术案例应以方法可靠、可复现和业务解释为标准，避免为了数量完成。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W23",
@@ -2799,7 +3031,15 @@
         "D01-W23-T03",
         "D01-W23-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Risk Technical Case I 和业务 Ownership 记录",
+        "focus_statement": "本周围绕「完成10个有效职级/薪酬样本对标」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "在实际工作允许的范围内争取 ownership，证据比任务数量重要。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W24",
@@ -2829,7 +3069,15 @@
         "D01-W24-T03",
         "D01-W24-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 Risk Technical Case I 和业务 Ownership 记录",
+        "focus_statement": "本周围绕「核实6月30日正式PFT结果或归档 Plan B 升级决定」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "PFT 是就业成果，不是待办清单；关键是拿到真实且可验证的状态。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W25",
@@ -2870,7 +3118,15 @@
         "D01-W25-T03",
         "D01-W25-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计3个赛道、12份 JD 并确定主备方向",
+        "focus_statement": "本周围绕「核实6月30日正式PFT结果或归档 Plan B 升级决定」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "技术案例应以方法可靠、可复现和业务解释为标准，避免为了数量完成。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W26",
@@ -2911,7 +3167,15 @@
         "D01-W26-T03",
         "D01-W26-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计3个赛道、12份 JD 并确定主备方向",
+        "focus_statement": "本周围绕「完成 Credit Risk Case I 完整可复现版本」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "在实际工作允许的范围内争取 ownership，证据比任务数量重要。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W27",
@@ -2940,7 +3204,15 @@
         "D01-W27-T03",
         "D01-W27-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计3个赛道、12份 JD 并确定主备方向",
+        "focus_statement": "本周围绕「确定主/备职业赛道并归档12份JD对比结果」判断最有价值的下一步；Q3 的目标是以 2027-06-30 前实现正式 PFT 为最关键职业成果，同时交付第一项完整 Risk Analytics Case。",
+        "judgement_prompt": "PFT 是就业成果，不是待办清单；关键是拿到真实且可验证的状态。",
+        "checkpoint": "2027-06-30 按书面合同和实际在岗状态核验 PFT；未达成则升级外部求职 Plan B。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W28",
@@ -2970,7 +3242,15 @@
         "D01-W28-T03",
         "D01-W28-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成第二项技术案例",
+        "focus_statement": "本周围绕「完成第二个 Risk Case 的研究问题及方法设计」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "关注 Senior Analyst 的真实 scope，包括独立判断、跨团队影响与项目责任。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W29",
@@ -3011,7 +3291,15 @@
         "D01-W29-T03",
         "D01-W29-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成第二项技术案例",
+        "focus_statement": "本周围绕「完成第二个 Risk Case 的研究问题及方法设计」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "技术研究和面试准备要服务真实职业机会，而不是无限扩展学习主题。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W30",
@@ -3052,7 +3340,15 @@
         "D01-W30-T03",
         "D01-W30-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成第二项技术案例",
+        "focus_statement": "本周围绕「取得一项跨团队协调工作的明确交付责任」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "若内部晋升受阻，应适时比较外部岗位的薪酬、职责与成长空间。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W31",
@@ -3081,7 +3377,15 @@
         "D01-W31-T03",
         "D01-W31-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成第二项技术案例",
+        "focus_statement": "本周围绕「制作 Senior Analyst Scope Gap Matrix」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "关注 Senior Analyst 的真实 scope，包括独立判断、跨团队影响与项目责任。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W32",
@@ -3111,7 +3415,15 @@
         "D01-W32-T03",
         "D01-W32-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成第二项技术案例",
+        "focus_statement": "本周围绕「完成 Risk Case II 主要模型或指标实现与验证」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "技术研究和面试准备要服务真实职业机会，而不是无限扩展学习主题。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W33",
@@ -3152,7 +3464,15 @@
         "D01-W33-T03",
         "D01-W33-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计2项 Ownership 与1项跨团队协调",
+        "focus_statement": "本周围绕「完成 Risk Case II 主要模型或指标实现与验证」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "若内部晋升受阻，应适时比较外部岗位的薪酬、职责与成长空间。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W34",
@@ -3182,7 +3502,15 @@
         "D01-W34-T03",
         "D01-W34-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计2项 Ownership 与1项跨团队协调",
+        "focus_statement": "本周围绕「归档第二项重要工作 Ownership 事例」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "关注 Senior Analyst 的真实 scope，包括独立判断、跨团队影响与项目责任。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W35",
@@ -3211,7 +3539,15 @@
         "D01-W35-T03",
         "D01-W35-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计2项 Ownership 与1项跨团队协调",
+        "focus_statement": "本周围绕「完成一次有反馈的 Technical / Behavioral Mock Interview」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "技术研究和面试准备要服务真实职业机会，而不是无限扩展学习主题。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W36",
@@ -3240,7 +3576,15 @@
         "D01-W36-T03",
         "D01-W36-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计2项 Ownership 与1项跨团队协调",
+        "focus_statement": "本周围绕「完成一次有反馈的 Technical / Behavioral Mock Interview」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "若内部晋升受阻，应适时比较外部岗位的薪酬、职责与成长空间。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W37",
@@ -3270,7 +3614,15 @@
         "D01-W37-T03",
         "D01-W37-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "累计2项 Ownership 与1项跨团队协调",
+        "focus_statement": "本周围绕「完成 Case II 最终版并达成累计2个完整案例」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "关注 Senior Analyst 的真实 scope，包括独立判断、跨团队影响与项目责任。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W38",
@@ -3311,7 +3663,15 @@
         "D01-W38-T03",
         "D01-W38-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "确认高级风险岗位技能与薪资差距",
+        "focus_statement": "本周围绕「完成 Case II 最终版并达成累计2个完整案例」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "技术研究和面试准备要服务真实职业机会，而不是无限扩展学习主题。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W39",
@@ -3352,7 +3712,15 @@
         "D01-W39-T03",
         "D01-W39-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "确认高级风险岗位技能与薪资差距",
+        "focus_statement": "本周围绕「做出 Q4 晋升路径 Gate Decision」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "若内部晋升受阻，应适时比较外部岗位的薪酬、职责与成长空间。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W40",
@@ -3381,7 +3749,15 @@
         "D01-W40-T03",
         "D01-W40-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "确认高级风险岗位技能与薪资差距",
+        "focus_statement": "本周围绕「完成至少1项跨团队协调/Leadership 事例归档」判断最有价值的下一步；Q4 的目标是积累晋升 Senior Analyst 所需的技术深度、业务 Owner 成果和跨团队领导力。",
+        "judgement_prompt": "关注 Senior Analyst 的真实 scope，包括独立判断、跨团队影响与项目责任。",
+        "checkpoint": "2027-09-30 判断内部晋升与薪酬兑现路径是否可信，否则加强外部 Senior Analyst 市场测试。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W41",
@@ -3411,7 +3787,15 @@
         "D01-W41-T03",
         "D01-W41-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "核验正式 Title、Base Salary 和就业状态",
+        "focus_statement": "本周围绕「整理 Senior Analyst 晋升证据包」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "把全年成果转化为真实 title、base salary 和长期职业价值。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W42",
@@ -3452,7 +3836,15 @@
         "D01-W42-T03",
         "D01-W42-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "核验正式 Title、Base Salary 和就业状态",
+        "focus_statement": "本周围绕「整理 Senior Analyst 晋升证据包」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "职业材料、案例和人脉是支持性资产，不能替代实际雇佣与薪酬结果。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W43",
@@ -3493,7 +3885,15 @@
         "D01-W43-T03",
         "D01-W43-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "核验正式 Title、Base Salary 和就业状态",
+        "focus_statement": "本周围绕「定稿 Credit / Market / Quant 三版目标岗位简历」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "年底以证据复核，不因未完成软性任务而误判整年职业表现。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W44",
@@ -3522,7 +3922,15 @@
         "D01-W44-T03",
         "D01-W44-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "核验正式 Title、Base Salary 和就业状态",
+        "focus_statement": "本周围绕「进行一次有明确结果的职业发展/晋升讨论或外部市场对标」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "把全年成果转化为真实 title、base salary 和长期职业价值。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W45",
@@ -3552,7 +3960,15 @@
         "D01-W45-T03",
         "D01-W45-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "核验正式 Title、Base Salary 和就业状态",
+        "focus_statement": "本周围绕「核验当前Title与Base相对于Senior Analyst / CAD100k门槛的差距」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "职业材料、案例和人脉是支持性资产，不能替代实际雇佣与薪酬结果。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W46",
@@ -3582,7 +3998,15 @@
         "D01-W46-T03",
         "D01-W46-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 40 KPI 年度评估与关键业务成果总结",
+        "focus_statement": "本周围绕「核验当前Title与Base相对于Senior Analyst / CAD100k门槛的差距」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "年底以证据复核，不因未完成软性任务而误判整年职业表现。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W47",
@@ -3612,7 +4036,15 @@
         "D01-W47-T03",
         "D01-W47-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 40 KPI 年度评估与关键业务成果总结",
+        "focus_statement": "本周围绕「完成3个可复述的 Leadership STAR 面试故事」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "把全年成果转化为真实 title、base salary 和长期职业价值。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W48",
@@ -3629,7 +4061,15 @@
         "D01-W48-T03",
         "D01-W48-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 40 KPI 年度评估与关键业务成果总结",
+        "focus_statement": "本周围绕「完成3个可复述的 Leadership STAR 面试故事」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "职业材料、案例和人脉是支持性资产，不能替代实际雇佣与薪酬结果。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W49",
@@ -3658,7 +4098,15 @@
         "D01-W49-T03",
         "D01-W49-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 40 KPI 年度评估与关键业务成果总结",
+        "focus_statement": "本周围绕「完成3个可复述的 Leadership STAR 面试故事」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "年底以证据复核，不因未完成软性任务而误判整年职业表现。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W50",
@@ -3688,7 +4136,15 @@
         "D01-W50-T03",
         "D01-W50-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 40 KPI 年度评估与关键业务成果总结",
+        "focus_statement": "本周围绕「在12月31日核验正式职级、年基本工资与就业状态」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "把全年成果转化为真实 title、base salary 和长期职业价值。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W51",
@@ -3729,7 +4185,15 @@
         "D01-W51-T03",
         "D01-W51-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 2028–2030 Career Roadmap",
+        "focus_statement": "本周围绕「在12月31日核验正式职级、年基本工资与就业状态」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "职业材料、案例和人脉是支持性资产，不能替代实际雇佣与薪酬结果。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W52",
@@ -3770,7 +4234,15 @@
         "D01-W52-T03",
         "D01-W52-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 2028–2030 Career Roadmap",
+        "focus_statement": "本周围绕「完成40项KPI的实际成果审核与证据索引」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "年底以证据复核，不因未完成软性任务而误判整年职业表现。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-W53",
@@ -3799,7 +4271,15 @@
         "D01-W53-T03",
         "D01-W53-T04"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 2028–2030 Career Roadmap",
+        "focus_statement": "本周围绕「完成2028–2030风险管理职业路线图」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "把全年成果转化为真实 title、base salary 和长期职业价值。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     },
     {
       "id": "D01-WCLOSE",
@@ -3826,7 +4306,15 @@
         "D01-WCLOSE-T01",
         "D01-WCLOSE-T02"
       ],
-      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。"
+      "guidance": "没有明确交付的周，不强制打卡；可提前完成后直接在 Monthly 验收。",
+      "weekly_focus": {
+        "type": "strategic_guidance",
+        "quarter_goal": "完成 2028–2030 Career Roadmap",
+        "focus_statement": "本周围绕「归档2027职业年度审计与2028第一阶段行动交接」判断最有价值的下一步；Q5 的目标是把工作成果转化为实际职级与基本年薪，在 2027-12-31 核验年度核心成果，2028-01-02 完成闭环。",
+        "judgement_prompt": "职业材料、案例和人脉是支持性资产，不能替代实际雇佣与薪酬结果。",
+        "checkpoint": "2027-12-31 分别验证 Senior Analyst+/等效职级 和 CAD 100k+ 年基本工资，2028-01-02 归档年终复盘。",
+        "track_as_task": false
+      }
     }
   ],
   "information_architecture": {
@@ -4256,6 +4744,7 @@
     "quarterly": "Execution completion derives from verified monthly deliverables, using period-linked months. KPI outcomes displayed separately.",
     "annual": "Annual outcome is NOT automatically achieved by checkboxes. Verified KPI actuals and objective assessment govern achievement.",
     "early_completion": "If work is done ahead of schedule, user can Verify now on the monthly deliverable. Linked weekly steps become satisfied, and quarter/annual execution progress updates.",
-    "skipped": "Skipped/N/A never means achieved; an applicable deliverable must be manually verified if a critical linked step is skipped."
+    "skipped": "Skipped/N/A never means achieved; an applicable deliverable must be manually verified if a critical linked step is skipped.",
+    "weekly_focus": "Each week shows a non-checkbox quarterly strategic alignment, a tailored weekly focus, and an optional judgment note; do not include these in task counts."
   }
 }
