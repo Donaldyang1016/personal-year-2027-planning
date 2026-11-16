@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "plan_version": "D04 V2.0 Annual & Quarterly — Batch 1 execution architecture",
+  "last_reviewed": "2026-11-16",
+  "domain_id": "D04",
+  "domain_name": "Health & Fitness",
+  "status": "Annual & Quarterly approved; Monthly/Weekly not generated",
+  "north_star": {
+    "vision_zh": "2027 Q3实现连续7天晨起平均≤75kg；Q1≤91、Q2≤83，随后维持与薄肌塑形；六周强化期以恢复健康为前提。",
+    "core_outcomes": [
+      "Q1≤91kg、Q2≤83kg、Q3≤75kg（连续7日平均）",
+      "保留力量、改善肩背V形比例及腰围",
+      "有氧2–3次/周、工作日多数夜晚睡7.5小时",
+      "Q4/Q5动态维持区间内且无持续反弹"
+    ]
+  },
+  "planning_periods": [
+    {
+      "id": "Q1",
+      "start": "2026-11-16",
+      "end": "2027-01-03"
+    },
+    {
+      "id": "Q2",
+      "start": "2027-01-04",
+      "end": "2027-04-04"
+    },
+    {
+      "id": "Q3",
+      "start": "2027-04-05",
+      "end": "2027-07-04"
+    },
+    {
+      "id": "Q4",
+      "start": "2027-07-05",
+      "end": "2027-10-03"
+    },
+    {
+      "id": "Q5",
+      "start": "2027-10-04",
+      "end": "2028-01-02"
+    }
+  ],
+  "goals": [
+    {
+      "id": "D04-O1",
+      "domain": "D04",
+      "section": "D04.1",
+      "title": "Strict Weight Milestones",
+      "title_zh": "Strict Weight Milestones",
+      "priority": "P0",
+      "must": "建立可持续身体与营养记录",
+      "target": "Q1≤91kg、Q2≤83kg、Q3≤75kg（连续7日平均）",
+      "stretch": "达标后平稳维持",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "2027-01-03前七日均值≤91kg",
+        "Q2": "2027-04-04前七日均值≤83kg",
+        "Q3": "2027-07-04前七日均值≤75kg",
+        "Q4": "根据达标后数据锁定维持区间",
+        "Q5": "年底维持区间内，完成复盘"
+      },
+      "kpis": [
+        {
+          "id": "D04-K1",
+          "label": "Q3目标体重(kg)",
+          "target": 75,
+          "unit": "kg",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "7日有效晨起体重平均，不使用脱水等方式"
+        }
+      ]
+    },
+    {
+      "id": "D04-O2",
+      "domain": "D04",
+      "section": "D04.2",
+      "title": "Strength & Body Composition",
+      "title_zh": "Strength & Body Composition",
+      "priority": "P1",
+      "must": "4次/周参考力量训练，保持动作技术与恢复",
+      "target": "保留力量、改善肩背V形比例及腰围",
+      "stretch": "力量与运动表现全面改善",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "六周强化与第7周过渡",
+        "Q2": "减脂并监测关键动作",
+        "Q3": "75kg和围度外形审核",
+        "Q4": "维持/体型重组",
+        "Q5": "全年力量、照片与围度总结"
+      },
+      "kpis": [
+        {
+          "id": "D04-K2",
+          "label": "力量维持与形态评估",
+          "target": 1,
+          "unit": "review",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "季度训练记录与同条件照片"
+        }
+      ]
+    },
+    {
+      "id": "D04-O3",
+      "domain": "D04",
+      "section": "D04.3",
+      "title": "Cardio, Sleep & Nutrition",
+      "title_zh": "Cardio, Sleep & Nutrition",
+      "priority": "P1",
+      "must": "适当有氧、足够营养和恢复；健康优先",
+      "target": "有氧2–3次/周、工作日多数夜晚睡7.5小时",
+      "stretch": "网球及心肺能力改善",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "强化阶段关注疲劳及睡眠",
+        "Q2": "饮食训练长期规律化",
+        "Q3": "考前维持恢复优先",
+        "Q4": "网球和心肺能力提高",
+        "Q5": "长期习惯稳固"
+      },
+      "kpis": [
+        {
+          "id": "D04-K3",
+          "label": "心肺/网球年度复盘",
+          "target": 1,
+          "unit": "review",
+          "level": "Stretch",
+          "deadline": "2027-12-31",
+          "verification": "可比记录而不是比赛输赢"
+        }
+      ]
+    },
+    {
+      "id": "D04-O4",
+      "domain": "D04",
+      "section": "D04.4",
+      "title": "Maintenance & Adaptive Tracking",
+      "title_zh": "Maintenance & Adaptive Tracking",
+      "priority": "P1",
+      "must": "可靠Tracker、每周复盘，不重复录入",
+      "target": "Q4/Q5动态维持区间内且无持续反弹",
+      "stretch": "生活中稳定长期坚持",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "强化期六周及W7复盘",
+        "Q2": "检查训练体重趋势",
+        "Q3": "达标后制定维持计划",
+        "Q4": "稳定维持体重区间",
+        "Q5": "全年健康状态综合验收"
+      },
+      "kpis": [
+        {
+          "id": "D04-K4",
+          "label": "维持期季度复盘",
+          "target": 2,
+          "unit": "quarter_reviews",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "达标后依据实际数据评估"
+        }
+      ]
+    }
+  ],
+  "monthly_plans": [],
+  "weekly_plans": [],
+  "tracking_policy": {
+    "weekly_layers": [
+      "quarterly_focus",
+      "concrete_deliverables",
+      "habit_counters"
+    ],
+    "monthly_density": "actual_outcomes_only",
+    "outcome_requires_independent_verification": true,
+    "early_completion": true,
+    "persistence": "private_database_required",
+    "qualitative_focus_is_not_checkbox": true
+  },
+  "cross_domain_references": []
+}
