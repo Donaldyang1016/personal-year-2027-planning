@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "plan_version": "D05 V2.0 Annual & Quarterly — Batch 1 execution architecture",
+  "last_reviewed": "2026-11-16",
+  "domain_id": "D05",
+  "domain_name": "Personal Image",
+  "status": "Annual & Quarterly approved; Monthly/Weekly not generated",
+  "north_star": {
+    "vision_zh": "韩系温柔清爽少年感；逐步骤护肤、自然纹理短发；2027年8套约会+4套职场+3套社交；12个月审、24次双线摄影练习。",
+    "core_outcomes": [
+      "全年稳定护理及皮肤、头皮状态月审",
+      "每4–6周理发维护并改进面部整体协调度",
+      "15套唯一搭配：8约会4职场3社交",
+      "24次练习及两组代表作品",
+      "2027年12次月审，Q1–Q5阶段照片对比"
+    ]
+  },
+  "planning_periods": [
+    {
+      "id": "Q1",
+      "start": "2026-11-16",
+      "end": "2027-01-03"
+    },
+    {
+      "id": "Q2",
+      "start": "2027-01-04",
+      "end": "2027-04-04"
+    },
+    {
+      "id": "Q3",
+      "start": "2027-04-05",
+      "end": "2027-07-04"
+    },
+    {
+      "id": "Q4",
+      "start": "2027-07-05",
+      "end": "2027-10-03"
+    },
+    {
+      "id": "Q5",
+      "start": "2027-10-04",
+      "end": "2028-01-02"
+    }
+  ],
+  "goals": [
+    {
+      "id": "D05-O1",
+      "domain": "D05",
+      "section": "D05.1",
+      "title": "Skincare, Grooming & Oral Care",
+      "title_zh": "Skincare, Grooming & Oral Care",
+      "priority": "P0",
+      "must": "形成逐步骤、按产品说明执行的早晚护理",
+      "target": "全年稳定护理及皮肤、头皮状态月审",
+      "stretch": "清爽稳定、耐受性良好的长效维护",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "护肤口腔清单和基线",
+        "Q2": "肤质头皮稳定及修订流程",
+        "Q3": "根据面部变化复盘",
+        "Q4": "稳定护理与表情仪容",
+        "Q5": "全年护理制度审查"
+      },
+      "kpis": [
+        {
+          "id": "D05-K10",
+          "label": "逐步骤护理方案及维护",
+          "target": 1,
+          "unit": "routine",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "verification": "计划步骤启用和月审，不根据数量虚构肤质结果"
+        }
+      ]
+    },
+    {
+      "id": "D05-O2",
+      "domain": "D05",
+      "section": "D05.2",
+      "title": "Hair & Facial Harmony",
+      "title_zh": "Hair & Facial Harmony",
+      "priority": "P1",
+      "must": "自然纹理韩系短发、头皮状态记录",
+      "target": "每4–6周理发维护并改进面部整体协调度",
+      "stretch": "定型个人发型与清爽感",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "第一组基线照片和发型目标",
+        "Q2": "定型初步发型和头皮护理",
+        "Q3": "减脂后脸部和发型适配",
+        "Q4": "表情与气质审核",
+        "Q5": "最终风格与持续护理"
+      },
+      "kpis": [
+        {
+          "id": "D05-K9",
+          "label": "发型维护评估",
+          "target": 8,
+          "unit": "sessions",
+          "level": "Process",
+          "deadline": "2027-12-31",
+          "verification": "按4–6周及真实需要执行，8为参考量非强制理发次数"
+        }
+      ]
+    },
+    {
+      "id": "D05-O3",
+      "domain": "D05",
+      "section": "D05.3",
+      "title": "Outfit Portfolio",
+      "title_zh": "Outfit Portfolio",
+      "priority": "P1",
+      "must": "衣橱整理、控制预算并适应减脂尺码",
+      "target": "15套唯一搭配：8约会4职场3社交",
+      "stretch": "形成长期可复用衣橱",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "现有衣橱盘点",
+        "Q2": "基本搭配与购买规划",
+        "Q3": "适应75kg体型",
+        "Q4": "三场景稳定使用",
+        "Q5": "15套完成并审核"
+      },
+      "kpis": [
+        {
+          "id": "D05-K1",
+          "label": "完整穿搭总数",
+          "target": 15,
+          "unit": "outfits",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "每套唯一编号并实际试穿"
+        },
+        {
+          "id": "D05-K2",
+          "label": "约会穿搭",
+          "target": 8,
+          "unit": "outfits",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "同一套不得重复计入总量"
+        },
+        {
+          "id": "D05-K3",
+          "label": "职场穿搭",
+          "target": 4,
+          "unit": "outfits",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "同一套不得重复计入总量"
+        },
+        {
+          "id": "D05-K4",
+          "label": "社交穿搭",
+          "target": 3,
+          "unit": "outfits",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "同一套不得重复计入总量"
+        }
+      ]
+    },
+    {
+      "id": "D05-O4",
+      "domain": "D05",
+      "section": "D05.4",
+      "title": "Photography & Presence",
+      "title_zh": "Photography & Presence",
+      "priority": "P2",
+      "must": "练习自身出镜和拍摄他人、记录反馈",
+      "target": "24次练习及两组代表作品",
+      "stretch": "形成稳定自然的形象与摄影风格",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "两条摄影练习路线确立",
+        "Q2": "基线照片及初步作品",
+        "Q3": "体型变化后的出镜调整",
+        "Q4": "实际社交及摄影表现",
+        "Q5": "两条作品集年度对比"
+      },
+      "kpis": [
+        {
+          "id": "D05-K7",
+          "label": "摄影专项练习",
+          "target": 24,
+          "unit": "sessions",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "真实有目的练习"
+        },
+        {
+          "id": "D05-K8",
+          "label": "双线摄影作品集",
+          "target": 2,
+          "unit": "portfolios",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "个人出镜和拍摄他人各一组"
+        }
+      ]
+    },
+    {
+      "id": "D05-O5",
+      "domain": "D05",
+      "section": "D05.5",
+      "title": "Image Maintenance & Monthly Reviews",
+      "title_zh": "Image Maintenance & Monthly Reviews",
+      "priority": "P1",
+      "must": "每月完整审核，按D04身体数据及D06预算调整",
+      "target": "2027年12次月审，Q1–Q5阶段照片对比",
+      "stretch": "建立标志性香氛配饰和长期维护方案",
+      "due": "2027-12-31",
+      "quarterly": {
+        "Q1": "2026年11和12月基线审查",
+        "Q2": "2027年1–3月月审",
+        "Q3": "2027年4–6月月审",
+        "Q4": "2027年7–9月月审",
+        "Q5": "2027年10–12月月审及全年总结"
+      },
+      "kpis": [
+        {
+          "id": "D05-K5",
+          "label": "2027全面形象月审",
+          "target": 12,
+          "unit": "reviews",
+          "level": "Must",
+          "deadline": "2027-12-31",
+          "verification": "每月一份综合审核，不重复计数"
+        },
+        {
+          "id": "D05-K6",
+          "label": "季度标准化照片对比",
+          "target": 5,
+          "unit": "quarter_sets",
+          "level": "Target",
+          "deadline": "2027-12-31",
+          "verification": "Q1–Q5各一组，允许引用D04照片"
+        }
+      ]
+    }
+  ],
+  "monthly_plans": [],
+  "weekly_plans": [],
+  "tracking_policy": {
+    "weekly_layers": [
+      "quarterly_focus",
+      "concrete_deliverables",
+      "habit_counters"
+    ],
+    "monthly_density": "actual_outcomes_only",
+    "outcome_requires_independent_verification": true,
+    "early_completion": true,
+    "persistence": "private_database_required",
+    "qualitative_focus_is_not_checkbox": true
+  },
+  "cross_domain_references": [
+    "D04:weight",
+    "D04:waist",
+    "D04:body_photos"
+  ]
+}
