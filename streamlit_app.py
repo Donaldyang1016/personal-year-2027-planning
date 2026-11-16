@@ -659,6 +659,21 @@ with tabs[4]:
         with st.container(border=True):
             st.markdown(f"### {w.get('title', week_id)}")
             st.caption(f"{w.get('start')} – {w.get('end')} · {w.get('quarter', '')}")
+        # Strategic guidance is qualitative, displayed prominently and never scored.
+        focus = w.get('weekly_focus', {})
+        if focus:
+            with st.container(border=True):
+                st.markdown('#### 🎯 This week in the quarter / 本周的季度方向')
+                st.markdown('**Quarterly objective / 本季度目标**')
+                st.write(focus.get('quarter_goal', ''))
+                st.markdown('**Weekly focus / 本周重点**')
+                st.write(focus.get('focus_statement', ''))
+                if focus.get('judgement_prompt'):
+                    st.caption('Career judgement / 职业判断：' + focus['judgement_prompt'])
+                with st.expander('Decision gate / 阶段决策节点'):
+                    st.write(focus.get('checkpoint', ''))
+        st.markdown('### Concrete actions / 具体交付任务')
+        st.caption('Only actions with an actual deliverable are counted. Strategic guidance above is not a checkbox.')
         render_todos(w.get('tasks', []), 'week')
         if w.get('guidance'):
             st.caption('Guidance / 建议：' + w['guidance'])
