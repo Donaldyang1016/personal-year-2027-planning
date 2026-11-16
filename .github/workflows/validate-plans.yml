@@ -1,0 +1,38 @@
+name: Validate Personal Year 2027
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Syntax and domain schema checks
+        run: |
+          python -m py_compile streamlit_app.py batch1_tracker.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          all_goals=set()
+          all_kpis=set()
+          for p in sorted(Path('data/domains').glob('D[0-9][0-9].json')):
+              data=json.loads(p.read_text())
+              assert data['domain_id']==p.stem
+              for goal in data['goals']:
+                  assert goal['id'].startswith(p.stem+'-')
+                  assert goal['id'] not in all_goals
+                  all_goals.add(goal['id'])
+                  for kpi in goal.get('kpis',[]):
+                      assert kpi['id'] not in all_kpis
+                      all_kpis.add(kpi['id'])
+          for p in sorted(Path('data/routines/D05').glob('*.json')):
+              data=json.loads(p.read_text())
+              ids=[s['step_id'] for s in data['steps']]
+              assert len(ids)==len(set(ids))
+              assert all(s['step_id'].startswith('D05-') for s in data['steps'])
+          print('Passed domain and routine definition validation')
+          PY
