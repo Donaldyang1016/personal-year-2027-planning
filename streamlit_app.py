@@ -446,7 +446,7 @@ with st.sidebar:
 
 tabs = st.tabs([
     '🏠 Dashboard', '🎯 Annual', '📅 Quarterly',
-    '🗓️ Monthly', '✅ Weekly', '📈 Progress'
+    '🗓️ Monthly', '✅ Weekly', '📈 Progress', '🧭 Batch 1 Tracker'
 ])
 
 with tabs[0]:
@@ -786,3 +786,9 @@ with tabs[5]:
         if st.session_state.activity_log:
             with st.expander('Recent activity / 最近更新'):
                 st.dataframe(pd.DataFrame(st.session_state.activity_log[:25]), hide_index=True, use_container_width=True)
+
+
+# Batch 1: separate, read-only until private persistence is configured.
+with tabs[6]:
+    from batch1_tracker import render as render_batch1_tracker
+    render_batch1_tracker(None, by_domain)
