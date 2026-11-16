@@ -26,8 +26,6 @@ D03_HABITS = [
 D04_HABITS = [
     ("strength", "Strength training", 4, "times"),
     ("cardio", "Cardio", 2, "times"),
-    ("weigh", "Morning weigh-ins", 4, "days"),
-    ("waist", "Waist measurement", 1, "times"),
     ("nutrition", "Nutrition/protein logging", 7, "days"),
     ("sleep", "Workday sleep >=7.5h", 4, "nights"),
     ("mobility", "Post-training mobility", 4, "times"),
@@ -149,6 +147,7 @@ def render(store, plans):
     st.caption("Check only when independently evidenced. Completing weekly actions never automatically verifies an exam, paper, chapter, or appearance result.")
     if access:
         kpis = [k for goal in plan.get("goals", []) for k in goal.get("kpis", [])]
+        kpis = [k for k in kpis if not (domain == "D04" and k["id"] == "D04-K1")]
         if kpis:
             selected = st.selectbox("Select KPI", [k["id"] for k in kpis], format_func=lambda kid: next(k["label"] for k in kpis if k["id"]==kid), key="batch1_outcome_pick")
             rec = records.get("outcome:" + selected, {})
@@ -179,6 +178,20 @@ def render(store, plans):
                     store.save("metric:D04:weight:" + chosen.isoformat(), {"value":w,"unit":"kg","date":chosen.isoformat()})
                     st.success("Saved privately.")
                     st.rerun()
+            with st.form("batch1_waist"):
+                waist_prior = records.get("metric:D04:waist:"+chosen.isoformat(),{}).get("value", 0)
+                waist = st.number_input("Waist circumference (cm)", min_value=0.0, max_value=250.0, value=float(waist_prior), step=0.1)
+                if st.form_submit_button("Save waist measurement"):
+                    if waist <= 0:
+                        st.error("Enter a positive measured waist circumference.")
+                    else:
+                        store.save("metric:D04:waist:"+chosen.isoformat(), {"value":waist,"unit":"cm","date":chosen.isoformat()})
+                        st.success("Saved privately.")
+                        st.rerun()
+        week_a = week_start(chosen)
+        count_weights = sum(week_a.isoformat() <= key.rsplit(":",1)[-1] <= (week_a+timedelta(days=6)).isoformat() for key in records if key.startswith("metric:D04:weight:"))
+        count_waists = sum(week_a.isoformat() <= key.rsplit(":",1)[-1] <= (week_a+timedelta(days=6)).isoformat() for key in records if key.startswith("metric:D04:waist:"))
+        st.caption(f"Auto-counted: morning weights {count_weights}/4 days · waist measurements {count_waists}/1. No duplicate checkboxes.")
     st.markdown("### 3 · Habit counters / 习惯次数")
     habits = D03_HABITS if domain == "D03" else D04_HABITS if domain == "D04" else []
     if domain == "D05":
